@@ -4,8 +4,6 @@ from html_tag_parser import HtmlTagParser
 
 # ONLY crawl url start with base url
 BASE_URL = 'https://stackoverflow.com/questions'
-# starting page
-HOME_PAGE = 'https://stackoverflow.com/questions'
 
 
 def grab_links(url, crawled):
