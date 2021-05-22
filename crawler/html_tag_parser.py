@@ -16,7 +16,7 @@ class HtmlTagParser:
         if title is None:
             title = self.soup.find('meta', {'itemprop': 'name'})
 
-        return str(title.get('content')).lower()
+        return str(title.get('content')).lower().strip("\n. ")
 
     def get_description(self):
         title = self.soup.find('meta', {'name': 'description'})
@@ -24,4 +24,4 @@ class HtmlTagParser:
         if title is None:
             title = self.soup.find('meta', {'itemprop': 'description'})
 
-        return str(title.get('content')).lower()
+        return str(title.get('content')).lower().strip("\n. ")
