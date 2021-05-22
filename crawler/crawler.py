@@ -14,7 +14,10 @@ def grab_links(url, crawled):
         response = requests.get(url)
         html_parser = HtmlTagParser(url, response.text)
 
-        #TODO: save in temp var
+        # TODO: append url to crawled.txt
+
+        # TODO: append crawl data to csv
+
         html_parser.description
         html_parser.title
 
@@ -26,12 +29,15 @@ def grab_links(url, crawled):
     crawled.add(url)
     new_links = links.page_links().difference(crawled)
 
-    for url in new_links:
-        grab_links(url, crawled)
+    # TODO: append urls to to_crawl_urls
 
 
 crawled = set()
+
+# TODO: run until out of urls in to_crawl_urls
+# TODO: read from to_crawl_urls and clear file
+# TODO: loop to each url
 grab_links(HOME_PAGE, crawled)
-#TODO: save crawl data to csv
+
 print(crawled)
 print('YES' if '1' in crawled else 'No')

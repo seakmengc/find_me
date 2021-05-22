@@ -1,20 +1,19 @@
 
-
-#stemming
+# stemming
 def stemming():
-    #TODO: read from csv
+    # TODO: read from csv
 
-    #TODO: stemming
+    # TODO: stemming
 
-    #TODO: save to csv
+    # TODO: save to csv
 
     pass
 
 
-#store data
+# store data
 def boot_graph_db():
-    #TODO: read from stemmed csv
+    # TODO: read from stemmed csv
 
-    #TODO: create data
+    # TODO: create data
 
     pass

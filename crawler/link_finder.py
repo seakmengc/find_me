@@ -15,8 +15,8 @@ class LinkFinder(HTMLParser):
                 if attribute == 'href':
                     url = parse.urlsplit(parse.urljoin(self.base_url, value))
                     clean_url = url.scheme + '://' + url.netloc + url.path
-                    if self.base_url in url:
-                        self.links.add(url)
+                    if self.base_url in clean_url:
+                        self.links.add(clean_url)
 
     def page_links(self):
         return self.links
