@@ -1,0 +1,890 @@
+https://stackoverflow.com/questions,newest questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/nsurlsession,newest 'nsurlsession' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/ask,log in,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/sass,newest 'sass' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/go,newest 'go' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669787/how-do-i-manage-the-structure-of-html-pages-in-a-web-app,how do i manage the structure of html pages in a web app?,"i am a beginner in web development and starting web app with flask. i want to build a simple web app where selection of each item/menu(e.g: about, services, portfolio, contact) on the navbar does not"
+https://stackoverflow.com/questions/67669770/moment-returns-different-time-in-web-and-cordova-application,moment returns different time in web and cordova application,"i have simple function to convert epoch to local time,
+gettimecomplaint(str){
+console.log(&quot;gettimecomplaint time in epoch format&quot;,str)
+let trydate = new date(str)
+console.log(&quot;try da"
+https://stackoverflow.com/questions/tagged/mysqli,newest 'mysqli' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669762/jsp-format-date-as-yyyy-mm-dd-hmm-a-within-a-forminput-field-for-datetime,"jsp: format date as ""yyyy-mm-dd h:mm a"" within a <form:input> field for datetimepicker","&lt;div class=&quot;col-xs-12 col-sm-6 col-md-3&quot;&gt;
+    &lt;label for=&quot;appointment_date&quot; class=&quot;required&quot; style=&quot;margin-left:30px&quot;&gt;appointment date: &lt;span"
+https://stackoverflow.com/questions/tagged/object,newest 'object' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/drake,newest 'drake' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669720/trouble-reading-modbus-register-using-python,trouble reading modbus register using python,"i am trying to use python (pycharm) to read a register on a modbus device. i have confirmed the com port, baud rate and other communication settings and i can use the devices application to read the"
+https://stackoverflow.com/questions/67669715/lambda-s3-request-cache-constrol,lambda s3 request cache-constrol,"hy everyone. any idea of how can i load images from aws s3 using cache-control?
+i have a function that converts jpg to webp.
+const querystring = require('querystring');
+
+const variables = {"
+https://stackoverflow.com/questions/tagged/azure-active-directory,newest 'azure-active-directory' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/types,newest 'types' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669721/unable-to-install-apr-util-missing-expat,"unable to install apr-util, missing expat","i am trying to build and install httpd-2.4.46 from the source code on windows machine.
+here are the steps that i have tried
+
+install pcre
+cd /d c:\mydata\apache24\build\pcre
+cmake -g &quot;nmake"
+https://stackoverflow.com/questions/tagged/noise,newest 'noise' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/minimalmodbus,newest 'minimalmodbus' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669784/problem-deleting-error-duplicate-values-from-list-in-python,problem deleting error duplicate values from list in python,"i'm creating a syntax to find duplicate values, combine values, and remove duplicate values.
+it works well but does not specify a range of values in the last column.
+what do you think is wrong?
+the"
+https://stackoverflow.com/questions/67669736/google-translation-api-advanced-with-glossary-adds-html-symbols-and-to-s,"google translation api advanced with glossary adds html symbols ""<"" and "">"" to some words","we are using a glossary with translation api advanced. everything works fine, but with some pairs of languages, some words are being returnd between html symbols &quot;&lt;&quot; and &quot;&gt;&quo"
+https://stackoverflow.com/questions/67669727/taskqueue-tasks-not-executing-in-dev-server-golang,taskqueue tasks not executing in dev server golang,"i'm new to golang. i have enqueued tasks to local taskqueue server using the google task queue library google.golang.org/appengine/taskqueue. but the execution is failing with the below error
+info"
+https://stackoverflow.com/questions/tagged/objective-c,newest 'objective-c' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669754/add-dynamic-property-to-existing-child-properties-in-javascript-object,add dynamic property to existing child properties in javascript object,"i know this sounds simple, but especially in this scenario it is not.
+lets say i've an object
+let garage = {}
+
+i know if i want to add property i can use the following methods
+object.defineproperty("
+https://stackoverflow.com/questions/tagged/threadpool,newest 'threadpool' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669797/x509-cert-signed-by-unknown-authority-possibly-bcz-of-crypto-rsa-verificatio,"x509: cert signed by unknown authority (possibly bcz of ""crypto/rsa: verification error"" while trying to verify candidate authority cert ""kubernetes"")","i am facing this error when i try any kubectl command, on alternate basis, i.e.,
+once the command gives correct output and other time it shows the above error.
+[root@ip-10-0-3-103 ec2-user]# kubect"
+https://stackoverflow.com/questions/67669722/diferences-between-insert-save-update-in-mongotemplate-spring,"diferences between insert, save, update in mongotemplate (spring)",i am starting with spring and mongodb. i have seen that there are several methods to insert and / or update. i have also read some posts here explaining some concepts. but i don't quite understand
+https://stackoverflow.com/questions/tagged/list,newest 'list' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/hostname,newest 'hostname' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/recording,newest 'recording' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669798/react-native-push-notifications-enable-disable-by-page,react native push notifications enable/disable by page,"hi everyone i setup  react-native-push-notification in my app with theese packages
+import pushnotification from 'react-native-push-notification';
+ import pushnotificationios from '@react-native-com"
+https://stackoverflow.com/questions/67669741/sending-messeges-throu-udp-and-getting-unreachable-address,sending messeges throu udp and getting unreachable address,"i am trying to make some udp communication between 2 different address families, so my sending code looks like:
+ var localendpoint = new ipendpoint(ipaddress.parse(&quot;192,168.2.10&quot;), 51111)"
+https://stackoverflow.com/questions/tagged/asp.net,newest 'asp.net' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/r,newest 'r' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/mongodb,newest 'mongodb' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669782/dafny-as-a-sat-qbf-solver-is-not-giving-right-results,dafny as a sat-qbf solver is not giving right results,"i am trying to get the habit to use dafny as a friendly sat-qbf solver for some simple formulae, since doing it in, for instance, z3 is too uncomfortable.
+the context for this is that i have implem"
+https://stackoverflow.com/questions/tagged/systemd,newest 'systemd' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669785/preg-split-returns-a-non-expected-number,preg_split returns a non expected number,"my first question, so please be patient with me...
+i have this string: &quot;create a script which will take a string and analyse it to produce the following stats. spicy jalapeno bacon ipsum dolor"
+https://stackoverflow.com/questions/tagged/operations-research,newest 'operations-research' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/windows,newest 'windows' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669710/if-we-give-any-input-series-a-corresponding-graph-must-be-generated,if we give any input series a corresponding graph must be generated,"click the link to view  image
+if we give any input series a corresponding graph must be generated
+for this task, you should not use any libraries
+guys please help me to solve this problem thanks in"
+https://stackoverflow.com/questions/tagged/css,newest 'css' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/dax,newest 'dax' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/predict,newest 'predict' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/asp.net-core-3.1,newest 'asp.net-core-3.1' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/open-source,newest 'open-source' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/confluent-platform,newest 'confluent-platform' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/ruby-on-rails,newest 'ruby-on-rails' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/active-directory,newest 'active-directory' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/database,newest 'database' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669795/adding-weights-for-networkx,adding weights for networkx,"i'm trying to make network visualization using networkx. but, my dataset don't have weight on it. how can i add weight to my .csv dataset? here
+is  my dataset"
+https://stackoverflow.com/questions/67669766/customerly-chatbox-not-changing-the-color,customerly chatbox not changing the color,"i am using on my project customerly.io chatbox, i define the script that is generating the icon on the index.html body, then i a setting the color of the icon to yellow usng the attribute :
+ widget"
+https://stackoverflow.com/questions/67669731/flutter-sliding-up-panel-with-multiple-scroll-views-in-panel,flutter sliding_up_panel with multiple scroll views in panel,i use a sliding_up_panel to display two tables inside of the panel. but every scrollable widget inside of the panel needs to use the scrollcontroller provided by the panelbuilder method to synchron
+https://stackoverflow.com/questions/tagged/android-jetpack-compose,newest 'android-jetpack-compose' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669781/calculated-column-to-sum-all-matching-values-based-on-three-criteria,calculated column to sum all matching values based on three criteria,"given the following table:
+hole
+vertfrom
+vertto
+len
+center
+a
+20.97
+22.18
+1.21
+21.575
+a
+22.18
+22.57
+0.39
+22.375
+a
+22.57
+24.09
+1.52
+23.33
+a
+24.09
+25.57
+1.48
+24.83
+b
+25.57
+27.08
+1.51
+26.325
+b
+2"
+https://stackoverflow.com/questions/tagged/webgl,newest 'webgl' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669738/how-to-contribute-to-jetpack-compose,how to contribute to jetpack compose?,"in this blog, tech crunch says,
+
+google launches jetpack compose, an open-source, kotlin-based ui development toolkit
+
+this means jetpack compose is an open-source framework (obviously). then... wh"
+https://stackoverflow.com/questions/67669765/correctly-formulate-a-constraint-in-gurobi-python,correctly formulate a constraint in gurobi python,"i am using a python ide with gurobi to model and solve a problem for an assignment. the problem, although not stated seems to be an ovrp(open vehicle routing problem)(with some extra constraints)"
+https://stackoverflow.com/questions/tagged/networkx,newest 'networkx' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669777/cant-launch-spark-cluster-on-aws-from-ssh-getting-error-has-no-attribute-ge,"can't launch spark cluster on aws from ssh , getting error ""has no attribute 'get_all_security_groups""","i'm trying to launch from ssh to spin a cluster on aws ec2.
+the permissions to run pem file are active and there.
+./spark-ec2  -k spark -i /home/ec2-user/jetflix-spark.pem -s 1 -t m1.small -r -us-e"
+https://stackoverflow.com/questions/tagged/angular,newest 'angular' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/ssl,newest 'ssl' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669764/issue-with-the-update-frequency-of-the-leafsystem-in-drake,issue with the update frequency of the leafsystem in drake,"i built a differential inverse kinematics system, and connected it to the manipulationstation. the default time step, 0.002 is chosen. in my view, the callback function in the differential inverse"
+https://stackoverflow.com/questions/tagged/serialization,newest 'serialization' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/keras,newest 'keras' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/c%23,newest 'c#' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/sql-server,newest 'sql-server' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/html5-canvas,newest 'html5-canvas' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/gdal,newest 'gdal' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/reactjs,newest 'reactjs' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/fastapi,newest 'fastapi' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/.net,newest '.net' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/google-maps,newest 'google-maps' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669780/fix-underline-when-applying-page-break-css,fix underline when applying page-break css,"i have a dynamic table with 2px solid border in my web page that sometimes contains lots of rows. i am currently using  page-break-before and page-break-after css properties.
+
+the css code is as per"
+https://stackoverflow.com/questions/67669771/warning-mysqli-connect-hy000-2002-cant-connect-to-local-mysql-server-thr,warning: mysqli_connect(): (hy000/2002): can't connect to local mysql server through socket,"i keep getting this error while trying to write the database connection. the answer to a similar question is not valid, as that is hosted on a localhost, and this is hosted on award space.
+the host"
+https://stackoverflow.com/questions/tagged/urlsession,newest 'urlsession' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669756/write-a-condition-on-dates,write a condition on dates,"i'm a debutant on utilisation of r and i have a little problem.
+so, i have 3 colonnes : day of male, day of female, and asii
+the two firts colonnes are a date and asii is a difference of day.
+examp"
+https://stackoverflow.com/questions/tagged/wordpress,newest 'wordpress' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669751/urlsessiondelegate-methods-are-not-called,`urlsessiondelegate` methods are not called,"please, note that i've checked previous answers and i am not using callbacks in the code. in this case the delegate methods should be called
+environment ios 14.4.2
+url is valid. file is downloaded"
+https://stackoverflow.com/questions/tagged/dafny,newest 'dafny' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669743/api-url-for-google-chat,api url for google chat,"i want to send messages from my java application to google chat using http post method. can someone guide me on how to obtain the api url for google chat.
+regards"
+https://stackoverflow.com/questions/67669748/how-to-post-json-form-data-with-curl-php,how to post json form data with curl php?,"{
+&quot;email&quot;: &quot;ibrahim_ates2761483@gmail.com&quot;,
+&quot;password&quot;: &quot;08d2runkes87&quot;,
+&quot;genderid&quot;: 1,
+&quot;marketingemailsauthorized&quot;: false,
+&quot;"
+https://stackoverflow.com/questions/tagged/javascript,newest 'javascript' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669717/is-there-a-way-to-verify-the-daily-efforts-logged-by-a-user-in-azure-devops-boar,is there a way to verify the daily efforts logged by a user in azure devops boards?,we are currently using devops boards and could see the capacity planning in the boards. we are able to see the efforts logged per user per tasks. but we would like to see the efforts logged by a us
+https://stackoverflow.com/questions/tagged/dart,newest 'dart' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/google-translate,newest 'google-translate' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/swift,newest 'swift' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/pixi.js,newest 'pixi.js' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/api,newest 'api' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/node.js,newest 'node.js' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/android,newest 'android' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/javafx,newest 'javafx' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/gurobi,newest 'gurobi' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/data-structures,newest 'data-structures' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/64771585/updating-params-along-with-image-using-multipart-form-url-session,updating params along with image using multipart form url session,"trying to update adresss along with image by  using multipart urlsession, image getting updated but address doesnt get updated.
+/*
+let postdict : [string : string] = [&quot;name&quot;:txtname.text!"
+https://stackoverflow.com/questions/66002510/how-to-get-status-of-nsurlsession-background-upload,how to get status of nsurlsession background upload,"i have an ios app that needs to do uploads using nsurlsession, which works ok. i'm providing a delegate for the session which will get a callback with status when the transfer completes, but that"
+https://stackoverflow.com/questions/tagged/codable,newest 'codable' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/completionhandler,newest 'completionhandler' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/certificate,newest 'certificate' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/nsurlconnection,newest 'nsurlconnection' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/nsurlsession+nsurlsessiondownloadtask,newest 'nsurlsession+nsurlsessiondownloadtask' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/closures,newest 'closures' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/nsurlsession+post,newest 'nsurlsession+post' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/uitableview,newest 'uitableview' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/macos,newest 'macos' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/nsurlsession+iphone,newest 'nsurlsession+iphone' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/utf-8,newest 'utf-8' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/background-process,newest 'background-process' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/combine,newest 'combine' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/nsurlrequest,newest 'nsurlrequest' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/ftp,newest 'ftp' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/65660586/contextual-closure-type-data-urlresponse-error-void-expects-3-argume,"contextual closure type '(data?, urlresponse?, error?) -> void' expects 3 arguments, but 1 was used in closure body","i am following this tutorial but getting this error:
+
+contextual closure type '(data?, urlresponse?, error?) -&gt; void' expects 3 arguments, but 1 was used in closure body
+
+at line: urlsession.dat"
+https://stackoverflow.com/questions/tagged/nsurlsession+background,newest 'nsurlsession+background' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/66690183/nsurlsession-photo-upload-task-to-azurefunction-inside-bgtaskscheduler-does-not,nsurlsession photo upload task to azurefunction inside bgtaskscheduler does not get executed when ios charger cable is unplugged on ios 14.4,"we are working on a xamarin forms app that is supposed to upload photos to api in the background. the app is being custom-made for a client by their request, so they will set their phones to whatever"
+https://stackoverflow.com/questions/tagged/nsurlsession+nsurlrequest,newest 'nsurlsession+nsurlrequest' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/nsurlsessiondownloadtask,newest 'nsurlsessiondownloadtask' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/delegates,newest 'delegates' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/authenticationchallenge,newest 'authenticationchallenge' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/nsurlsessiontask,newest 'nsurlsessiontask' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/download,newest 'download' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/64506831/avassetdownloadtask-method-didfinishdownloadingto-is-not-called-in-background,avassetdownloadtask method 'didfinishdownloadingto' is not called in background mode with low disk space,"i create a background session like this:
+let backgroundconfiguration = urlsessionconfiguration.background(withidentifier: backgroundsessionid)
+backgroundconfiguration.isdiscretionary = false"
+https://stackoverflow.com/questions/tagged/xamarin.forms,newest 'xamarin.forms' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/64113417/swift-urlsession-returns-a-different-public-key-than-openssl,swift/urlsession returns a different public key than openssl,"i have this code (can be run in a playground):
+import uikit
+import cryptokit
+
+let url: url = url(string: &quot;https://apple.com&quot;)!
+
+final class sslextractor: nsobject, urlsessiondelegate {"
+https://stackoverflow.com/questions/67494780/why-does-completion-handler-always-fail-even-when-network-call-is-always-success,why does completion handler always fail even when network call is always successful,"my goal is to have my completion handler work correctly, update and display the correct ui when the completion handler is finished.
+here is my network call that i use when a user taps a uialertacti"
+https://stackoverflow.com/questions/tagged/nsurlsession+nsurlsessiondatatask,newest 'nsurlsession+nsurlsessiondatatask' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/nsurlsession+nsurlsessionuploadtask,newest 'nsurlsession+nsurlsessionuploadtask' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/nsurlsession+objective-c,newest 'nsurlsession+objective-c' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/multipart,newest 'multipart' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/aws-sdk-ios,newest 'aws-sdk-ios' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/65935518/is-it-possible-to-upload-audio-file-to-server-using-put-request-not-multipart-r,is it possible to upload audio file to server using put request (not multipart request) in ios swift,"i need to upload audio file recorded in ios device to server using put method in request. now, i am confused that is it possible to upload audio file to server without multipart request in ios swift"
+https://stackoverflow.com/questions/tagged/multithreading,newest 'multithreading' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/66076978/unable-to-stop-process-named-nsurlsession-macos-bigsur-11-3,unable to stop process named: nsurlsession macos bigsur 11.3,"i am using macbook air 2017
+with macos bigsur 11.3
+i have been a bit issue while launching my mac the process named nsurlsession consumes a huge data while booting mac and it consumes nearly approx"
+https://stackoverflow.com/questions/64917412/ios-objective-c-application-crash-on-ios-10-after-libraries-upgrade,ios - objective-c: application crash on ios 10 after libraries upgrade,i have an older objective-c application that i upgraded recently in order to add new functionalities. i'm using now afnetworking version 4.0. all is working now even in the newest version of ios ex
+https://stackoverflow.com/questions/tagged/nsurlsession+ios7,newest 'nsurlsession+ios7' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/function,newest 'function' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/nsurlsession+swift2,newest 'nsurlsession+swift2' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/nsurlsession+ios,newest 'nsurlsession+ios' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/64038382/how-to-get-json-data-from-login-without-alamofire,how to get json data from login without alamofire,"i am able login, but don't get any data from listpeserta. i want to get user's name etc
+func onlinecheckin(){
+    self.password.resignfirstresponder()
+    let password1 = password.text;
+    if let"
+https://stackoverflow.com/questions/tagged/postman,newest 'postman' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/alamofire,newest 'alamofire' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/nsurlsession+afnetworking,newest 'nsurlsession+afnetworking' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/airwatch,newest 'airwatch' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/66515290/tableviewcontroller-pagination-retrieved-my-data-from-server-twice-and-not-all-d,tableviewcontroller pagination retrieved my data from server twice and not all data is retrieved from the server,i have a tableviewcontroller with 3 cells one for getting image and text from the server and the second for getting only text and the third one for implementing pagination with activity indicator l
+https://stackoverflow.com/questions/tagged/ssl-certificate,newest 'ssl-certificate' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/ios,newest 'ios' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/65019850/fetch-data-in-background-nsurlsession,fetch data in background nsurlsession,i have used [nsurlsession sharedsession] to get data from server.while getting the data if the app moves to background and after sometime if it comes to foreground i get &quot;connection was lost&q
+https://stackoverflow.com/questions/66181983/in-swift-how-do-you-get-the-error-type-from-urlsession,"in swift, how do you get the error type from urlsession","i have the following code in my network logic:
+let task = urlsession.datatask(with: request) { [weak self] (data, response, error) in
+  
+  if let error = error {        
+    if error.localizeddescr"
+https://stackoverflow.com/questions/64186945/post-request-with-nsurl-when-app-is-offline-for-more-than-30-seconds,post request with nsurl when app is offline for more than 30 seconds,"i encounter an issue with sending messages when i'm offline and go to background app for more than 30 seconds, the message won't send until i go inside the app again.
+i have posted the issue here in"
+https://stackoverflow.com/questions/67498641/file-download-sometimes-restart-from-the-beginning-when-network-has-changedafur,file download sometimes restart from the beginning when network has changed(afurlsessionmanager),i'm having trouble with file download. my app is using afurlsessionmanager and make nsurldownloadsessiontask by (nsurlsessiondownloadtask *)downloadtaskwithrequest:progress:destination:completionha
+https://stackoverflow.com/questions/66360934/why-does-this-website-fail-to-convert-to-utf8-in-a-swift-urlsession,why does this website fail to convert to utf8 in a swift urlsession?,"the following code fails:
+let url = url(string: &quot;https://www.cardboardconnection.com/1987-topps-baseball-cards&quot;)!
+
+var request = urlrequest(url: url)
+request.setvalue(&quot;text/html; cha"
+https://stackoverflow.com/questions/tagged/json,newest 'json' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/afnetworking,newest 'afnetworking' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/65812076/does-background-app-refresh-have-an-effect-on-a-background-urlsession,does background app refresh have an effect on a background urlsession?,"given i have a standard background urlsession and urlsessiondownloadtask, as below (i deliberately simplified the code for the sake of the example):
+let sessionconfig = urlsessionconfiguration.back"
+https://stackoverflow.com/questions/tagged/openssl,newest 'openssl' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/nsoperationqueue,newest 'nsoperationqueue' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/nsurlsession+alamofire,newest 'nsurlsession+alamofire' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/nsurlsessionconfiguration,newest 'nsurlsessionconfiguration' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67658027/vertically-scrolling-text-with-css-and-javascript,vertically scrolling text with css and javascript,"i've just started to learn front-end development and i'm trying to figure out how to create a list of scrolling list that pauses every 20s.
+like the greetings section in the header of this website"
+https://stackoverflow.com/questions/tagged/sass+angular,newest 'sass+angular' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67653153/how-do-i-solve-this-invalid-property-value-problem,"how do i solve this ""invalid property value"" problem?",i added gradient effect to text which is working perfectly fine on firefox but on chrome and my phone (safari ios) the gradient effect just do not work. inspect element gives yellow flag (invalid
+https://stackoverflow.com/questions/67618553/safari-displaying-2-icons-on-transform-rotate,safari displaying 2 icons on transform rotate,"so in a angular project i have icons and dropdown components.
+when dropdown is opened, icon that is used (arrow) gets .open class applied which does:
+transform: rotate(180deg);
+
+in the default stat"
+https://stackoverflow.com/questions/tagged/unit-testing,newest 'unit-testing' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67629560/error-al-ejecutar-npm-install-save-dev-gulp-sass,error al ejecutar - npm install --save-dev gulp-sass,"hola soy nuevo en esto y ahora mismo estoy intentando iniciar un proyecto que lleva sass ... no logro solucionar el error arriba mencionado, ya actualice el windows a 10pro, volví a instalar node e"
+https://stackoverflow.com/questions/tagged/sass+bootstrap-4,newest 'sass+bootstrap-4' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/flexbox,newest 'flexbox' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67636392/chome-linear-gradient-css,chome linear-gradient css,"wondering if anyone can give some pointers.
+i have a linear gradient that works perfectly fine in firefox, and understand there are some bugs that still aren't fixed with chrome.
+essentially i have"
+https://stackoverflow.com/questions/67639407/gredeint-border-and-text-is-not-working-on-safari-and-iphone-devices,gredeint border and text is not working on safari and iphone devices,"i have the color of text and border-bottom in gradient color and not working as expected on:
+
+safari (desktop)
+
+iphone (safari)
+screenshots:
+
+this is how it looks on chrome web
+this is how it loo"
+https://stackoverflow.com/questions/tagged/vuejs3,newest 'vuejs3' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/angular-material,newest 'angular-material' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/bootstrap-4,newest 'bootstrap-4' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/vuetify.js,newest 'vuetify.js' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67610992/weird-syntax-error-with-semicolon-in-scss-and-intellij-idea,weird syntax error with semicolon in scss and intellij idea,"i've tried to write scss in my maven project with react in idea. i have sass and sass-loader in npm packages. but i always get a weird error:
+syntax error: missing semicolon
+this is a very simple s"
+https://stackoverflow.com/questions/67639262/why-live-sass-compiler-extension-is-compiling-all-sass-files,"why "" live sass compiler "" extension is compiling all sass files?",i am new to coding and stack overflow as well. all i know is if you ever run into any coding problem go to stackoverflow and there somebody will definitely help you. so i recently got a problem wit
+https://stackoverflow.com/questions/67631467/scss-conditional-include-not-working-and-all-the-blocks-gets-executed,scss - conditional include not working and all the blocks gets executed,"i am trying to do conditional include in scss. here is the code:
+html
+&lt;div class=&quot;test&quot; data-active data-label data-comment &gt;1&lt;/div&gt;
+&lt;div class=&quot;test&quot; data-active"
+https://stackoverflow.com/questions/tagged/autoprefixer,newest 'autoprefixer' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67619898/angular-override-bootstrap-variable-by-interpolated-component-variables-in-scss,angular: override bootstrap variable by interpolated component variables in scss stylesheet,"i'm trying to create theming based on a 'theme' value in json config with overriding bootstrap variables. ideal situation would be to load themes for a value
+{
+  &quot;theme&quot;: &quot;green&quot"
+https://stackoverflow.com/questions/tagged/sass-loader,newest 'sass-loader' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/sass+less,newest 'sass+less' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67632675/react-scss-sasserror-undefined-variable,react & scss: sasserror: undefined variable,"i am developing a react application and i have scss file where i have defined some variables:
+variables.scss:
+$source-sans-font: source sans pro, serif;
+$sidebar-bg-color: #916fdd;
+$sidebar-width:"
+https://stackoverflow.com/questions/tagged/less,newest 'less' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67658348/how-can-you-use-scss-modules-in-react,how can you use scss modules in react?,"i know we can use style.module.css, but is it possible to use style.module.scss? is there a dependency that can help us do that?"
+https://stackoverflow.com/questions/tagged/compiler-errors,newest 'compiler-errors' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/sass+ionic-framework,newest 'sass+ionic-framework' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/vscode-extensions,newest 'vscode-extensions' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67628078/z-index-contains-in-css,z-index contains # in css,"i've recently updated from angular 10 to 12.
+i use scss.
+after updating i noticed my logo is behind the content and all my z-index values have # prepended to the values and i don't know the reason"
+https://stackoverflow.com/questions/tagged/sass+compass-sass,newest 'sass+compass-sass' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67645416/using-autoprefixer-in-sass-watch-mode-npm,using autoprefixer in sass watch mode (npm),"i want to compile scss files and use autoprefixer. npm run build compiles the scss file to css file. then i can use this finished css file for autoprefixer.
+but i have a problem with npm run watch ("
+https://stackoverflow.com/questions/67664369/how-can-i-apply-different-css-styles-to-2-different-element-with-same-class-name,how can i apply different css styles to 2 different element with same class name?,"i'm working on a website i have just one long page and i split it to 5 different section. in every section i have some same figure with different size. i created different folders, jsx files and scss"
+https://stackoverflow.com/questions/67636969/how-to-reverse-number-in-sass,how to reverse number in sass,"i have a sass class like this:
+@for $column from 1 through $columns {
+    .column-#{$column} {
+        @extend %set-margin;
+        flex: 100% / $column;
+    }
+}
+
+and the result like this:
+.column-"
+https://stackoverflow.com/questions/tagged/colors,newest 'colors' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67653884/how-to-reference-import-an-svg-from-public-folder-inside-an-scss-file-in-src-f,"how to ""reference/import"" an svg from public folder inside an scss file in src folder?","i want to set the background of an element to an svg; therefore, i need to know how to &quot;reference/import&quot; an svg from the public folder into the scss file in the src folder?
+my react"
+https://stackoverflow.com/questions/67659204/you-may-need-an-appropriate-loader-to-handle-this-file-type-currently-no-loade,"""you may need an appropriate loader to handle this file type, currently no loaders are configured to process this file""","i'm trying to compile my react project, but these errors are popping up:
+terminal output:
+
+error in ./src/components/info.scss 2:0 module parse failed:
+unexpected token (2:0) you may need an approp"
+https://stackoverflow.com/questions/67640614/laravel-mix-bootstrap-deprecation-warning-using-for-division-is-deprecated,laravel mix | bootstrap deprecation warning: using / for division is deprecated and will be removed,"i install bootstrap using npm and use scss to import it
+but when i try to compile,it just show endless warnings
+npm install bootstrap 
+
+app.scss file
+@import &quot;~bootstrap/scss/bootstrap&quot;;"
+https://stackoverflow.com/questions/tagged/angular-material2,newest 'angular-material2' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/sass+javascript,newest 'sass+javascript' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/sass+mixins,newest 'sass+mixins' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67634320/prevent-menu-animation-transition-on-page-load,prevent menu animation transition on page load,"i'm building a menu with an &quot;indicator&quot; just like this codepen: https://codepen.io/jnowland/pen/xmqgnx
+everything works perfectly except for one little tiny detail: when the link is click"
+https://stackoverflow.com/questions/tagged/node-sass-json-importer,newest 'node-sass-json-importer' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67650098/make-a-custom-stylelint-order-for-property-containing-a-string-variable,make a custom stylelint-order for property containing a string variable,"i have scss that looks like this:
+.foo {
+  position:  absolute;
+  top:       0;
+  #{$right}: 200; // correct order.
+  bottom:    0;
+  #{$left}:  0;
+  z-index:   5;
+}
+
+we set $righttype: right; for"
+https://stackoverflow.com/questions/67660992/node-sass-problem-having-to-re-run-the-watch-script-after-adding-a-new-partial,node sass problem: having to re-run the watch script after adding a new partial scss file,"i don't know if this is the problem that i'm the only one facing or it's just the way it's supposed to be.
+so, every time i add a new partial sass file after i'd already run the watch sass script,"
+https://stackoverflow.com/questions/tagged/sass+npm,newest 'sass+npm' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/safari,newest 'safari' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67658726/css-stretched-image-on-mobile-deviced,css stretched image on mobile deviced,"i have done css/scss for quite some time now but i've nerver seen this before in my current context:
+img
+in the dev tools everything seems alright, but once i open up the page on an actual smartpho"
+https://stackoverflow.com/questions/tagged/z-index,newest 'z-index' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/twitter-bootstrap,newest 'twitter-bootstrap' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/sass+webpack,newest 'sass+webpack' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/visual-studio-code,newest 'visual-studio-code' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/string-interpolation,newest 'string-interpolation' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/sass+html,newest 'sass+html' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/typescript,newest 'typescript' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67623125/error-to-load-scss-to-vue3-typeerror-this-getoptions-is-not-a-function,error to load scss to vue3 typeerror: this.getoptions is not a function,"i try to load scss file to the vue3 project.
+i use:
+&quot;@vue/cli&quot;: &quot;^4.5.13&quot;,
+&quot;@vue/cli-service&quot;: &quot;^4.5.13&quot;,
+&quot;@vue/compiler-sfc&quot;: &quot;^3.0.11&quot;,"
+https://stackoverflow.com/questions/tagged/sass+gulp,newest 'sass+gulp' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67644660/sass-doesnt-compile-variables-properly,sass doesn't compile variables properly,"i start to write my own scss along with boostrap. i follow the hierarchy of the framework like:
+/* the main file and all partial files are in the same directory */
+@import &quot;variables&quot;;
+@i"
+https://stackoverflow.com/questions/67660494/angular-material-switch-a-color-when-switching-theme,angular material switch a color when switching theme,i have implemented angular material dark and light theme. with this i can change the colors based on the theme using for example mat-color($primary). this works fine but now i need to use a different
+https://stackoverflow.com/questions/67628446/css-scss-reusable-mixin-for-custom-attribute-styles,css/scss - reusable mixin for custom attribute styles,"i'm styling a re-usable popout component with an arrow positioned near the box. i'm wondering if there is a way to use a mixin to make the placement styling easier/neater?
+.dialog {
+    ...
+
+    &a"
+https://stackoverflow.com/questions/tagged/background-image,newest 'background-image' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67652091/how-to-define-enum-type-in-beego-orm-model,how to define enum type in beego orm model?,"how do i define an enum type in my beego orm model?
+i tried:
+model.go
+type user struct {
+    id              string         `json:&quot;id&quot; orm:&quot;pk;&quot;`
+    gender          gender"
+https://stackoverflow.com/questions/tagged/docker-compose,newest 'docker-compose' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67667717/how-to-connection-golang-with-mongodb-in-a-separate-function,how to connection golang with mongodb in a separate function?,"in this code, i am connecting the mongodb database with golang and inserting data in it. i want to separate the connection() function from insertdata() function (from other functions also that i made"
+https://stackoverflow.com/questions/tagged/terratest,newest 'terratest' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67662284/run-terraform-as-a-go-library,run terraform as a go library?,"i've been using terratest to test all my go modules and absolutely love it as a means for running terraform and interacting with terraform infrastructure through the go programming language. however,"
+https://stackoverflow.com/questions/67659307/how-to-add-a-key-val-pair-string-float64-to-a-map,how to add a key val pair string -> []float64 to a map?,"i want to create a map from string keys to float64 array values. i initialize and assign:
+gloveembeddings := make(map[string][]float64)
+gloveembeddings[&quot;a&quot;] := []float64{1.0, 2.0, 3.0}
+
+b"
+https://stackoverflow.com/questions/tagged/bitclout,newest 'bitclout' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/go+string,newest 'go+string' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67652118/how-to-get-same-cci-values-from-trading-view-in-golang,how to get same cci values from trading view in golang?,"i'm trying to replicate values from pine script cci() function in golang. i've found this lib https://github.com/markcheno/go-talib/blob/master/talib.go#l1821
+but it gives totally different values"
+https://stackoverflow.com/questions/67655618/golang-package-interface,golang package interface,"i am bit new to golang and i have a question about packages and interfaces.
+if i have package1, that needs to use implementation of an interface that can be swapped in future with other implementat"
+https://stackoverflow.com/questions/tagged/slice,newest 'slice' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67661276/how-do-i-properly-sign-a-bitclout-tx-in-golang-vs-typescript,how do i properly sign a bitclout tx in golang vs typescript?,"i have a working example in typescript:
+  signtransaction(seedhex: string, transactionhex: string): string {
+    const privatekey = this.cryptoservice.seedhextoprivatekey(seedhex);
+
+    const"
+https://stackoverflow.com/questions/tagged/build,newest 'build' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/mysql,newest 'mysql' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67664683/is-closechannel-a-blocking-operation,is close(channel) a blocking operation?,is close(channel) a blocking operation? does it wait until the buffered channel has finished consuming messages?
+https://stackoverflow.com/questions/67657750/encapsulating-concurrency-safety-in-go-maps,"encapsulating ""concurrency safety"" in go maps","i have a struct, mystruct, which contains a map. i want to make the access to the map safe for concurrent read and write but i also want to stick to the base map and not use sync.map.
+for this reas"
+https://stackoverflow.com/questions/tagged/makefile,newest 'makefile' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/terraform-provider-aws,newest 'terraform-provider-aws' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/go+amazon-web-services,newest 'go+amazon-web-services' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/go+channel,newest 'go+channel' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67653504/how-to-goreleaser-to-build-sub-folder-in-github,how to goreleaser to build sub-folder in github,"i use goreleaser to build in github action.
+because my main.go in ./cmd/tes_cli, it always show error in github action.
+repo does not contain a main function.
+
+i check the original document, it see"
+https://stackoverflow.com/questions/67651235/gorm-report-trace-with-signal-fx,gorm report trace with signal fx?,"how can i report the signal the trace to the db
+i'm seeing how to instantiate it with the documentation but i don't understand how i can do it for gorm
+https://github.com/signalfx/signalfx-go-tracing/"
+https://stackoverflow.com/questions/tagged/go+mongodb,newest 'go+mongodb' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/performance,newest 'performance' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/building-github-actions,newest 'building-github-actions' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67668561/how-to-build-a-project-with-drone-yml-file,how to build a project with drone.yml file,"i found great project but i want to fix some part of the project so, i forked that project and tried to fix the code.
+i want to check is it working well when i build it so i checked the document. l"
+https://stackoverflow.com/questions/tagged/rest,newest 'rest' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/go+json,newest 'go+json' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/go-echo,newest 'go-echo' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/csvreader,newest 'csvreader' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/go-colly,newest 'go-colly' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/dictionary,newest 'dictionary' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67651847/why-i-cant-import-internal-package,use of internal package not allowed,"i'm trying to build and run a repo (https://github.com/hyperledger/fabric/tree/master) but this error keeps popping up and still i haven't found a solution to this.
+
+consensus.go:12:2: use of inter"
+https://stackoverflow.com/questions/67659716/faster-method-for-creating-key-value-pairs,faster method for creating key value pairs,"i want to create a mapping from key (string) to value (string[]). i read a file:
+  gloveembeddings := make(map[string][]string)
+
+  f, _ := ioutil.readfile(&quot;./glove.840b.300d.txt&quot;)
+
+the fi"
+https://stackoverflow.com/questions/tagged/cadence-workflow,newest 'cadence-workflow' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67652639/elastic-error-500-internal-server-error-all-shards-failed-type-search-phase,elastic: error 500 (internal server error): all shards failed [type=search_phase_execution_exception] when searching frequently through golang,i'm using golang to write a tool which can search the relating information about a list of userids respectively. the program stopped with &quot;elastic: error 500 (internal server error): all shards
+https://stackoverflow.com/questions/tagged/go+go-gorm,newest 'go+go-gorm' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/memory-address,newest 'memory-address' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/go+reflection,newest 'go+reflection' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/ubuntu,newest 'ubuntu' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67650694/how-do-i-retrieve-the-domain-from-a-url,how do i retrieve the domain from a url?,"in go, how can i extract only the domain name from a url string?
+before:
+https://www.example.com/some-random-url
+www.example.com/some-random-url
+example.com/some-random-url
+www.example.com
+subdomain"
+https://stackoverflow.com/questions/67660077/golang-unable-to-use-or-download-parser-from-go-parser,golang: unable to use or download parser from go/parser,"i am going through &quot;the go programming language&quot; book, chapter 7 page 200 states:
+&quot;we dont have space to show the parse function here, but you'll find it if you download the package"
+https://stackoverflow.com/questions/tagged/response,newest 'response' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/stack,newest 'stack' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67664480/range-value-supposed-to-be-chan-struct-but-is-int,"range value supposed to be chan struct{}, but is int","i have a function that needs to cycle over stopcs sending a struct{}{} message.  problem is the stopc in the range is an int. why, and how do i fix it?
+func myfunc() {
+    var stopcs []chan struct{"
+https://stackoverflow.com/questions/tagged/deferred,newest 'deferred' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/gorm,newest 'gorm' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/linked-list,newest 'linked-list' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/elasticsearch,newest 'elasticsearch' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/go+google-app-engine,newest 'go+google-app-engine' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/terraform,newest 'terraform' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/fasthttp,newest 'fasthttp' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/indicator,newest 'indicator' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/html-parsing,newest 'html-parsing' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67657408/retry-request-in-go-colly,retry request in go-colly,"i have this scraper library, i would like to change my user agent if the first user agent returns error, but this code doesnt work, if first user agent doesnt work, i have send the 2nd attempt but"
+https://stackoverflow.com/questions/tagged/google-cloud-firestore,newest 'google-cloud-firestore' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/beego,newest 'beego' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/dapr,newest 'dapr' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/go+concurrency,newest 'go+concurrency' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67659494/how-to-encode-struct-to-byte-slice-and-decode-byte-slice-back-to-original-struct,how to encode struct to byte slice and decode byte slice back to original struct using gob encoding?,"i am trying marshall go struct to bytes (via gob encoding), and then to unmarshall those bytes back to original object. i am getting unexpected result (object is not getting the correct values). he"
+https://stackoverflow.com/questions/tagged/gitlab,newest 'gitlab' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/task-queue,newest 'task-queue' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67661374/how-can-i-parse-website-built-in-react-spa,how can i parse website built in react (spa),i want to create a bot using golang that will be parse website built in react. that means i get only tiny html (without content) and bunch of javascript. how can parse actual content of this website?
+https://stackoverflow.com/questions/tagged/go-modules,newest 'go-modules' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/go+unit-testing,newest 'go+unit-testing' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/1575141/how-to-make-a-div-100-height-of-the-browser-window,how to make a div 100% height of the browser window,"i have a layout with two columns - a left div and a right div.
+
+the right div has a grey background-color, and i need it to expand vertically depending on the height of the user's browser window. r"
+https://stackoverflow.com/questions/5235142/how-do-i-disable-the-resizable-property-of-a-textarea,how do i disable the resizable property of a textarea?,"i want to disable the resizable property of a textarea.
+
+currently, i can resize a textarea by clicking on the bottom right corner of the textarea and dragging the mouse. how can i disable this?"
+https://stackoverflow.com/questions/tagged/web-applications,newest 'web-applications' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/3437786/get-the-size-of-the-screen-current-web-page-and-browser-window,"get the size of the screen, current web page and browser window","how can i get windowwidth, windowheight, pagewidth, pageheight, screenwidth, screenheight, pagex, pagey, screenx, screeny which will work in all major browsers?"
+https://stackoverflow.com/questions/tagged/flask,newest 'flask' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/14220321/how-do-i-return-the-response-from-an-asynchronous-call,how do i return the response from an asynchronous call?,"i have a function foo which makes an asynchronous request. how can i return the response/result from foo?
+i tried returning the value from the callback, as well as assigning the result to a local"
+https://stackoverflow.com/questions/34266923/full-calendar-day-click-and-dropped-the-event-date-issue-with-timezone-change,full calendar day click and dropped the event date issue with timezone change,"i am using full-calendar for my calendar functionality. everything is working fine with ist but when timezone changed to pst the problem occurs.
+
+up to now, what i have done is
+
+1) when user clicks"
+https://stackoverflow.com/questions/36735554/wrong-time-on-android-device-using-cordova-but-correct-time-in-browser,wrong time on android device using cordova but correct time in browser,"so my issue is when using javascript new date() on my android device (cordova app) it returns the wrong time:
+
+using cordova globalisation - correct time
+  wed apr 20 2016 11:38:00 gmt-0200 (_tzif"
+https://stackoverflow.com/questions/45158161/convert-iso-date-string-to-date-object-without-considering-timezone,convert iso date string to date object without considering timezone,"goal: convert iso date string to date object without considering timezone
+
+i have a iso string: 2017-07-23t20:30:00.00z.
+
+i tried converting that string to date with the following methods:
+
+new date('"
+https://stackoverflow.com/questions/tagged/ionic4,newest 'ionic4' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/momentjs,newest 'momentjs' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67598119/call-to-amember-function-fetch-assoc-on-bool-inphp-result-php8-stacktrace-0,call to amember function fetch_assoc() on bool inphp\result.php:8 stacktrace: #0 student\result.php(3): require() #1{main}thrown in result.php on lin8,"i can't find the problem. this is the error i'm getting
+warning: undefined array key &quot;studentid&quot; in d:\xampp\htdocs\irasv5\php\result.php on line 6
+fatal error: uncaught error: call to a"
+https://stackoverflow.com/questions/67663039/how-to-check-if-a-row-already-exists-in-database-if-it-exists-then-it-should-up,insert into a mysql table or update if exists,"i want to add a row to a database table, but if a row exists with the same unique key i want to update the row.
+for example:
+insert into table_name (id, name, age) values(1, &quot;a&quot;, 19);
+
+le"
+https://stackoverflow.com/questions/67596910/whats-the-correct-update-statement-for-this-i-always-get-false-as-result,whats the correct update statement for this? i always get false as result,"if(isset($edit))
+{
+  $sql = &quot;update `tblpost` set `title`='$title',`content`='$content',`category`='$category',`datetime`='$datetime' where `post_id`='$id'&quot;;
+  $run = mysqli_query($con,$s"
+https://stackoverflow.com/questions/tagged/ajax,newest 'ajax' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67594877/php-fetch-associated-results-from-mysqli-query,php fetch associated results from mysqli query,"​
+hi, i dont know where im going wrong here, but when i get the results for the query it duplicates the results with a new instance for each associated result?
+where i would expect:
+1st line:     s"
+https://stackoverflow.com/questions/tagged/bootstrap-multiselect,newest 'bootstrap-multiselect' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/mysqli+session,newest 'mysqli+session' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/jquery,newest 'jquery' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67659455/i-am-trying-to-display-the-subject-for-the-specified-user-that-is-logged-in,i am trying to display the subject for the specified user that is logged in,"i am trying to display the subjects for the person that is logged in, in a table using php
+this is the code on top of the page for starting the session. the session has been started in authcontroll"
+https://stackoverflow.com/questions/67652761/why-i-get-this-error-in-my-login-page-undefined-array-key-userid-i-supose-th,"""notice: undefined variable"", ""notice: undefined index"", and ""notice: undefined offset"" using php","i'm running a php script and continue to receive errors like:
+
+notice: undefined variable: my_variable_name in c:\wamp\www\mypath\index.php on line 10
+notice: undefined index: my_index c:\wamp\www\"
+https://stackoverflow.com/questions/67604095/using-mysqli-and-prepared-statements-i-want-to-return-the-column-results,how to fetch all in assoc array from a prepared statement?,"i'm trying this code:
+
+    if ($result = $this-&gt;mysqli-&gt;prepare(""select * from `mytable` where `rows1`=?""))
+    {
+
+        $result-&gt;bind_param(""i"",$id);
+        $result-&gt;execute();"
+https://stackoverflow.com/questions/67645244/maximum-execution-time-php-2k-array-values,"maximum execution time php, 2k+ array values","i know i could set the maximum execution time higher than the default value. but i think it might be more on the coding side than sever-side ;)
+i'm gathering a big json file through an api, but sin"
+https://stackoverflow.com/questions/tagged/php-7.4,newest 'php-7.4' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/mysqli+sql-update,newest 'mysqli+sql-update' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67647129/why-is-the-mysqli-errno-being-set-to-0-in-the-middle-of-the-debugging,why is the mysqli->$errno being set to 0 in the middle of the debugging?,"today i am faced with a bizarre situation. i have been searching for a definition but unfortunately, i couldn't find any.
+in my php code, i am inserting a row into a database table. when i try to i"
+https://stackoverflow.com/questions/67620049/what-is-database-size-i-dont-understand,what is database size i dont understand,"so i create varchar(1000) , varchar(100) , varchar(200), varchar(100) etc , but suppose i occupy only 10 characters in each of columns , so will database consume size based on 1000,100,200,etc or"
+https://stackoverflow.com/questions/tagged/mysqli+oop,newest 'mysqli+oop' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/mysqli+function,newest 'mysqli+function' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/mysqli+json,newest 'mysqli+json' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/pdo,newest 'pdo' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/mysqli+javascript,newest 'mysqli+javascript' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/phpmyadmin,newest 'phpmyadmin' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/mysqli+while-loop,newest 'mysqli+while-loop' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67666246/fetching-data-from-mysql-with-this-db,fetching data from mysql with $this->db,"so, i am trying to get the imdb id for the from the table called videos. i tried it with these these are giving me error.
+code 1:
+      $imdb_id =  $this-&gt;db-&gt;get_where('videos', array('imdbi"
+https://stackoverflow.com/questions/67655267/how-do-i-solve-warning-trying-to-access-array-offset-on-value-of-type-null-in-p,how do i solve warning: trying to access array offset on value of type null in php,"i have this php code
+   &lt;?php 
+    $payroll=$conn-&gt;query(&quot;select p.*,concat(e.lastname,', ',e.firstname,' ',e.middlename) as ename,e.employee_no from payroll_items p inner join employee"
+https://stackoverflow.com/questions/tagged/mysqli+jquery,newest 'mysqli+jquery' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/mysqli+prepared-statement,newest 'mysqli+prepared-statement' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67585553/data-from-database-only-shows-one-data-and-it-does-not-show,data from database only shows one data and it does not show,our html/php code shows the name from the database but the rest of them doesn't show. although we used the same syntax for every part but we changed the data name same with the database column name
+https://stackoverflow.com/questions/67632468/mysql-prepared-statement-fails-sql-query-with-more-than-one-statement,mysqli: can it prepare multiple queries in one statement?,"i would like to know if i can prepare one mysqli statement that executes multiple queries:
+
+mysqli-&gt;prepare(query1 ...1,2,3 param...; query2...4,5 param...);
+or 
+mysqli-&gt;prepare(insert into"
+https://stackoverflow.com/questions/tagged/mysqli+forms,newest 'mysqli+forms' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67641374/if-i-insert-data-into-my-database-it-store-twice,if i insert data into my database it store twice,"when i store a data it store twice the data i inserted hope someone can help me.
+
+&lt;td align=&quot;center&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;check[]&quot; value=&quot;&lt;?="
+https://stackoverflow.com/questions/tagged/authentication,newest 'authentication' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67621671/session-variable-always-showing-the-last-enrty-of-database-in-php,php button on each row of table,"im making some application form in php.
+
+im putting all info returned from the database into a table.
+
+now i want to create a button on each line that changes something in the db of that line.
+
+but i"
+https://stackoverflow.com/questions/67619306/i-am-trying-to-generate-a-table-with-php-and-mysli-what-is-wrong-with-my-code,mysqli_fetch_assoc() expects parameter / call to a member function bind_param() errors. how to get the actual mysql error and fix it?,"in my local/development environment, the mysqli query is performing ok. however, when i upload it on my web host environment, i get this error:
+  fatal error: call to a member function bind_param("
+https://stackoverflow.com/questions/67658764/cant-login-even-if-successful-registration-in-mysql-and-php,can't login even if successful registration in mysql and php,got successful connection with my database using php and also implemented the registration successfully but the only problem is i can't login even if i use a manually created data in localhost/phpm
+https://stackoverflow.com/questions/67608099/how-can-i-display-scores-to-appear-like-desired-output-using-php-while-loop,how can i display scores to appear like desired output using php while loop,"please help i need to display data from &quot;scores&quot; table to look like desired output using sql pivot, where class = basic 1"
+https://stackoverflow.com/questions/tagged/mariadb,newest 'mariadb' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/mysqli+codeigniter,newest 'mysqli+codeigniter' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/mysqli+foreach,newest 'mysqli+foreach' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/mysqli+mysql,newest 'mysqli+mysql' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67663242/how-to-reset-password,how to reset password,"i have already implemented phpmailer and it works fine, i can already send reset password link through gmail. my problem is when i actually reset my password it gives me an error and i believe i ha"
+https://stackoverflow.com/questions/tagged/sql-update,newest 'sql-update' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/mysqli+ajax,newest 'mysqli+ajax' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/login-system,newest 'login-system' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/sql,newest 'sql' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67610778/php-mysql-stored-procedure-with-input-parameters-not-working,php mysql stored procedure with input parameters not working,"i've got a mysql database where i've setup a store procedure, i know the stored procedure works because i can execute it from the phpmyadmin control panel.
+i'm now trying to execute the procedure f"
+https://stackoverflow.com/questions/tagged/procedure,newest 'procedure' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/prepared-statement,newest 'prepared-statement' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/php-telegram-bot,newest 'php-telegram-bot' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/postgresql,newest 'postgresql' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/connect,newest 'connect' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/html,newest 'html' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67661146/how-to-show-several-tables-with-a-single-query,how to show several tables with a single query,i am trying to display several tables in which a particular element should only be listed using a single database query only. i am using the if to condition the display of a particular element in o
+https://stackoverflow.com/questions/1922018/jquery-ui-tools-tab-panes-all-showing-at-once,jquery ui tools - tab panes all showing at once,"i'm using jquery tools for my tabs - something's gone wrong which i don't know (as everything was working) .. all the panels are being displayed at once for some reason... here is the code:
+
+&lt;di"
+https://stackoverflow.com/questions/tagged/java,newest 'java' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/jstl,newest 'jstl' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/281380/format-date-with-fmtformatdate-jsp,format date with fmt:formatdate jsp,"i am trying to format a date with: 
+
+&lt;fmt:formatdate value=""${newsletter.createdon}"" pattern=""mm/dd/yyyy""/&gt;
+newsletter is an object with a createdon property which is java.util.date.
+
+when i"
+https://stackoverflow.com/questions/tagged/image-processing,newest 'image-processing' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/gltf,newest 'gltf' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67655557/array-value-from-one-object-not-updating-within-another,array value from one object not updating within another,"i'm new to javascript, and i'm struggling a little bit with an issue. i've tried everything i can think of, but i can't seem to get it to work. i'm thinking it's a scope problem, but i'm not entirely"
+https://stackoverflow.com/questions/tagged/yolo,newest 'yolo' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/object+html,newest 'object+html' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67647750/how-to-sort-an-array-of-objects-containing-different-information-about-newspaper,how to sort an array of objects containing different information about newspaper articles?,"i am trying to boil down an array of objects containing different information about newspaper articles. what i want is a string that summarise the information about each news source.
+each object co"
+https://stackoverflow.com/questions/tagged/fetch-api,newest 'fetch-api' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67641462/is-there-a-difference-between-and-new-object,is there a difference between {} and new object(),"i was asked this in an interview. i couldn't answer. not sure if it was a trick question.
+let a = {}
+and
+let a = new object"
+https://stackoverflow.com/questions/67660308/object-method-in-javasscript,object method in javasscript,"var employee = {
+      name: &quot;john smith&quot;,
+      job: &quot;programmer&quot;,
+      age: 31,
+      namelength: function (){
+        console.log(this.name.length);
+  }
+}
+
+here is a code an"
+https://stackoverflow.com/questions/tagged/object+constructor,newest 'object+constructor' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67638724/id-like-to-know-how-to-get-the-function-to-return-the-following,how do i return the response from an asynchronous call?,"i have a function foo which makes an asynchronous request. how can i return the response/result from foo?
+i tried returning the value from the callback, as well as assigning the result to a local"
+https://stackoverflow.com/questions/tagged/codeigniter-4,newest 'codeigniter-4' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/pool,newest 'pool' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67646413/given-following-statements-within-a-method-block-how-many-objects-references-va,"given following statements within a method block, how many objects/references/variables will be created in heap, string pool & stack?","how many objects/references/variables will be created in heap, string pool &amp; stack?
+int a = 10;
+string s1 = &quot;hello&quot;;
+string s2 = new string(s1);
+string s3 = new string(&quot;hello&quo"
+https://stackoverflow.com/questions/67652221/how-is-it-that-a-static-method-in-a-class-can-be-run-without-an-object-as-we-kn,how is it that a static method in a class can be run without an object (as we know that a class does not have any memory allocated to it) in c++?,"so using static keyword below we can call mymethod without creating an object of the class myclass, my question is how is it even possible as a class is not allocated memory when the code is compil"
+https://stackoverflow.com/questions/tagged/sorting,newest 'sorting' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67655924/how-to-make-data-consistent-when-return-it-from-api,how to make data consistent when return it from api,"my data in database have no consistent form, some data looks like this
+{
+ 'name': 'some name',
+ 'age': 'some age'
+}
+
+and another looks like this
+[
+   {
+   'name': 'some name',
+   'age': 'some age'"
+https://stackoverflow.com/questions/67656962/how-to-create-arrays-with-object-classes-in-java-homework,how to create arrays with object classes in java [homework],"before you read on this is for my homework and will be oddly specific.
+i am very new to object-oriented programming and currently, it is very hard for me to grasp the new concepts. my assignment is"
+https://stackoverflow.com/questions/tagged/object+node.js,newest 'object+node.js' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67663960/accessing-object-members-inside-a-vector-inside-another-object-out-of-range,"accessing object members inside a vector, inside another object, out of range","i am new to c++, and i am making a menu system for the output console, simply using cin and cout. i have made a structure like so:
+the ui object has a vector of menu objects, which in turn each hav"
+https://stackoverflow.com/questions/67654136/obj-is-not-pushing-into-array-in-javascript,obj is not pushing into array in javascript,"here i am receiving a set of token in csv texts and every token belongs a document in monogdb. my logic is to get the documents token wise and return them as an array to the front end .
+here i have"
+https://stackoverflow.com/questions/tagged/socket.io,newest 'socket.io' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/reference,newest 'reference' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67643761/how-to-get-a-json-serialized-dictionary-back-to-original-object-form,how to get a json serialized dictionary back to original object form,"so, i'm trying to save an object to a json file then recover that object in a state that allows me to call its functions. for example,
+listofobjects = [&lt;object&gt;, &lt;object&gt;]
+json.dump("
+https://stackoverflow.com/questions/67661724/object-keys-not-response-in-the-ionic-app,object.keys not response in the ionic app,"i was using the object.keys to push all my object’s key into the array, it test well in the browser ( ionic serve --lab), but after ionic cordova build, object.keys just return a empty array to me,"
+https://stackoverflow.com/questions/67640989/how-to-convert-string-with-special-character-as-array-php,how to convert string with special character as array php,"i have a string like this below.
+&quot;|dm:12|em:.25|fm:10|wm:85|de:143|qty:1&quot;
+
+how to convert it as key-value pair?"
+https://stackoverflow.com/questions/67657114/object-reference-is-null-though-the-xml-activity-and-java-classe-are-linked-in-a,object reference is null though the xml activity and java classe are linked in android studio,"my code goes like this,in the main_activity the textview object is initialized and even then the null pointer exception is getting invoked
+can someone please help me with this.
+mainactivity.java
+pa"
+https://stackoverflow.com/questions/67664871/how-to-sum-two-number-type-arrays,how to sum two number type arrays?,"i'm trying to use generics for the next method:
+    public int[] newarraytest(int[] arraytoadd){
+        int[] arraytoreturn =  new int[arraytoadd.length];
+        for (int i = 0; i &lt; arraytoadd"
+https://stackoverflow.com/questions/67650153/react-todo-app-typeof-a-props-is-not-as-i-expect,react todo app - typeof a props is not as i expect,"i am building react todo app. however, i can't understand how todos type became object? in the app.js, we set it an array. in the form.js we set
+settodos([...todos, { text: inputtext, id: math.rand"
+https://stackoverflow.com/questions/tagged/getvalue,newest 'getvalue' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67659679/how-to-convert-array-objects-to-comma-separated-objects-in-php,how to convert array objects to comma separated objects in php,"i have a variable, $my_var generated within a nested loop, that currently holds two arrays.
+&lt;?php print_r($my_var) ?&gt; currently returns the below result.
+array
+(
+    [id] =&gt; 1
+    [name] ="
+https://stackoverflow.com/questions/tagged/object+arraylist,newest 'object+arraylist' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67662250/how-to-merge-array-of-objects-to-objects-with-unique-key-using-javascript,how to merge array of objects to objects with unique key using javascript?,"how can i merge arr1 array of objects to the obj with unique key id's, my aim is to receive one array which will contain data structured like this [{itemid: &quot;164488786030&quot;, name:'google',"
+https://stackoverflow.com/questions/67654700/convert-an-object-to-a-new-class,convert an object to a new class,"i have two very similar classes. examplewithasurprise inherits from example, having one more attribute. my_examples stores all the examples between their creation and the moment i convert them to a"
+https://stackoverflow.com/questions/tagged/object+ecmascript-6,newest 'object+ecmascript-6' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67652747/acessesing-nested-objects-in-react-render,acessesing nested objects in react render,"not sure why i'm getting typeerror: project.item is not a functionerror when i try to access an object inside of an array returned on my get request.
+this is how my code looks. the weird thing abou"
+https://stackoverflow.com/questions/tagged/python,newest 'python' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67669421/python-tkinter-calculating-days-left-with-tkcalendar,"python, tkinter: calculating days left with tkcalendar","i have two issues.
+one:
+i can't figure out how to calculate days left until a specific date which the user inputs in a calendar interface.
+secondly:
+i want to use the numbers that the user has inpu"
+https://stackoverflow.com/questions/tagged/laravel,newest 'laravel' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/tkinter,newest 'tkinter' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/find,newest 'find' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/object+loops,newest 'object+loops' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67642353/construct-new-array-of-objects-based-on-existing-array-and-object,construct new array of objects based on existing array and object,"probably making a silly mistake, but i can't seem to figure this one out.
+based on an existing array of strings, i want to check if they exist as an object value within my array of objects. if true"
+https://stackoverflow.com/questions/tagged/php,newest 'php' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/object+android,newest 'object+android' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67649554/calculate-x-y-height-and-width-object-coordinates-of-an-object-in-an-image-to,"calculate x, y, height and width object coordinates of an object in an image to train yolov2","i am trying to find a way to calculate the object coordinates of an object in an image in order to then train yolov2 to detect my custom objects.
+i am following the alexey ab repo guidelines: https://"
+https://stackoverflow.com/questions/tagged/winforms,newest 'winforms' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/object+function,newest 'object+function' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/sortedlist,newest 'sortedlist' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/three.js,newest 'three.js' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/object+javascript,newest 'object+javascript' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/methods,newest 'methods' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67643631/express-how-to-pass-json-into-res-render,express how to pass .json into res.render,"how can i pass an object array like this:
+var dataarray = [
+{&quot;type&quot;: &quot;c#&quot;, &quot;script&quot;:&quot;csharp script&quot;},
+{&quot;type&quot;: &quot;javascript&quot;, &quot;script"
+https://stackoverflow.com/questions/67646501/could-someone-explain-the-source-code-of-tostring-method-which-is-overridden-in,could someone explain the source code of tostring method which is overridden in the string class?,"i have few questions it would be helpful if someone answered it.
+
+what does the tostring() method returns in the following code?
+/** 
+* this object (which is already a string!) is itself returned"
+https://stackoverflow.com/questions/tagged/python-turtle,newest 'python-turtle' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/websocket,newest 'websocket' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/object+arrays,newest 'object+arrays' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/object+string,newest 'object+string' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/darknet,newest 'darknet' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/object+php,newest 'object+php' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/object+java,newest 'object+java' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67667837/how-to-get-all-the-object-keys-and-data-types-from-nested-object,how to get all the object keys and data types from nested object,"how to get all the object keys from nested object and data types of the object key value.
+payload
+const payload = {
+  name: 'mark',
+  age: 20,
+  activities: ['play', { game: 'football', play: false"
+https://stackoverflow.com/questions/tagged/generics,newest 'generics' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/object+oop,newest 'object+oop' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/directional-light,newest 'directional-light' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/coordinates,newest 'coordinates' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/65848079/optimization-with-backward-euler-between-2-quaternions-involving-flexible-dt-and,optimization with backward euler between 2 quaternions involving flexible dt and cost on angular velocity,"this is yet another follow up to why does this simple mp for finding angular velocity between 2 quaternions fail?
+following the answer given by hongkai dai, i made the following modifications:
+
+mad"
+https://stackoverflow.com/questions/65707755/inverse-dynamics-controller-drake,inverse dynamics controller drake,i currently have an array of desired position vs. time of an object in my plant. i am using an inverse dynamics controller in order to drive the object to this desired position but i'm experiencing
+https://stackoverflow.com/questions/tagged/drake+inverse-kinematics,newest 'drake+inverse-kinematics' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/drake+input,newest 'drake+input' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/drake+jupyter-notebook,newest 'drake+jupyter-notebook' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67604078/pydrake-about-penetration-in-discrete-time-simulation,pydrake: about penetration in discrete time simulation,"i'm working on a biped robot simulation in pydrake. my robot now could stand well or even jump by using inverse dynamics and optimizing contact forces when the step time is 0.0001s. however, the feet"
+https://stackoverflow.com/questions/65860331/could-you-demo-a-very-simple-c-example-about-symbolic-variable-and-jacobian-by,could you demo a very simple c++ example about symbolic variable and jacobian by converting pydrake code to c++ version?,"i am trying to convert the following pydrake code to c++ version. unfortunately,i get lost in the very rigorous c++ api documentation. could you help to convert the following code into c++ version"
+https://stackoverflow.com/questions/66965256/the-issue-with-modelling-the-force-torque-sensor-in-drake,the issue with modelling the force/torque sensor in drake,"i came across the following error message when connecting get_reaction_forces_output_port() to my controller.
+runtimeerror: reported algebraic loop detected in diagrambuilder:
+      inputport[0] ("
+https://stackoverflow.com/questions/tagged/drake+python-3.x,newest 'drake+python-3.x' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/66287323/an-error-happen-during-bazel-build-no-such-package-cc-not-a-regular-file,an error happen during bazel build: no such package '@cc//': not a regular file:,"i just upgrade mac os to macos big sur (11), it is no issue to reinstall drake from source (./setup/mac/install_prereqs.sh). but some errors happen during &quot;bazel built&quot;.
+the message is po"
+https://stackoverflow.com/questions/tagged/drake+simulation,newest 'drake+simulation' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67155462/new-drake-visualizer-example,new drake visualizer example,"after updating my drake to the latest version, my previous simulation code cannot work because of the api change. i am wondering if there is an existing tutorial or example for this new visualizati"
+https://stackoverflow.com/questions/66445284/executing-on-line-generated-trajectory-using-trajectorysource,executing on-line generated trajectory using trajectorysource,i am trying to execute trajectories that are computed during runtime. it seems that the trajectorysource system needs to be provided a trajectory during initialization itself. is it possible to upd
+https://stackoverflow.com/questions/66216899/pydrake-import-error-cannot-import-name-drakevisualizer-clippingrange-depth,"pydrake import error: cannot import name 'drakevisualizer', clippingrange, depthrange, et al",i am using the latest pydrake docker image and trying to visualize some of my results. everything else in pydrake imports and works really well. specifically packages in the pydrake.geometry cannot
+https://stackoverflow.com/questions/tagged/drake+macos,newest 'drake+macos' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/drake+docker,newest 'drake+docker' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/drake+nvidia,newest 'drake+nvidia' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67608144/automatic-differentiation-in-drake,automatic differentiation in drake,"i have a question regarding automatic differentiation (ad) in drake. if someone writes the dae for a system in python, how does drake compute the derivatives for optimization? does it have a ad pac"
+https://stackoverflow.com/questions/66884935/how-do-you-visualise-your-ros-urdf-on-the-drake-visualizer,how do you visualise your ros urdf on the drake visualizer?,"drake noob here.
+i tried running the drake_visualizer and geometry_inspector with my own ros generated urdf that depicts and experimental setup with two ur10s. this throws two errors
+
+packagemap is"
+https://stackoverflow.com/questions/66285704/how-to-define-collision-filter-groups-across-model-instances,how to define collision filter groups across model instances?,"when constructing a multibodyplant from multiple modelinstances each loaded from a separate urdf, is there a way to define collision filter groups to exclude collisions across model instances? in the"
+https://stackoverflow.com/questions/tagged/drake+bazel,newest 'drake+bazel' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67035352/segfault-when-queryobject-leaves-function-scope,segfault when queryobject leaves function scope,"the following code segfaults:
+from pydrake.all import (
+    diagram,
+    diagrambuilder,
+    addmultibodyplantscenegraph,
+    unitinertia,
+    spatialinertia,
+    multibodyplant,
+    scenegraph,"
+https://stackoverflow.com/questions/tagged/inverse-kinematics,newest 'inverse-kinematics' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/65725516/direct-transcription-collocation-for-rigid-body-rotation-trajectory-in-so3,direct transcription/collocation for rigid body rotation trajectory in so(3),"i am trying to use directtranscription and directcollocation to find the optimal trajectory in so(3) for a free-floating box i.e. rotating a satellite from one pose to another. to start with, i'm u"
+https://stackoverflow.com/questions/66112334/inspecting-port-data-in-real-time,inspecting port data in real time,is there any recommended way to inspect/plot the numeric values that are being sent through the ports between drake systems in real-time?. (something similar to rqt_plot in ros). apart from the
+https://stackoverflow.com/questions/67486334/how-to-deal-with-the-algebraic-loop-in-drake,how to deal with the algebraic loop in drake?,"i wrote the code for a linear system and a simple state feedback controller in drake, but when connecting the two systems, the following error message appeared,
+runtimeerror: reported algebraic loop"
+https://stackoverflow.com/questions/66054558/lidars-in-drake,lidars in drake,"i want to simulate lidars. i saw that a class depthsensor was mentioned in the documentation, but i have not found its actual implementation. for now, i am planning on using the rgbdsensor class an"
+https://stackoverflow.com/questions/66426959/implementing-a-joint-that-allows-motion-in-curvilinear-path,implementing a joint that allows motion in curvilinear path,i am building a two link system. the parent link is a curved object and the second link has a single degree of freedom to follow the curved length. i attempted to implement this with a prismatic jo
+https://stackoverflow.com/questions/66667574/some-thing-wrong-in-using-autodifftogradientmatrix,some thing wrong in using autodifftogradientmatrix,i use following code to generate discrete dynamic gradient matrix. it looks like to generate different value in some matrix element when runs the same get_dynamics_gradient2() for several times. i
+https://stackoverflow.com/questions/tagged/python-3.x,newest 'python-3.x' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/drake+opencv,newest 'drake+opencv' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67168288/whats-the-best-way-to-upgrade-from-a-drake-version-that-is-3-months-old,what's the best way to upgrade from a drake version that is >3 months old?,"i have some code using an older version of drake, and i'd like to upgrade to a much newer version.
+how should i proceed?"
+https://stackoverflow.com/questions/tagged/upgrade,newest 'upgrade' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/67172137/drake-continuous-collision-detection,drake continuous collision detection,"i am trying to use drake as a collision detection function in ompl, and i have already implemented the state validity checker as follows:
+bool statevaliditychecker (drake::multibody::multibodyplant"
+https://stackoverflow.com/questions/tagged/collision,newest 'collision' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/xml-parsing,newest 'xml-parsing' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/drake+python,newest 'drake+python' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/drake+collision,newest 'drake+collision' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/66422040/direct-collocation-with-collision-detection-in-drake,direct collocation with collision detection in drake,"i'm trying to implement trajectory optimization using direct collocation for a simple system: essentially, two acrobots interacting each other through contact. however, while solving the mathematical"
+https://stackoverflow.com/questions/65675339/derivative-of-jacobian-in-drake,derivative of jacobian in drake,"i am currently trying to implement feedback linearization and for that, i was looking to compute coriolis and gravitational terms,mass matrix, jacobian and jacobian derivative.
+in drake i found fun"
+https://stackoverflow.com/questions/67393784/linear-inequality-constraint-not-working-in-drake,linear inequality constraint not working in drake,"i am learning how to use drake to solving optimization problems.
+this problem was to find the optimal length and width of a fence, the fence must have a perimeter less than or equal to 40. the code"
+https://stackoverflow.com/questions/tagged/drake%20c%2b%2b,newest 'drake c++' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/drake+ubuntu,newest 'drake+ubuntu' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/66388788/how-to-map-joint-index-to-the-corresponding-index-in-generalized-positions,how to map joint index to the corresponding index in generalized positions?,"given the floatng base pose and a list of joint values ordered by their corresponding joint index, i want to construct a generalized position vector so i can setposition the plant.
+i am aware that"
+https://stackoverflow.com/questions/65947488/what-method-of-path-planning-is-supported-in-drake,what method of path planning is supported in drake,"i am trying to findout the path planner that used with drake.
+for example is it a statistical method something else.
+where can i get informatoin about the path planners"
+https://stackoverflow.com/questions/3437059/does-python-have-a-string-contains-substring-method,does python have a string 'contains' substring method?,"i'm looking for a string.contains or string.indexof method in python.
+
+i want to do:
+
+if not somestring.contains(""blah""):
+   continue"
+https://stackoverflow.com/questions/415511/how-to-get-the-current-time-in-python,how to get the current time in python,what is the module/method used to get the current time?
+https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python,what are metaclasses in python?,"in python, what are metaclasses and what do we use them for?"
+https://stackoverflow.com/questions/3294889/iterating-over-dictionaries-using-for-loops,iterating over dictionaries using 'for' loops,"i am a bit puzzled by the following code:
+d = {'x': 1, 'y': 2, 'z': 3} 
+for key in d:
+    print (key, 'corresponds to', d[key])
+
+what i don't understand is the key portion. how does python recogniz"
+https://stackoverflow.com/questions/tagged/pyserial,newest 'pyserial' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/1300088/distinct-with-lambda,distinct() with lambda?,"right, so i have an enumerable and wish to get distinct values from it.
+using system.linq, there's, of course, an extension method called distinct. in the simple case, it can be used with no parame"
+https://stackoverflow.com/questions/9568074/is-it-fine-if-first-response-is-private-with-appcache-symfony2,is it fine if first response is private with appcache (symfony2)?,"i'm trying to use http caching. in my controller i'm setting a response as follows: 
+
+$response-&gt;setpublic();
+$response-&gt;setmaxage(120);
+$response-&gt;setsharedmaxage(120);
+$response-&gt;"
+https://stackoverflow.com/questions/tagged/lambda,newest 'lambda' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/16501/what-is-a-lambda-function,what is a lambda (function)?,"for a person without a comp-sci background, what is a lambda in the world of computer science?"
+https://stackoverflow.com/questions/tagged/amazon-s3,newest 'amazon-s3' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/tagged/amazon-web-services,newest 'amazon-web-services' questions,stack overflow | the world’s largest online community for developers
+https://stackoverflow.com/questions/7627098/what-is-a-lambda-expression-in-c11,what is a lambda expression in c++11?,"what is a lambda expression in c++11? when would i use one? what class of problem do they solve that wasn't possible prior to their introduction?
+
+a few examples, and use cases would be useful"
+https://stackoverflow.com/questions/67615698/surpress-output-of-get-azureaddomain,surpress output of get-azureaddomain,"using below snippet :
+#loop until we have found the newly added domain
+$stop='' 
+while (-not $stop) 
+{
+    $stop = get-azureaddomain -name $direct_routing_domain -erroraction ignore | out-null"
+https://stackoverflow.com/questions/67573253/get-msaltoken-error-aadsts7000218-the-request-body-must-contain-the-following-p,get-msaltoken error aadsts7000218: the request body must contain the following parameter: 'client_assertion' or 'client_secret',"stuck with this error. please help me resolve this thanks!!
+here is my powershell script
+$connectiondetails = @{
+    'tenantid'    = '****-****'
+    'clientid'    = '****-****'
+    'interactive' ="
