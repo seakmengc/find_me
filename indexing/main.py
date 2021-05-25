@@ -53,9 +53,7 @@ def get_keywords_dict_from_csv():
 
 def write_csv(keywords_dict):
     with stemmed_csv_path.open("w", newline="") as f:
-        fieldnames = ["url", "keywords"]
-
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=["url", "keywords"])
         writer.writeheader()
 
         for url in keywords_dict:
