@@ -59,7 +59,7 @@ def write_csv(keywords_dict):
         writer.writeheader()
 
         for url in keywords_dict:
-            writer.writerow({"url": (url), "keywords": (keywords_dict[url])})
+            writer.writerow({ "url": url, "keywords": keywords_dict[url] })
 
 
 def init():
