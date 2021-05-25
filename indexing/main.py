@@ -1,13 +1,13 @@
 from pathlib import Path
 import csv
 import nltk
-from nltk.stem import PorterStemmer
+from nltk.stem import SnowballStemmer
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from string import punctuation
 import re
 
-stemmer = PorterStemmer()
+stemmer = SnowballStemmer(language="english")
 nltk.download("stopwords")
 nltk.download("averaged_perceptron_tagger")
 stop_words = set(stopwords.words("english"))
@@ -36,7 +36,7 @@ def get_keywords(text):
         keywords.append(keyword)
 
     # remove duplicates and sort by word frequency
-    return sorted(set(keywords), key=lambda w: keywords.count(w), reverse=True)
+    return set(sorted(keywords, key=lambda w: keywords.count(w), reverse=True))
 
 
 def get_keywords_dict_from_csv():
