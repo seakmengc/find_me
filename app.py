@@ -1,17 +1,14 @@
-from abc import ABC
-from urllib import robotparser
-
-import requests
-import xmltodict
 from flask import Flask
-from neo4j import GraphDatabase
-import os, json
-from neomodel import db, StructuredNode, StringProperty, RelationshipTo
+
+import os
+from neomodel import db
 from commands.crawl import bp as crawl_bp
+from commands.stem import bp as stem_bp
 
 app = Flask(__name__)
 
 app.register_blueprint(crawl_bp)
+app.register_blueprint(stem_bp)
 
 db.set_connection('bolt://{username}:{password}@{uri}'.format(username=os.getenv('DB_USERNAME'),
                                                               password=os.getenv('DB_PASSWORD'),

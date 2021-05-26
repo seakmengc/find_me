@@ -7,7 +7,7 @@ from flask import Blueprint
 
 from crawler.html_tag_parser import HtmlTagParser
 from crawler.link_finder import LinkFinder
-from models.page import Page
+from models.doc import Doc
 
 bp = Blueprint('crawler', __name__, cli_group='crawler')
 
@@ -16,38 +16,38 @@ bp = Blueprint('crawler', __name__, cli_group='crawler')
 def crawl():
     add_urls_by_sitemap()
 
-    # Start crawling
-    page = Page.nodes.first_or_none(title__isnull=True)
-    while page:
-        html_parser = parse_html(page)
+    # Start scraping and exploring more urls
+    doc = Doc.nodes.first_or_none(title__isnull=True)
+    while doc and len(Doc.nodes.all()) < 500:
+        html_parser = parse_html(doc)
 
         if html_parser:
             # Done: save data to Url model
-            page.title = html_parser.title
-            page.description = html_parser.description
-            page.save()
-            print(page)
+            doc.title = html_parser.title
+            doc.description = html_parser.description
+            doc.save()
+            print(doc)
 
-            Page.get_or_create(*[{'url': link} for link in html_parser.links])
+            Doc.get_or_create(*[{'url': link} for link in html_parser.links])
 
-        page = Page.nodes.first_or_none(title__isnull=True)
+        doc = Doc.nodes.first_or_none(title__isnull=True)
 
 
-def parse_html(page):
-    if page.title:
+def parse_html(doc):
+    if doc.title:
         return
 
-    print('Crawling: ' + page.url)
+    print('Crawling: ' + doc.url)
 
     try:
-        response = requests.get(page.url)
+        response = requests.get(doc.url)
 
-        links = LinkFinder(page.url)
+        links = LinkFinder(doc.url)
         links.feed(response.text)
     except:
         return
 
-    return HtmlTagParser(page.url, response.text, links.page_links())
+    return HtmlTagParser(doc.url, response.text, links.page_links())
 
 
 def add_urls_by_sitemap():
@@ -60,7 +60,7 @@ def add_urls_by_sitemap():
         raw_urls = get_urls_from_sitemap(rp.site_maps()[0])[:10]
         queue_urls = [{'url': url['loc']} for url in raw_urls]
         print(*queue_urls)
-        Page.get_or_create(*queue_urls)
+        Doc.get_or_create(*queue_urls)
 
 
 def get_robot_parser(domain):
