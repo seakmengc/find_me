@@ -23,7 +23,7 @@ def stem():
     stop_words = set(stopwords.words("english"))
 
     # Start stemming
-    doc = Doc.nodes.first_or_none(stemmed__exact=False, title__isnull=False, description__isnull=False)
+    doc = Doc.get_havent_stemmed()
     while doc:
         keys = get_keywords(doc, stemmer=stemmer, stop_words=stop_words)
         # print(keywords.items())
@@ -39,7 +39,7 @@ def stem():
             doc.stemmed = True
             doc.save()
 
-        doc = Doc.nodes.first_or_none(stemmed__exact=False, title__isnull=False, description__isnull=False)
+        doc = Doc.get_havent_stemmed()
 
     print('Done stemming')
 
@@ -61,6 +61,21 @@ def get_keywords(page, stemmer, stop_words):
 
             keywords.append(keyword)
 
-    # remove duplicates and sort by word frequency
+        keywords.append(extract_ne(words))
+    print(keywords)
     return Counter(keywords)
-    return set(sorted(keywords, key=lambda w: keywords.count(w), reverse=True))
+
+
+# Experiment
+def extract_ne(text):
+    words = word_tokenize(text)
+    tags = nltk.pos_tag(words)
+    tree = nltk.ne_chunk(tags, binary=True)
+
+    ne = []
+    for ent in tree:
+        if hasattr(ent, 'label') and ent.label() == 'NE':
+            print(i for i in ent)
+            ne.append(" ".join(i[0] for i in ent))
+
+    return ne

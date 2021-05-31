@@ -18,7 +18,7 @@ def crawl():
 
     # Start scraping and exploring more urls
     doc = Doc.nodes.first_or_none(title__isnull=True)
-    while doc and len(Doc.nodes.all()) < 500:
+    while doc and len(Doc.nodes.all()) < 1000:
         html_parser = parse_html(doc)
 
         if html_parser:
@@ -57,7 +57,7 @@ def add_urls_by_sitemap():
         rp = get_robot_parser(domain)
         print('Done parsing robots.txt of ' + domain)
 
-        raw_urls = get_urls_from_sitemap(rp.site_maps()[0])[:10]
+        raw_urls = get_urls_from_sitemap(rp.site_maps()[0])
         queue_urls = [{'url': url['loc']} for url in raw_urls]
         print(*queue_urls)
         Doc.get_or_create(*queue_urls)
@@ -72,7 +72,6 @@ def get_robot_parser(domain):
 
 
 def get_urls_from_sitemap(main_sitemap_url):
-    # return [OrderedDict({'loc': 'https://stackoverflow.com/questions/10855/linq-query-on-a-datatable'})]
     urls = []
     sitemap_xml_urls = xmltodict.parse(requests.get(main_sitemap_url).text)['sitemapindex']['sitemap']
     for xml_url in sitemap_xml_urls:
