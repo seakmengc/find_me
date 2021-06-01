@@ -66,6 +66,27 @@ def get_keywords(page, stemmer, stop_words):
     return Counter(keywords)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Experiment
 def extract_ne(text):
     words = word_tokenize(text)
