@@ -14,11 +14,11 @@ bp = Blueprint('crawler', __name__, cli_group='crawler')
 
 @bp.cli.command('crawl')
 def crawl():
-    add_urls_by_sitemap()
+    # add_urls_by_sitemap()
 
     # Start scraping and exploring more urls
     doc = Doc.nodes.first_or_none(title__isnull=True)
-    while doc and len(Doc.nodes.all()) < 1000:
+    while doc:
         html_parser = parse_html(doc)
 
         if html_parser:
@@ -26,7 +26,6 @@ def crawl():
             doc.title = html_parser.title
             doc.description = html_parser.description
             doc.save()
-            print(doc)
 
             Doc.get_or_create(*[{'url': link} for link in html_parser.links])
 
@@ -75,7 +74,7 @@ def get_urls_from_sitemap(main_sitemap_url):
     urls = []
     sitemap_xml_urls = xmltodict.parse(requests.get(main_sitemap_url).text)['sitemapindex']['sitemap']
     for xml_url in sitemap_xml_urls:
-        raw = xmltodict.parse(requests.get(xml_url['loc']).text)['urlset']['url']
+        raw = xmltodict.parse(requests.get(xml_url['loc']).text)['urlset']['url'][:100]
         urls = urls + raw
         break
 

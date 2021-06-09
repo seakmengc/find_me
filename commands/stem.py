@@ -13,19 +13,20 @@ from models.doc import Doc
 from neomodel import db
 
 bp = Blueprint('stemmer', __name__, cli_group='stemmer')
+stemmer = SnowballStemmer(language="english")
+stop_words = set(stopwords.words("english"))
 
 
 @bp.cli.command('stem')
 def stem():
-    stemmer = SnowballStemmer(language="english")
     nltk.download("stopwords")
     nltk.download("averaged_perceptron_tagger")
-    stop_words = set(stopwords.words("english"))
 
     # Start stemming
     doc = Doc.get_havent_stemmed()
     while doc:
-        keys = get_keywords(doc, stemmer=stemmer, stop_words=stop_words)
+        text = doc.title + ' ' + doc.description
+        keys = get_keywords(text=text)
         # print(keywords.items())
         # return
 
@@ -44,24 +45,22 @@ def stem():
     print('Done stemming')
 
 
-def get_keywords(page, stemmer, stop_words):
+def get_keywords(text):
     keywords = []
 
-    texts = [page.title, page.description]
-    for text in texts:
-        # remove symbols n stuff
-        text = re.sub(r"[\W+-_]", " ", text)
+    # remove symbols n stuff
+    text = re.sub(r"[\W+-_]", " ", text)
 
-        words = word_tokenize(text.lower())
-        for w in words:
-            keyword = stemmer.stem(w)
+    words = word_tokenize(text.lower())
+    for w in words:
+        keyword = stemmer.stem(w)
 
-            if w in stop_words or keyword in punctuation:
-                continue
+        if w in stop_words or keyword in punctuation:
+            continue
 
-            keywords.append(keyword)
+        keywords.append(keyword)
 
-        keywords.append(extract_ne(words))
+        # keywords.append(extract_ne(words))
     print(keywords)
     return Counter(keywords)
 
