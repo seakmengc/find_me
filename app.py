@@ -1,5 +1,4 @@
-from flask import Flask
-from flask import request
+from flask import Flask,request
 import os
 from neomodel import db
 from commands.crawl import bp as crawl_bp
@@ -78,18 +77,12 @@ def search():
 
     # word tokenize
     # filter stopwords
+    # stemming 
     keywords = list(get_keywords(query).keys())
-
     # lemmatize
     # synonyms
-    # stemming
 
-    res = Keyword.nodes.filter(keyword__in=keywords)
-
-    for r in res:
-        print(r)
-        
-    return res
+    return str(keywords)
 
 
 if __name__ == "__main__":
