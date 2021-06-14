@@ -1,6 +1,8 @@
-from flask import Flask,request
+from flask import Flask, request, jsonify
 import os
+import json
 from neomodel import db
+
 from commands.crawl import bp as crawl_bp
 from commands.stem import bp as stem_bp
 
@@ -10,20 +12,25 @@ from nltk.corpus import wordnet
 
 from commands.stem import get_keywords
 from models.keyword import Keyword
+from models.doc import Doc
+from neomodel import Q, config
 
+from tfidf import calc_tfidf
 
 app = Flask(__name__)
 
 app.register_blueprint(crawl_bp)
 app.register_blueprint(stem_bp)
 
-db.set_connection(
-    "bolt://{username}:{password}@{uri}".format(
-        username=os.getenv("DB_USERNAME"),
-        password=os.getenv("DB_PASSWORD"),
-        uri=os.getenv("DB_URI"),
-    )
+NEO_URL = "bolt://{username}:{password}@{uri}".format(
+    username=os.getenv("DB_USERNAME"),
+    password=os.getenv("DB_PASSWORD"),
+    uri=os.getenv("DB_URI"),
 )
+
+db.set_connection(NEO_URL)
+
+config.DATABASE_URL = NEO_URL
 
 lemmatizer = WordNetLemmatizer()
 
@@ -77,12 +84,29 @@ def search():
 
     # word tokenize
     # filter stopwords
-    # stemming 
+    # stemming
     keywords = list(get_keywords(query).keys())
+
+    results = Keyword.nodes.has(docs=True).filter(keyword__in=keywords)
+
+    response = {}
+
+    for res in list(results):
+        for r in list(res.docs.all()):
+            response[r.url] = {
+                "url": r.url,
+                "title": r.title,
+                "description": r.description,
+                "content": (r.title + " " + r.description).lower().split(),
+            }
+
+    results = calc_tfidf(keywords, list(response.values()))
+    sorted_results = sorted(results, key=lambda res: res["score"], reverse=True)
+
+    return {"results": sorted_results}
+
     # lemmatize
     # synonyms
-
-    return str(keywords)
 
 
 if __name__ == "__main__":
