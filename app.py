@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 import os
 import json
 from neomodel import db
+import time as time_
 
 from commands.crawl import bp as crawl_bp
 from commands.stem import bp as stem_bp
@@ -33,6 +34,11 @@ db.set_connection(NEO_URL)
 config.DATABASE_URL = NEO_URL
 
 lemmatizer = WordNetLemmatizer()
+
+
+def get_time_ms():
+    return int(round(time_.time() * 1000))
+
 
 # function to convert nltk tag to wordnet tag
 def nltk_tag_to_wordnet_tag(nltk_tag):
@@ -82,6 +88,8 @@ def hello_world():
 def search():
     query = request.args.get("query")
 
+    start = get_time_ms()
+
     # word tokenize
     # filter stopwords
     # stemming
@@ -103,7 +111,12 @@ def search():
     results = calc_tfidf(keywords, list(response.values()))
     sorted_results = sorted(results, key=lambda res: res["score"], reverse=True)
 
-    return {"results": sorted_results}
+    end = get_time_ms()
+
+    return {
+        "time_to_search_in_milliseconds": str(end - start) + "ms",
+        "results": sorted_results,
+    }
 
     # lemmatize
     # synonyms
