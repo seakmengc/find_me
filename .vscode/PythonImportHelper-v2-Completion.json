@@ -1,0 +1,889 @@
+[
+    {
+        "label": "OrderedDict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "robotparser",
+        "importPath": "urllib",
+        "description": "urllib",
+        "isExtraImport": true,
+        "detail": "urllib",
+        "documentation": {}
+    },
+    {
+        "label": "parse",
+        "importPath": "urllib",
+        "description": "urllib",
+        "isExtraImport": true,
+        "detail": "urllib",
+        "documentation": {}
+    },
+    {
+        "label": "robotparser",
+        "importPath": "urllib",
+        "description": "urllib",
+        "isExtraImport": true,
+        "detail": "urllib",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "xmltodict",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "xmltodict",
+        "description": "xmltodict",
+        "detail": "xmltodict",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "HtmlTagParser",
+        "importPath": "crawler.html_tag_parser",
+        "description": "crawler.html_tag_parser",
+        "isExtraImport": true,
+        "detail": "crawler.html_tag_parser",
+        "documentation": {}
+    },
+    {
+        "label": "LinkFinder",
+        "importPath": "crawler.link_finder",
+        "description": "crawler.link_finder",
+        "isExtraImport": true,
+        "detail": "crawler.link_finder",
+        "documentation": {}
+    },
+    {
+        "label": "Doc",
+        "importPath": "models.doc",
+        "description": "models.doc",
+        "isExtraImport": true,
+        "detail": "models.doc",
+        "documentation": {}
+    },
+    {
+        "label": "Doc",
+        "importPath": "models.doc",
+        "description": "models.doc",
+        "isExtraImport": true,
+        "detail": "models.doc",
+        "documentation": {}
+    },
+    {
+        "label": "Doc",
+        "importPath": "models.doc",
+        "description": "models.doc",
+        "isExtraImport": true,
+        "detail": "models.doc",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "punctuation",
+        "importPath": "string",
+        "description": "string",
+        "isExtraImport": true,
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "punctuation",
+        "importPath": "string",
+        "description": "string",
+        "isExtraImport": true,
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "nltk",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "nltk",
+        "description": "nltk",
+        "detail": "nltk",
+        "documentation": {}
+    },
+    {
+        "label": "word_tokenize",
+        "importPath": "nltk",
+        "description": "nltk",
+        "isExtraImport": true,
+        "detail": "nltk",
+        "documentation": {}
+    },
+    {
+        "label": "SnowballStemmer",
+        "importPath": "nltk",
+        "description": "nltk",
+        "isExtraImport": true,
+        "detail": "nltk",
+        "documentation": {}
+    },
+    {
+        "label": "word_tokenize",
+        "importPath": "nltk",
+        "description": "nltk",
+        "isExtraImport": true,
+        "detail": "nltk",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "Keyword",
+        "importPath": "models.keyword",
+        "description": "models.keyword",
+        "isExtraImport": true,
+        "detail": "models.keyword",
+        "documentation": {}
+    },
+    {
+        "label": "Keyword",
+        "importPath": "models.keyword",
+        "description": "models.keyword",
+        "isExtraImport": true,
+        "detail": "models.keyword",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "neomodel",
+        "description": "neomodel",
+        "isExtraImport": true,
+        "detail": "neomodel",
+        "documentation": {}
+    },
+    {
+        "label": "StringProperty",
+        "importPath": "neomodel",
+        "description": "neomodel",
+        "isExtraImport": true,
+        "detail": "neomodel",
+        "documentation": {}
+    },
+    {
+        "label": "StructuredNode",
+        "importPath": "neomodel",
+        "description": "neomodel",
+        "isExtraImport": true,
+        "detail": "neomodel",
+        "documentation": {}
+    },
+    {
+        "label": "BooleanProperty",
+        "importPath": "neomodel",
+        "description": "neomodel",
+        "isExtraImport": true,
+        "detail": "neomodel",
+        "documentation": {}
+    },
+    {
+        "label": "StructuredNode",
+        "importPath": "neomodel",
+        "description": "neomodel",
+        "isExtraImport": true,
+        "detail": "neomodel",
+        "documentation": {}
+    },
+    {
+        "label": "StringProperty",
+        "importPath": "neomodel",
+        "description": "neomodel",
+        "isExtraImport": true,
+        "detail": "neomodel",
+        "documentation": {}
+    },
+    {
+        "label": "RelationshipTo",
+        "importPath": "neomodel",
+        "description": "neomodel",
+        "isExtraImport": true,
+        "detail": "neomodel",
+        "documentation": {}
+    },
+    {
+        "label": "StructuredRel",
+        "importPath": "neomodel",
+        "description": "neomodel",
+        "isExtraImport": true,
+        "detail": "neomodel",
+        "documentation": {}
+    },
+    {
+        "label": "IntegerProperty",
+        "importPath": "neomodel",
+        "description": "neomodel",
+        "isExtraImport": true,
+        "detail": "neomodel",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "neomodel",
+        "description": "neomodel",
+        "isExtraImport": true,
+        "detail": "neomodel",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "neomodel",
+        "description": "neomodel",
+        "isExtraImport": true,
+        "detail": "neomodel",
+        "documentation": {}
+    },
+    {
+        "label": "LinkFinder",
+        "importPath": "link_finder",
+        "description": "link_finder",
+        "isExtraImport": true,
+        "detail": "link_finder",
+        "documentation": {}
+    },
+    {
+        "label": "HtmlTagParser",
+        "importPath": "html_tag_parser",
+        "description": "html_tag_parser",
+        "isExtraImport": true,
+        "detail": "html_tag_parser",
+        "documentation": {}
+    },
+    {
+        "label": "CSVWriter",
+        "importPath": "csv_writer",
+        "description": "csv_writer",
+        "isExtraImport": true,
+        "detail": "csv_writer",
+        "documentation": {}
+    },
+    {
+        "label": "TxtWrite",
+        "importPath": "csv_writer",
+        "description": "csv_writer",
+        "isExtraImport": true,
+        "detail": "csv_writer",
+        "documentation": {}
+    },
+    {
+        "label": "TxtRead",
+        "importPath": "csv_writer",
+        "description": "csv_writer",
+        "isExtraImport": true,
+        "detail": "csv_writer",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLParser",
+        "importPath": "html.parser",
+        "description": "html.parser",
+        "isExtraImport": true,
+        "detail": "html.parser",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "SnowballStemmer",
+        "importPath": "nltk.stem",
+        "description": "nltk.stem",
+        "isExtraImport": true,
+        "detail": "nltk.stem",
+        "documentation": {}
+    },
+    {
+        "label": "WordNetLemmatizer",
+        "importPath": "nltk.stem",
+        "description": "nltk.stem",
+        "isExtraImport": true,
+        "detail": "nltk.stem",
+        "documentation": {}
+    },
+    {
+        "label": "word_tokenize",
+        "importPath": "nltk.tokenize",
+        "description": "nltk.tokenize",
+        "isExtraImport": true,
+        "detail": "nltk.tokenize",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "bp",
+        "importPath": "commands.crawl",
+        "description": "commands.crawl",
+        "isExtraImport": true,
+        "detail": "commands.crawl",
+        "documentation": {}
+    },
+    {
+        "label": "bp",
+        "importPath": "commands.stem",
+        "description": "commands.stem",
+        "isExtraImport": true,
+        "detail": "commands.stem",
+        "documentation": {}
+    },
+    {
+        "label": "get_keywords",
+        "importPath": "commands.stem",
+        "description": "commands.stem",
+        "isExtraImport": true,
+        "detail": "commands.stem",
+        "documentation": {}
+    },
+    {
+        "label": "crawl",
+        "kind": 2,
+        "importPath": "commands.crawl",
+        "description": "commands.crawl",
+        "peekOfCode": "def crawl():\n    # add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    doc = Doc.nodes.first_or_none(title__isnull=True)\n    while doc:\n        html_parser = parse_html(doc)\n        if html_parser:\n            # Done: save data to Url model\n            doc.title = html_parser.title\n            doc.description = html_parser.description",
+        "detail": "commands.crawl",
+        "documentation": {}
+    },
+    {
+        "label": "parse_html",
+        "kind": 2,
+        "importPath": "commands.crawl",
+        "description": "commands.crawl",
+        "peekOfCode": "def parse_html(doc):\n    if doc.title:\n        return\n    print('Crawling: ' + doc.url)\n    try:\n        response = requests.get(doc.url)\n        links = LinkFinder(doc.url)\n        links.feed(response.text)\n    except:\n        return",
+        "detail": "commands.crawl",
+        "documentation": {}
+    },
+    {
+        "label": "add_urls_by_sitemap",
+        "kind": 2,
+        "importPath": "commands.crawl",
+        "description": "commands.crawl",
+        "peekOfCode": "def add_urls_by_sitemap():\n    domains = ['https://stackoverflow.com']\n    for domain in domains:\n        print('Crawling sitemap of ' + domain)\n        rp = get_robot_parser(domain)\n        print('Done parsing robots.txt of ' + domain)\n        raw_urls = get_urls_from_sitemap(rp.site_maps()[0])\n        queue_urls = [{'url': url['loc']} for url in raw_urls]\n        print(*queue_urls)\n        Doc.get_or_create(*queue_urls)",
+        "detail": "commands.crawl",
+        "documentation": {}
+    },
+    {
+        "label": "get_robot_parser",
+        "kind": 2,
+        "importPath": "commands.crawl",
+        "description": "commands.crawl",
+        "peekOfCode": "def get_robot_parser(domain):\n    rp = robotparser.RobotFileParser()\n    rp.set_url(domain + \"/robots.txt\")\n    rp.read()\n    return rp\ndef get_urls_from_sitemap(main_sitemap_url):\n    urls = []\n    sitemap_xml_urls = xmltodict.parse(requests.get(main_sitemap_url).text)['sitemapindex']['sitemap']\n    for xml_url in sitemap_xml_urls:\n        raw = xmltodict.parse(requests.get(xml_url['loc']).text)['urlset']['url'][:100]",
+        "detail": "commands.crawl",
+        "documentation": {}
+    },
+    {
+        "label": "get_urls_from_sitemap",
+        "kind": 2,
+        "importPath": "commands.crawl",
+        "description": "commands.crawl",
+        "peekOfCode": "def get_urls_from_sitemap(main_sitemap_url):\n    urls = []\n    sitemap_xml_urls = xmltodict.parse(requests.get(main_sitemap_url).text)['sitemapindex']['sitemap']\n    for xml_url in sitemap_xml_urls:\n        raw = xmltodict.parse(requests.get(xml_url['loc']).text)['urlset']['url'][:100]\n        urls = urls + raw\n        break\n    return urls",
+        "detail": "commands.crawl",
+        "documentation": {}
+    },
+    {
+        "label": "bp",
+        "kind": 5,
+        "importPath": "commands.crawl",
+        "description": "commands.crawl",
+        "peekOfCode": "bp = Blueprint('crawler', __name__, cli_group='crawler')\n@bp.cli.command('crawl')\ndef crawl():\n    # add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    doc = Doc.nodes.first_or_none(title__isnull=True)\n    while doc:\n        html_parser = parse_html(doc)\n        if html_parser:\n            # Done: save data to Url model",
+        "detail": "commands.crawl",
+        "documentation": {}
+    },
+    {
+        "label": "stem",
+        "kind": 2,
+        "importPath": "commands.stem",
+        "description": "commands.stem",
+        "peekOfCode": "def stem():\n    nltk.download(\"stopwords\")\n    nltk.download(\"averaged_perceptron_tagger\")\n    # Start stemming\n    doc = Doc.get_havent_stemmed()\n    while doc:\n        text = doc.title + ' ' + doc.description\n        keys = get_keywords(text=text)\n        # print(keywords.items())\n        # return",
+        "detail": "commands.stem",
+        "documentation": {}
+    },
+    {
+        "label": "get_keywords",
+        "kind": 2,
+        "importPath": "commands.stem",
+        "description": "commands.stem",
+        "peekOfCode": "def get_keywords(text):\n    keywords = []\n    # remove symbols n stuff\n    text = re.sub(r\"[\\W+-_]\", \" \", text)\n    words = word_tokenize(text.lower())\n    for w in words:\n        keyword = stemmer.stem(w)\n        if w in stop_words or keyword in punctuation:\n            continue\n        keywords.append(keyword)",
+        "detail": "commands.stem",
+        "documentation": {}
+    },
+    {
+        "label": "extract_ne",
+        "kind": 2,
+        "importPath": "commands.stem",
+        "description": "commands.stem",
+        "peekOfCode": "def extract_ne(text):\n    words = word_tokenize(text)\n    tags = nltk.pos_tag(words)\n    tree = nltk.ne_chunk(tags, binary=True)\n    ne = []\n    for ent in tree:\n        if hasattr(ent, 'label') and ent.label() == 'NE':\n            print(i for i in ent)\n            ne.append(\" \".join(i[0] for i in ent))\n    return ne",
+        "detail": "commands.stem",
+        "documentation": {}
+    },
+    {
+        "label": "bp",
+        "kind": 5,
+        "importPath": "commands.stem",
+        "description": "commands.stem",
+        "peekOfCode": "bp = Blueprint('stemmer', __name__, cli_group='stemmer')\nstemmer = SnowballStemmer(language=\"english\")\nstop_words = set(stopwords.words(\"english\"))\n@bp.cli.command('stem')\ndef stem():\n    nltk.download(\"stopwords\")\n    nltk.download(\"averaged_perceptron_tagger\")\n    # Start stemming\n    doc = Doc.get_havent_stemmed()\n    while doc:",
+        "detail": "commands.stem",
+        "documentation": {}
+    },
+    {
+        "label": "stemmer",
+        "kind": 5,
+        "importPath": "commands.stem",
+        "description": "commands.stem",
+        "peekOfCode": "stemmer = SnowballStemmer(language=\"english\")\nstop_words = set(stopwords.words(\"english\"))\n@bp.cli.command('stem')\ndef stem():\n    nltk.download(\"stopwords\")\n    nltk.download(\"averaged_perceptron_tagger\")\n    # Start stemming\n    doc = Doc.get_havent_stemmed()\n    while doc:\n        text = doc.title + ' ' + doc.description",
+        "detail": "commands.stem",
+        "documentation": {}
+    },
+    {
+        "label": "stop_words",
+        "kind": 5,
+        "importPath": "commands.stem",
+        "description": "commands.stem",
+        "peekOfCode": "stop_words = set(stopwords.words(\"english\"))\n@bp.cli.command('stem')\ndef stem():\n    nltk.download(\"stopwords\")\n    nltk.download(\"averaged_perceptron_tagger\")\n    # Start stemming\n    doc = Doc.get_havent_stemmed()\n    while doc:\n        text = doc.title + ' ' + doc.description\n        keys = get_keywords(text=text)",
+        "detail": "commands.stem",
+        "documentation": {}
+    },
+    {
+        "label": "grab_links",
+        "kind": 2,
+        "importPath": "crawler.crawler",
+        "description": "crawler.crawler",
+        "peekOfCode": "def grab_links(url, crawled):\n    if url in crawled:\n        return\n    print('Crawling: ' + url)\n    try:\n        response = requests.get(url)\n        html_parser = HtmlTagParser(url, response.text)\n        # Done: append url to crawled.txt\n        TxtWrite('../data/crawled_urls.txt', html_parser.url)\n        # Done: append crawl data to csv",
+        "detail": "crawler.crawler",
+        "documentation": {}
+    },
+    {
+        "label": "crawl",
+        "kind": 2,
+        "importPath": "crawler.crawler",
+        "description": "crawler.crawler",
+        "peekOfCode": "def crawl():\n    crawled = TxtRead('../data/crawled_urls.txt').readStr()\n    # Done: run until out of urls in to_crawl_urls\n    # Done: read from to_crawl_urls and clear file\n    # Done: loop to each url\n    grab_links(BASE_URL, crawled)\n    for x in range(500):\n        nextUrl = TxtRead('../data/to_crawl_urls.txt').readStr()\n        if nextUrl != None:\n            grab_links(nextUrl, crawled)",
+        "detail": "crawler.crawler",
+        "documentation": {}
+    },
+    {
+        "label": "CSVWriter",
+        "kind": 6,
+        "importPath": "crawler.csv_writer",
+        "description": "crawler.csv_writer",
+        "peekOfCode": "class CSVWriter:\n    header = ['url', 'title', 'description']\n    regex = re.compile(\n        r'^(?:http|ftp)s?://' # http:// or https://\n        r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\\.)+(?:[A-Z]{2,6}\\.?|[A-Z0-9-]{2,}\\.?)|' #domain...\n        r'localhost|' #localhost...\n        r'\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})' # ...or ip\n        r'(?::\\d+)?' # optional port\n        r'(?:/?|[/?]\\S+)$', re.IGNORECASE)\n    def __init__(self, url, title, description):",
+        "detail": "crawler.csv_writer",
+        "documentation": {}
+    },
+    {
+        "label": "TxtWrite",
+        "kind": 6,
+        "importPath": "crawler.csv_writer",
+        "description": "crawler.csv_writer",
+        "peekOfCode": "class TxtWrite:\n    def __init__(self, path, url):\n        super().__init__()\n        self.path = path\n        self.url = url\n        self.write()\n    def write(self):\n        with open(str(self.path), \"a\") as f:\n            if type(self.url) is set:\n                for i in self.url:",
+        "detail": "crawler.csv_writer",
+        "documentation": {}
+    },
+    {
+        "label": "TxtRead",
+        "kind": 6,
+        "importPath": "crawler.csv_writer",
+        "description": "crawler.csv_writer",
+        "peekOfCode": "class TxtRead:\n    def __init__(self, path):\n        super().__init__()\n        self.path = path\n    def readStr(self):\n        url = None\n        data = None\n        with open(str(self.path), \"r\") as f:\n            url = f.readline().rstrip('\\n')\n            data = f.read().splitlines(True)",
+        "detail": "crawler.csv_writer",
+        "documentation": {}
+    },
+    {
+        "label": "HtmlTagParser",
+        "kind": 6,
+        "importPath": "crawler.html_tag_parser",
+        "description": "crawler.html_tag_parser",
+        "peekOfCode": "class HtmlTagParser:\n    def __init__(self, url, html_text, links):\n        self.soup = BeautifulSoup(html_text, 'html.parser')\n        self.url = url\n        self.title = self.get_title()\n        self.description = self.get_description()\n        self.links = links\n    def get_title(self):\n        title = self.soup.find('meta', {'name': 'title'})\n        if title is None:",
+        "detail": "crawler.html_tag_parser",
+        "documentation": {}
+    },
+    {
+        "label": "LinkFinder",
+        "kind": 6,
+        "importPath": "crawler.link_finder",
+        "description": "crawler.link_finder",
+        "peekOfCode": "class LinkFinder(HTMLParser):\n    def __init__(self, page_url):\n        super().__init__()\n        self.page_url = page_url\n        url = parse.urlsplit(page_url)\n        self.base_url = url.scheme + '://' + url.netloc\n        self.robot_parser = get_robot_parser(self.base_url)\n        self.links = set()\n    def handle_starttag(self, tag, attrs):\n        if tag == 'a':",
+        "detail": "crawler.link_finder",
+        "documentation": {}
+    },
+    {
+        "label": "get_robot_parser",
+        "kind": 2,
+        "importPath": "crawler.link_finder",
+        "description": "crawler.link_finder",
+        "peekOfCode": "def get_robot_parser(domain):\n    rp = robotparser.RobotFileParser()\n    rp.set_url(domain + \"/robots.txt\")\n    rp.read()\n    return rp",
+        "detail": "crawler.link_finder",
+        "documentation": {}
+    },
+    {
+        "label": "get_keywords",
+        "kind": 2,
+        "importPath": "indexing.main",
+        "description": "indexing.main",
+        "peekOfCode": "def get_keywords(text):\n    # remove symbols n stuff\n    text = re.sub(r\"[\\W+-_]\", \" \", text)\n    words = word_tokenize(text.lower())\n    keywords = []\n    for w in words:\n        keyword = stemmer.stem(w)\n        if w in stop_words or keyword in punctuation:\n            continue\n        keywords.append(keyword)",
+        "detail": "indexing.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_keywords_dict_from_csv",
+        "kind": 2,
+        "importPath": "indexing.main",
+        "description": "indexing.main",
+        "peekOfCode": "def get_keywords_dict_from_csv():\n    keywords = {}\n    with crawled_csv_path.open() as f:\n        reader = csv.DictReader(f)\n        for i, row in enumerate(reader):\n            url, title, desc = [row[URL_LABEL], row[TITLE_LABEL], row[DESC_LABEL]]\n            keywords[url] = get_keywords(title + desc)\n    return keywords\ndef write_csv(keywords_dict):\n    with stemmed_csv_path.open(\"w\", newline=\"\") as f:",
+        "detail": "indexing.main",
+        "documentation": {}
+    },
+    {
+        "label": "write_csv",
+        "kind": 2,
+        "importPath": "indexing.main",
+        "description": "indexing.main",
+        "peekOfCode": "def write_csv(keywords_dict):\n    with stemmed_csv_path.open(\"w\", newline=\"\") as f:\n        writer = csv.DictWriter(f, fieldnames=[\"url\", \"keywords\"])\n        writer.writeheader()\n        for url in keywords_dict:\n            writer.writerow({ \"url\": url, \"keywords\": keywords_dict[url] })\ndef init():\n    keywords_dict = get_keywords_dict_from_csv()\n    write_csv(keywords_dict)\n    pass",
+        "detail": "indexing.main",
+        "documentation": {}
+    },
+    {
+        "label": "init",
+        "kind": 2,
+        "importPath": "indexing.main",
+        "description": "indexing.main",
+        "peekOfCode": "def init():\n    keywords_dict = get_keywords_dict_from_csv()\n    write_csv(keywords_dict)\n    pass\n# store data\ndef boot_graph_db():\n    # TODO: read from stemmed csv\n    # TODO: create data\n    pass\ninit()",
+        "detail": "indexing.main",
+        "documentation": {}
+    },
+    {
+        "label": "boot_graph_db",
+        "kind": 2,
+        "importPath": "indexing.main",
+        "description": "indexing.main",
+        "peekOfCode": "def boot_graph_db():\n    # TODO: read from stemmed csv\n    # TODO: create data\n    pass\ninit()",
+        "detail": "indexing.main",
+        "documentation": {}
+    },
+    {
+        "label": "stemmer",
+        "kind": 5,
+        "importPath": "indexing.main",
+        "description": "indexing.main",
+        "peekOfCode": "stemmer = SnowballStemmer(language=\"english\")\nnltk.download(\"stopwords\")\nnltk.download(\"averaged_perceptron_tagger\")\nstop_words = set(stopwords.words(\"english\"))\ncrawled_csv_path = Path(__file__).parent / \"../data/crawled.csv\"\nstemmed_csv_path = Path(__file__).parent / \"../data/stemmed.csv\"\nURL_LABEL = \"https://stackoverflow.com/questions\"\nTITLE_LABEL = \"newest questions\"\nDESC_LABEL = \"stack overflow | the world’s largest online community for developers\"\n# stemming",
+        "detail": "indexing.main",
+        "documentation": {}
+    },
+    {
+        "label": "stop_words",
+        "kind": 5,
+        "importPath": "indexing.main",
+        "description": "indexing.main",
+        "peekOfCode": "stop_words = set(stopwords.words(\"english\"))\ncrawled_csv_path = Path(__file__).parent / \"../data/crawled.csv\"\nstemmed_csv_path = Path(__file__).parent / \"../data/stemmed.csv\"\nURL_LABEL = \"https://stackoverflow.com/questions\"\nTITLE_LABEL = \"newest questions\"\nDESC_LABEL = \"stack overflow | the world’s largest online community for developers\"\n# stemming\ndef get_keywords(text):\n    # remove symbols n stuff\n    text = re.sub(r\"[\\W+-_]\", \" \", text)",
+        "detail": "indexing.main",
+        "documentation": {}
+    },
+    {
+        "label": "crawled_csv_path",
+        "kind": 5,
+        "importPath": "indexing.main",
+        "description": "indexing.main",
+        "peekOfCode": "crawled_csv_path = Path(__file__).parent / \"../data/crawled.csv\"\nstemmed_csv_path = Path(__file__).parent / \"../data/stemmed.csv\"\nURL_LABEL = \"https://stackoverflow.com/questions\"\nTITLE_LABEL = \"newest questions\"\nDESC_LABEL = \"stack overflow | the world’s largest online community for developers\"\n# stemming\ndef get_keywords(text):\n    # remove symbols n stuff\n    text = re.sub(r\"[\\W+-_]\", \" \", text)\n    words = word_tokenize(text.lower())",
+        "detail": "indexing.main",
+        "documentation": {}
+    },
+    {
+        "label": "stemmed_csv_path",
+        "kind": 5,
+        "importPath": "indexing.main",
+        "description": "indexing.main",
+        "peekOfCode": "stemmed_csv_path = Path(__file__).parent / \"../data/stemmed.csv\"\nURL_LABEL = \"https://stackoverflow.com/questions\"\nTITLE_LABEL = \"newest questions\"\nDESC_LABEL = \"stack overflow | the world’s largest online community for developers\"\n# stemming\ndef get_keywords(text):\n    # remove symbols n stuff\n    text = re.sub(r\"[\\W+-_]\", \" \", text)\n    words = word_tokenize(text.lower())\n    keywords = []",
+        "detail": "indexing.main",
+        "documentation": {}
+    },
+    {
+        "label": "URL_LABEL",
+        "kind": 5,
+        "importPath": "indexing.main",
+        "description": "indexing.main",
+        "peekOfCode": "URL_LABEL = \"https://stackoverflow.com/questions\"\nTITLE_LABEL = \"newest questions\"\nDESC_LABEL = \"stack overflow | the world’s largest online community for developers\"\n# stemming\ndef get_keywords(text):\n    # remove symbols n stuff\n    text = re.sub(r\"[\\W+-_]\", \" \", text)\n    words = word_tokenize(text.lower())\n    keywords = []\n    for w in words:",
+        "detail": "indexing.main",
+        "documentation": {}
+    },
+    {
+        "label": "TITLE_LABEL",
+        "kind": 5,
+        "importPath": "indexing.main",
+        "description": "indexing.main",
+        "peekOfCode": "TITLE_LABEL = \"newest questions\"\nDESC_LABEL = \"stack overflow | the world’s largest online community for developers\"\n# stemming\ndef get_keywords(text):\n    # remove symbols n stuff\n    text = re.sub(r\"[\\W+-_]\", \" \", text)\n    words = word_tokenize(text.lower())\n    keywords = []\n    for w in words:\n        keyword = stemmer.stem(w)",
+        "detail": "indexing.main",
+        "documentation": {}
+    },
+    {
+        "label": "DESC_LABEL",
+        "kind": 5,
+        "importPath": "indexing.main",
+        "description": "indexing.main",
+        "peekOfCode": "DESC_LABEL = \"stack overflow | the world’s largest online community for developers\"\n# stemming\ndef get_keywords(text):\n    # remove symbols n stuff\n    text = re.sub(r\"[\\W+-_]\", \" \", text)\n    words = word_tokenize(text.lower())\n    keywords = []\n    for w in words:\n        keyword = stemmer.stem(w)\n        if w in stop_words or keyword in punctuation:",
+        "detail": "indexing.main",
+        "documentation": {}
+    },
+    {
+        "label": "Doc",
+        "kind": 6,
+        "importPath": "models.doc",
+        "description": "models.doc",
+        "peekOfCode": "class Doc(StructuredNode):\n    url = StringProperty(required=True, unique_index=True)\n    title = StringProperty()\n    description = StringProperty()\n    stemmed = BooleanProperty(default=False)\n    @staticmethod\n    def get_havent_stemmed():\n        return Doc.nodes.first_or_none(stemmed__exact=False, title__isnull=False, description__isnull=False)",
+        "detail": "models.doc",
+        "documentation": {}
+    },
+    {
+        "label": "KeywordRelationship",
+        "kind": 6,
+        "importPath": "models.keyword",
+        "description": "models.keyword",
+        "peekOfCode": "class KeywordRelationship(StructuredRel):\n    freq = IntegerProperty(required=True)\nclass Keyword(StructuredNode):\n    keyword = StringProperty(unique_index=True)\n    docs = RelationshipTo('Doc', 'IN', model=KeywordRelationship)",
+        "detail": "models.keyword",
+        "documentation": {}
+    },
+    {
+        "label": "Keyword",
+        "kind": 6,
+        "importPath": "models.keyword",
+        "description": "models.keyword",
+        "peekOfCode": "class Keyword(StructuredNode):\n    keyword = StringProperty(unique_index=True)\n    docs = RelationshipTo('Doc', 'IN', model=KeywordRelationship)",
+        "detail": "models.keyword",
+        "documentation": {}
+    },
+    {
+        "label": "StringableModel",
+        "kind": 6,
+        "importPath": "models.stringable_model",
+        "description": "models.stringable_model",
+        "peekOfCode": "class StringableModel:\n    def __str__(self):\n        return self.__properties__",
+        "detail": "models.stringable_model",
+        "documentation": {}
+    },
+    {
+        "label": "importlib_load_entry_point",
+        "kind": 2,
+        "importPath": "venv.Scripts.pybolt-script",
+        "description": "venv.Scripts.pybolt-script",
+        "peekOfCode": "def importlib_load_entry_point(spec, group, name):\n    dist_name, _, _ = spec.partition('==')\n    matches = (\n        entry_point\n        for entry_point in distribution(dist_name).entry_points\n        if entry_point.group == group and entry_point.name == name\n    )\n    return next(matches).load()\nglobals().setdefault('load_entry_point', importlib_load_entry_point)\nif __name__ == '__main__':",
+        "detail": "venv.Scripts.pybolt-script",
+        "documentation": {}
+    },
+    {
+        "label": "__requires__",
+        "kind": 5,
+        "importPath": "venv.Scripts.pybolt-script",
+        "description": "venv.Scripts.pybolt-script",
+        "peekOfCode": "__requires__ = 'neo4j-driver==4.1.1'\ntry:\n    from importlib.metadata import distribution\nexcept ImportError:\n    try:\n        from importlib_metadata import distribution\n    except ImportError:\n        from pkg_resources import load_entry_point\ndef importlib_load_entry_point(spec, group, name):\n    dist_name, _, _ = spec.partition('==')",
+        "detail": "venv.Scripts.pybolt-script",
+        "documentation": {}
+    },
+    {
+        "label": "nltk_tag_to_wordnet_tag",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def nltk_tag_to_wordnet_tag(nltk_tag):\n    if nltk_tag.startswith(\"J\"):\n        return wordnet.ADJ\n    elif nltk_tag.startswith(\"V\"):\n        return wordnet.VERB\n    elif nltk_tag.startswith(\"N\"):\n        return wordnet.NOUN\n    elif nltk_tag.startswith(\"R\"):\n        return wordnet.ADV\n    else:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "lemmatize_sentence",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def lemmatize_sentence(sentence):\n    # tokenize the sentence and find the POS tag for each token\n    nltk_tagged = nltk.pos_tag(nltk.word_tokenize(sentence))\n    # tuple of (token, wordnet_tag)\n    wordnet_tagged = map(lambda x: (x[0], nltk_tag_to_wordnet_tag(x[1])), nltk_tagged)\n    lemmatized_sentence = []\n    for word, tag in wordnet_tagged:\n        if tag is None:\n            # if there is no available tag, append the token as is\n            lemmatized_sentence.append(word)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "find_synonyms",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def find_synonyms(keyword):\n    synonyms = []\n    for synset in wordnet.synsets(keyword):\n        for lemma in synset.lemmas():\n            synonyms.append(lemma.name())\n    return str(synonyms)\n@app.route(\"/\")\ndef hello_world():\n    return \"Hello World!\"\n@app.route(\"/search\")",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "hello_world",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def hello_world():\n    return \"Hello World!\"\n@app.route(\"/search\")\ndef search():\n    query = request.args.get(\"query\")\n    # word tokenize\n    # filter stopwords\n    keywords = list(get_keywords(query).keys())\n    # lemmatize\n    # synonyms",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "search",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def search():\n    query = request.args.get(\"query\")\n    # word tokenize\n    # filter stopwords\n    keywords = list(get_keywords(query).keys())\n    # lemmatize\n    # synonyms\n    # stemming\n    res = Keyword.nodes.filter(keyword__in=keywords)\n    response = {'data': []}",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\napp.register_blueprint(crawl_bp)\napp.register_blueprint(stem_bp)\nNEO_URL = \"bolt://{username}:{password}@{uri}\".format(\n    username=os.getenv(\"DB_USERNAME\"),\n    password=os.getenv(\"DB_PASSWORD\"),\n    uri=os.getenv(\"DB_URI\"),\n)\ndb.set_connection(NEO_URL)\nconfig.DATABASE_URL = NEO_URL",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "NEO_URL",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "NEO_URL = \"bolt://{username}:{password}@{uri}\".format(\n    username=os.getenv(\"DB_USERNAME\"),\n    password=os.getenv(\"DB_PASSWORD\"),\n    uri=os.getenv(\"DB_URI\"),\n)\ndb.set_connection(NEO_URL)\nconfig.DATABASE_URL = NEO_URL\n# function to convert nltk tag to wordnet tag\ndef nltk_tag_to_wordnet_tag(nltk_tag):\n    if nltk_tag.startswith(\"J\"):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "config.DATABASE_URL",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "config.DATABASE_URL = NEO_URL\n# function to convert nltk tag to wordnet tag\ndef nltk_tag_to_wordnet_tag(nltk_tag):\n    if nltk_tag.startswith(\"J\"):\n        return wordnet.ADJ\n    elif nltk_tag.startswith(\"V\"):\n        return wordnet.VERB\n    elif nltk_tag.startswith(\"N\"):\n        return wordnet.NOUN\n    elif nltk_tag.startswith(\"R\"):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "extract_ne",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def extract_ne(text):\n    words = word_tokenize(text)\n    tags = nltk.pos_tag(words)\n    tree = nltk.ne_chunk(tags, binary=True)\n    ne = set()\n    for ent in tree:\n        if hasattr(ent, 'label') and ent.label() == 'NE':\n            ne.add(\" \".join(i[0] for i in ent))\n    return ne\ndoc = extract_ne('European authorities fined Google a record $5.1 billion on Wednesday for abusing its power in the mobile phone market and ordered the company to alter its practices.'",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "doc",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "doc = extract_ne('European authorities fined Google a record $5.1 billion on Wednesday for abusing its power in the mobile phone market and ordered the company to alter its practices.'\n                 ' Information Retrieval has.')\nprint(doc)",
+        "detail": "test",
+        "documentation": {}
+    }
+]

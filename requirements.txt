@@ -1,5 +1,8 @@
 neo4j
-beautifulsoup4
-nltk
+beautifulsoup4~=4.9.3
+nltk~=3.6.1
 python-dotenv
-neomodel
+neomodel~=4.0.3
+Flask~=2.0.1
+requests~=2.25.1
+xmltodict~=0.12.0

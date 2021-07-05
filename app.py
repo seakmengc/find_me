@@ -1,7 +1,6 @@
-from flask import Flask
-from flask import request
+from flask import Flask, request
 import os
-from neomodel import db
+from neomodel import db, config
 from commands.crawl import bp as crawl_bp
 from commands.stem import bp as stem_bp
 
@@ -18,15 +17,15 @@ app = Flask(__name__)
 app.register_blueprint(crawl_bp)
 app.register_blueprint(stem_bp)
 
-db.set_connection(
-    "bolt://{username}:{password}@{uri}".format(
-        username=os.getenv("DB_USERNAME"),
-        password=os.getenv("DB_PASSWORD"),
-        uri=os.getenv("DB_URI"),
-    )
+NEO_URL = "bolt://{username}:{password}@{uri}".format(
+    username=os.getenv("DB_USERNAME"),
+    password=os.getenv("DB_PASSWORD"),
+    uri=os.getenv("DB_URI"),
 )
 
-lemmatizer = WordNetLemmatizer()
+db.set_connection(NEO_URL)
+
+config.DATABASE_URL = NEO_URL
 
 # function to convert nltk tag to wordnet tag
 def nltk_tag_to_wordnet_tag(nltk_tag):
@@ -86,10 +85,14 @@ def search():
 
     res = Keyword.nodes.filter(keyword__in=keywords)
 
+    response = {'data': []}
     for r in res:
-        print(r)
-        
-    return res
+        response['data'].append({
+            'id': r.id,
+            'keyword': r.keyword,
+        })
+
+    return response
 
 
 if __name__ == "__main__":
