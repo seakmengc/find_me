@@ -1,6 +1,9 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 import os
-from neomodel import db, config
+import json
+from neomodel import db
+import time as time_
+
 from commands.crawl import bp as crawl_bp
 from commands.stem import bp as stem_bp
 
@@ -10,7 +13,10 @@ from nltk.corpus import wordnet
 
 from commands.stem import get_keywords
 from models.keyword import Keyword
+from models.doc import Doc
+from neomodel import Q, config
 
+from tfidf import calc_tfidf
 
 app = Flask(__name__)
 
@@ -26,6 +32,13 @@ NEO_URL = "bolt://{username}:{password}@{uri}".format(
 db.set_connection(NEO_URL)
 
 config.DATABASE_URL = NEO_URL
+
+lemmatizer = WordNetLemmatizer()
+
+
+def get_time_ms():
+    return int(round(time_.time() * 1000))
+
 
 # function to convert nltk tag to wordnet tag
 def nltk_tag_to_wordnet_tag(nltk_tag):
@@ -75,24 +88,38 @@ def hello_world():
 def search():
     query = request.args.get("query")
 
+    start = get_time_ms()
+
     # word tokenize
     # filter stopwords
+    # stemming
     keywords = list(get_keywords(query).keys())
+
+    results = Keyword.nodes.has(docs=True).filter(keyword__in=keywords)
+
+    response = {}
+
+    for res in list(results):
+        for r in list(res.docs.all()):
+            response[r.url] = {
+                "url": r.url,
+                "title": r.title,
+                "description": r.description,
+                "content": (r.title + " " + r.description).lower().split(),
+            }
+
+    results = calc_tfidf(keywords, list(response.values()))
+    sorted_results = sorted(results, key=lambda res: res["score"], reverse=True)
+
+    end = get_time_ms()
+
+    return {
+        "time_to_search_in_milliseconds": str(end - start) + "ms",
+        "results": sorted_results,
+    }
 
     # lemmatize
     # synonyms
-    # stemming
-
-    res = Keyword.nodes.filter(keyword__in=keywords)
-
-    response = {'data': []}
-    for r in res:
-        response['data'].append({
-            'id': r.id,
-            'keyword': r.keyword,
-        })
-
-    return response
 
 
 if __name__ == "__main__":
