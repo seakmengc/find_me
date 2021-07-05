@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS, cross_origin
 import os
 import json
 from neomodel import db
@@ -19,6 +20,8 @@ from neomodel import Q, config
 from tfidf import calc_tfidf
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 app.register_blueprint(crawl_bp)
 app.register_blueprint(stem_bp)
@@ -58,7 +61,8 @@ def lemmatize_sentence(sentence):
     # tokenize the sentence and find the POS tag for each token
     nltk_tagged = nltk.pos_tag(nltk.word_tokenize(sentence))
     # tuple of (token, wordnet_tag)
-    wordnet_tagged = map(lambda x: (x[0], nltk_tag_to_wordnet_tag(x[1])), nltk_tagged)
+    wordnet_tagged = map(lambda x: (
+        x[0], nltk_tag_to_wordnet_tag(x[1])), nltk_tagged)
     lemmatized_sentence = []
     for word, tag in wordnet_tagged:
         if tag is None:
@@ -85,6 +89,7 @@ def hello_world():
 
 
 @app.route("/search")
+@cross_origin()
 def search():
     query = request.args.get("query")
 
@@ -109,7 +114,8 @@ def search():
             }
 
     results = calc_tfidf(keywords, list(response.values()))
-    sorted_results = sorted(results, key=lambda res: res["score"], reverse=True)
+    sorted_results = sorted(
+        results, key=lambda res: res["score"], reverse=True)
 
     end = get_time_ms()
 

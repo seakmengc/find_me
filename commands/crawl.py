@@ -14,7 +14,7 @@ bp = Blueprint('crawler', __name__, cli_group='crawler')
 
 @bp.cli.command('crawl')
 def crawl():
-    # add_urls_by_sitemap()
+    add_urls_by_sitemap()
 
     # Start scraping and exploring more urls
     doc = Doc.nodes.first_or_none(title__isnull=True)

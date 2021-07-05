@@ -129,3 +129,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+data/crawled.csv
+.gitignore
+data/to_crawl_urls.txt
+data/stemmed.csv
+data/crawled_urls.txt
