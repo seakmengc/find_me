@@ -147,14 +147,6 @@
         "documentation": {}
     },
     {
-        "label": "punctuation",
-        "importPath": "string",
-        "description": "string",
-        "isExtraImport": true,
-        "detail": "string",
-        "documentation": {}
-    },
-    {
         "label": "nltk",
         "kind": 6,
         "isExtraImport": true,
@@ -185,14 +177,6 @@
         "description": "nltk",
         "isExtraImport": true,
         "detail": "nltk",
-        "documentation": {}
-    },
-    {
-        "label": "stopwords",
-        "importPath": "nltk.corpus",
-        "description": "nltk.corpus",
-        "isExtraImport": true,
-        "detail": "nltk.corpus",
         "documentation": {}
     },
     {
@@ -260,6 +244,22 @@
         "documentation": {}
     },
     {
+        "label": "RelationshipTo",
+        "importPath": "neomodel",
+        "description": "neomodel",
+        "isExtraImport": true,
+        "detail": "neomodel",
+        "documentation": {}
+    },
+    {
+        "label": "StructuredRel",
+        "importPath": "neomodel",
+        "description": "neomodel",
+        "isExtraImport": true,
+        "detail": "neomodel",
+        "documentation": {}
+    },
+    {
         "label": "StructuredNode",
         "importPath": "neomodel",
         "description": "neomodel",
@@ -301,6 +301,14 @@
     },
     {
         "label": "db",
+        "importPath": "neomodel",
+        "description": "neomodel",
+        "isExtraImport": true,
+        "detail": "neomodel",
+        "documentation": {}
+    },
+    {
+        "label": "Q",
         "importPath": "neomodel",
         "description": "neomodel",
         "isExtraImport": true,
@@ -381,44 +389,59 @@
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "IntegerProperty",
+        "importPath": "neomodel.properties",
+        "description": "neomodel.properties",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "neomodel.properties",
         "documentation": {}
     },
     {
-        "label": "SnowballStemmer",
-        "importPath": "nltk.stem",
-        "description": "nltk.stem",
+        "label": "ranking",
+        "importPath": "process",
+        "description": "process",
         "isExtraImport": true,
-        "detail": "nltk.stem",
+        "detail": "process",
         "documentation": {}
     },
     {
-        "label": "WordNetLemmatizer",
-        "importPath": "nltk.stem",
-        "description": "nltk.stem",
+        "label": "sigmoid",
+        "importPath": "process",
+        "description": "process",
         "isExtraImport": true,
-        "detail": "nltk.stem",
+        "detail": "process",
         "documentation": {}
     },
     {
-        "label": "word_tokenize",
-        "importPath": "nltk.tokenize",
-        "description": "nltk.tokenize",
+        "label": "cal_probab",
+        "importPath": "process",
+        "description": "process",
         "isExtraImport": true,
-        "detail": "nltk.tokenize",
+        "detail": "process",
         "documentation": {}
     },
     {
-        "label": "sys",
-        "kind": 6,
+        "label": "cal_tfidf",
+        "importPath": "process",
+        "description": "process",
         "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
+        "detail": "process",
+        "documentation": {}
+    },
+    {
+        "label": "CORS",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "cross_origin",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
         "documentation": {}
     },
     {
@@ -428,6 +451,15 @@
         "importPath": "os",
         "description": "os",
         "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
         "documentation": {}
     },
     {
@@ -455,11 +487,36 @@
         "documentation": {}
     },
     {
+        "label": "WordNetLemmatizer",
+        "importPath": "nltk.stem",
+        "description": "nltk.stem",
+        "isExtraImport": true,
+        "detail": "nltk.stem",
+        "documentation": {}
+    },
+    {
+        "label": "calc_tfidf",
+        "importPath": "tfidf",
+        "description": "tfidf",
+        "isExtraImport": true,
+        "detail": "tfidf",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
         "label": "crawl",
         "kind": 2,
         "importPath": "commands.crawl",
         "description": "commands.crawl",
-        "peekOfCode": "def crawl():\n    # add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    doc = Doc.nodes.first_or_none(title__isnull=True)\n    while doc:\n        html_parser = parse_html(doc)\n        if html_parser:\n            # Done: save data to Url model\n            doc.title = html_parser.title\n            doc.description = html_parser.description",
+        "peekOfCode": "def crawl():\n    add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    doc = Doc.nodes.first_or_none(title__isnull=True)\n    while doc:\n        html_parser = parse_html(doc)\n        if html_parser:\n            # Done: save data to Url model\n            doc.title = html_parser.title\n            doc.description = html_parser.description",
         "detail": "commands.crawl",
         "documentation": {}
     },
@@ -486,7 +543,7 @@
         "kind": 2,
         "importPath": "commands.crawl",
         "description": "commands.crawl",
-        "peekOfCode": "def get_robot_parser(domain):\n    rp = robotparser.RobotFileParser()\n    rp.set_url(domain + \"/robots.txt\")\n    rp.read()\n    return rp\ndef get_urls_from_sitemap(main_sitemap_url):\n    urls = []\n    sitemap_xml_urls = xmltodict.parse(requests.get(main_sitemap_url).text)['sitemapindex']['sitemap']\n    for xml_url in sitemap_xml_urls:\n        raw = xmltodict.parse(requests.get(xml_url['loc']).text)['urlset']['url'][:100]",
+        "peekOfCode": "def get_robot_parser(domain):\n    rp = robotparser.RobotFileParser()\n    rp.set_url(domain + \"/robots.txt\")\n    rp.read()\n    return rp\ndef get_urls_from_sitemap(main_sitemap_url):\n    urls = []\n    sitemap_xml_urls = xmltodict.parse(requests.get(main_sitemap_url).text)[\n        'sitemapindex']['sitemap'][::-1]\n    for xml_url in sitemap_xml_urls:",
         "detail": "commands.crawl",
         "documentation": {}
     },
@@ -495,7 +552,7 @@
         "kind": 2,
         "importPath": "commands.crawl",
         "description": "commands.crawl",
-        "peekOfCode": "def get_urls_from_sitemap(main_sitemap_url):\n    urls = []\n    sitemap_xml_urls = xmltodict.parse(requests.get(main_sitemap_url).text)['sitemapindex']['sitemap']\n    for xml_url in sitemap_xml_urls:\n        raw = xmltodict.parse(requests.get(xml_url['loc']).text)['urlset']['url'][:100]\n        urls = urls + raw\n        break\n    return urls",
+        "peekOfCode": "def get_urls_from_sitemap(main_sitemap_url):\n    urls = []\n    sitemap_xml_urls = xmltodict.parse(requests.get(main_sitemap_url).text)[\n        'sitemapindex']['sitemap'][::-1]\n    for xml_url in sitemap_xml_urls:\n        raw = xmltodict.parse(requests.get(xml_url['loc']).text)['urlset']['url']\n        urls = urls + raw\n        break\n    return urls",
         "detail": "commands.crawl",
         "documentation": {}
     },
@@ -504,7 +561,7 @@
         "kind": 5,
         "importPath": "commands.crawl",
         "description": "commands.crawl",
-        "peekOfCode": "bp = Blueprint('crawler', __name__, cli_group='crawler')\n@bp.cli.command('crawl')\ndef crawl():\n    # add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    doc = Doc.nodes.first_or_none(title__isnull=True)\n    while doc:\n        html_parser = parse_html(doc)\n        if html_parser:\n            # Done: save data to Url model",
+        "peekOfCode": "bp = Blueprint('crawler', __name__, cli_group='crawler')\n@bp.cli.command('crawl')\ndef crawl():\n    add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    doc = Doc.nodes.first_or_none(title__isnull=True)\n    while doc:\n        html_parser = parse_html(doc)\n        if html_parser:\n            # Done: save data to Url model",
         "detail": "commands.crawl",
         "documentation": {}
     },
@@ -635,111 +692,12 @@
         "documentation": {}
     },
     {
-        "label": "get_keywords",
-        "kind": 2,
-        "importPath": "indexing.main",
-        "description": "indexing.main",
-        "peekOfCode": "def get_keywords(text):\n    # remove symbols n stuff\n    text = re.sub(r\"[\\W+-_]\", \" \", text)\n    words = word_tokenize(text.lower())\n    keywords = []\n    for w in words:\n        keyword = stemmer.stem(w)\n        if w in stop_words or keyword in punctuation:\n            continue\n        keywords.append(keyword)",
-        "detail": "indexing.main",
-        "documentation": {}
-    },
-    {
-        "label": "get_keywords_dict_from_csv",
-        "kind": 2,
-        "importPath": "indexing.main",
-        "description": "indexing.main",
-        "peekOfCode": "def get_keywords_dict_from_csv():\n    keywords = {}\n    with crawled_csv_path.open() as f:\n        reader = csv.DictReader(f)\n        for i, row in enumerate(reader):\n            url, title, desc = [row[URL_LABEL], row[TITLE_LABEL], row[DESC_LABEL]]\n            keywords[url] = get_keywords(title + desc)\n    return keywords\ndef write_csv(keywords_dict):\n    with stemmed_csv_path.open(\"w\", newline=\"\") as f:",
-        "detail": "indexing.main",
-        "documentation": {}
-    },
-    {
-        "label": "write_csv",
-        "kind": 2,
-        "importPath": "indexing.main",
-        "description": "indexing.main",
-        "peekOfCode": "def write_csv(keywords_dict):\n    with stemmed_csv_path.open(\"w\", newline=\"\") as f:\n        writer = csv.DictWriter(f, fieldnames=[\"url\", \"keywords\"])\n        writer.writeheader()\n        for url in keywords_dict:\n            writer.writerow({ \"url\": url, \"keywords\": keywords_dict[url] })\ndef init():\n    keywords_dict = get_keywords_dict_from_csv()\n    write_csv(keywords_dict)\n    pass",
-        "detail": "indexing.main",
-        "documentation": {}
-    },
-    {
-        "label": "init",
-        "kind": 2,
-        "importPath": "indexing.main",
-        "description": "indexing.main",
-        "peekOfCode": "def init():\n    keywords_dict = get_keywords_dict_from_csv()\n    write_csv(keywords_dict)\n    pass\n# store data\ndef boot_graph_db():\n    # TODO: read from stemmed csv\n    # TODO: create data\n    pass\ninit()",
-        "detail": "indexing.main",
-        "documentation": {}
-    },
-    {
-        "label": "boot_graph_db",
-        "kind": 2,
-        "importPath": "indexing.main",
-        "description": "indexing.main",
-        "peekOfCode": "def boot_graph_db():\n    # TODO: read from stemmed csv\n    # TODO: create data\n    pass\ninit()",
-        "detail": "indexing.main",
-        "documentation": {}
-    },
-    {
-        "label": "stemmer",
-        "kind": 5,
-        "importPath": "indexing.main",
-        "description": "indexing.main",
-        "peekOfCode": "stemmer = SnowballStemmer(language=\"english\")\nnltk.download(\"stopwords\")\nnltk.download(\"averaged_perceptron_tagger\")\nstop_words = set(stopwords.words(\"english\"))\ncrawled_csv_path = Path(__file__).parent / \"../data/crawled.csv\"\nstemmed_csv_path = Path(__file__).parent / \"../data/stemmed.csv\"\nURL_LABEL = \"https://stackoverflow.com/questions\"\nTITLE_LABEL = \"newest questions\"\nDESC_LABEL = \"stack overflow | the world’s largest online community for developers\"\n# stemming",
-        "detail": "indexing.main",
-        "documentation": {}
-    },
-    {
-        "label": "stop_words",
-        "kind": 5,
-        "importPath": "indexing.main",
-        "description": "indexing.main",
-        "peekOfCode": "stop_words = set(stopwords.words(\"english\"))\ncrawled_csv_path = Path(__file__).parent / \"../data/crawled.csv\"\nstemmed_csv_path = Path(__file__).parent / \"../data/stemmed.csv\"\nURL_LABEL = \"https://stackoverflow.com/questions\"\nTITLE_LABEL = \"newest questions\"\nDESC_LABEL = \"stack overflow | the world’s largest online community for developers\"\n# stemming\ndef get_keywords(text):\n    # remove symbols n stuff\n    text = re.sub(r\"[\\W+-_]\", \" \", text)",
-        "detail": "indexing.main",
-        "documentation": {}
-    },
-    {
-        "label": "crawled_csv_path",
-        "kind": 5,
-        "importPath": "indexing.main",
-        "description": "indexing.main",
-        "peekOfCode": "crawled_csv_path = Path(__file__).parent / \"../data/crawled.csv\"\nstemmed_csv_path = Path(__file__).parent / \"../data/stemmed.csv\"\nURL_LABEL = \"https://stackoverflow.com/questions\"\nTITLE_LABEL = \"newest questions\"\nDESC_LABEL = \"stack overflow | the world’s largest online community for developers\"\n# stemming\ndef get_keywords(text):\n    # remove symbols n stuff\n    text = re.sub(r\"[\\W+-_]\", \" \", text)\n    words = word_tokenize(text.lower())",
-        "detail": "indexing.main",
-        "documentation": {}
-    },
-    {
-        "label": "stemmed_csv_path",
-        "kind": 5,
-        "importPath": "indexing.main",
-        "description": "indexing.main",
-        "peekOfCode": "stemmed_csv_path = Path(__file__).parent / \"../data/stemmed.csv\"\nURL_LABEL = \"https://stackoverflow.com/questions\"\nTITLE_LABEL = \"newest questions\"\nDESC_LABEL = \"stack overflow | the world’s largest online community for developers\"\n# stemming\ndef get_keywords(text):\n    # remove symbols n stuff\n    text = re.sub(r\"[\\W+-_]\", \" \", text)\n    words = word_tokenize(text.lower())\n    keywords = []",
-        "detail": "indexing.main",
-        "documentation": {}
-    },
-    {
-        "label": "URL_LABEL",
-        "kind": 5,
-        "importPath": "indexing.main",
-        "description": "indexing.main",
-        "peekOfCode": "URL_LABEL = \"https://stackoverflow.com/questions\"\nTITLE_LABEL = \"newest questions\"\nDESC_LABEL = \"stack overflow | the world’s largest online community for developers\"\n# stemming\ndef get_keywords(text):\n    # remove symbols n stuff\n    text = re.sub(r\"[\\W+-_]\", \" \", text)\n    words = word_tokenize(text.lower())\n    keywords = []\n    for w in words:",
-        "detail": "indexing.main",
-        "documentation": {}
-    },
-    {
-        "label": "TITLE_LABEL",
-        "kind": 5,
-        "importPath": "indexing.main",
-        "description": "indexing.main",
-        "peekOfCode": "TITLE_LABEL = \"newest questions\"\nDESC_LABEL = \"stack overflow | the world’s largest online community for developers\"\n# stemming\ndef get_keywords(text):\n    # remove symbols n stuff\n    text = re.sub(r\"[\\W+-_]\", \" \", text)\n    words = word_tokenize(text.lower())\n    keywords = []\n    for w in words:\n        keyword = stemmer.stem(w)",
-        "detail": "indexing.main",
-        "documentation": {}
-    },
-    {
-        "label": "DESC_LABEL",
-        "kind": 5,
-        "importPath": "indexing.main",
-        "description": "indexing.main",
-        "peekOfCode": "DESC_LABEL = \"stack overflow | the world’s largest online community for developers\"\n# stemming\ndef get_keywords(text):\n    # remove symbols n stuff\n    text = re.sub(r\"[\\W+-_]\", \" \", text)\n    words = word_tokenize(text.lower())\n    keywords = []\n    for w in words:\n        keyword = stemmer.stem(w)\n        if w in stop_words or keyword in punctuation:",
-        "detail": "indexing.main",
+        "label": "RefRelationship",
+        "kind": 6,
+        "importPath": "models.doc",
+        "description": "models.doc",
+        "peekOfCode": "class RefRelationship(StructuredRel):\n    pass\nclass Doc(StructuredNode):\n    url = StringProperty(required=True, unique_index=True)\n    title = StringProperty()\n    description = StringProperty()\n    # ref = IntegerProperty(default=0)\n    stemmed = BooleanProperty(default=False)\n    ref_docs = RelationshipTo('Doc', 'REF', model=RefRelationship)\n    @staticmethod",
+        "detail": "models.doc",
         "documentation": {}
     },
     {
@@ -747,7 +705,7 @@
         "kind": 6,
         "importPath": "models.doc",
         "description": "models.doc",
-        "peekOfCode": "class Doc(StructuredNode):\n    url = StringProperty(required=True, unique_index=True)\n    title = StringProperty()\n    description = StringProperty()\n    stemmed = BooleanProperty(default=False)\n    @staticmethod\n    def get_havent_stemmed():\n        return Doc.nodes.first_or_none(stemmed__exact=False, title__isnull=False, description__isnull=False)",
+        "peekOfCode": "class Doc(StructuredNode):\n    url = StringProperty(required=True, unique_index=True)\n    title = StringProperty()\n    description = StringProperty()\n    # ref = IntegerProperty(default=0)\n    stemmed = BooleanProperty(default=False)\n    ref_docs = RelationshipTo('Doc', 'REF', model=RefRelationship)\n    @staticmethod\n    def get_havent_stemmed():\n        return Doc.nodes.first_or_none(stemmed__exact=False, title__isnull=False, description__isnull=False)",
         "detail": "models.doc",
         "documentation": {}
     },
@@ -770,30 +728,12 @@
         "documentation": {}
     },
     {
-        "label": "StringableModel",
-        "kind": 6,
-        "importPath": "models.stringable_model",
-        "description": "models.stringable_model",
-        "peekOfCode": "class StringableModel:\n    def __str__(self):\n        return self.__properties__",
-        "detail": "models.stringable_model",
-        "documentation": {}
-    },
-    {
-        "label": "importlib_load_entry_point",
+        "label": "get_time_ms",
         "kind": 2,
-        "importPath": "venv.Scripts.pybolt-script",
-        "description": "venv.Scripts.pybolt-script",
-        "peekOfCode": "def importlib_load_entry_point(spec, group, name):\n    dist_name, _, _ = spec.partition('==')\n    matches = (\n        entry_point\n        for entry_point in distribution(dist_name).entry_points\n        if entry_point.group == group and entry_point.name == name\n    )\n    return next(matches).load()\nglobals().setdefault('load_entry_point', importlib_load_entry_point)\nif __name__ == '__main__':",
-        "detail": "venv.Scripts.pybolt-script",
-        "documentation": {}
-    },
-    {
-        "label": "__requires__",
-        "kind": 5,
-        "importPath": "venv.Scripts.pybolt-script",
-        "description": "venv.Scripts.pybolt-script",
-        "peekOfCode": "__requires__ = 'neo4j-driver==4.1.1'\ntry:\n    from importlib.metadata import distribution\nexcept ImportError:\n    try:\n        from importlib_metadata import distribution\n    except ImportError:\n        from pkg_resources import load_entry_point\ndef importlib_load_entry_point(spec, group, name):\n    dist_name, _, _ = spec.partition('==')",
-        "detail": "venv.Scripts.pybolt-script",
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def get_time_ms():\n    return int(round(time_.time() * 1000))\n# function to convert nltk tag to wordnet tag\ndef nltk_tag_to_wordnet_tag(nltk_tag):\n    if nltk_tag.startswith(\"J\"):\n        return wordnet.ADJ\n    elif nltk_tag.startswith(\"V\"):\n        return wordnet.VERB\n    elif nltk_tag.startswith(\"N\"):\n        return wordnet.NOUN",
+        "detail": "app",
         "documentation": {}
     },
     {
@@ -810,7 +750,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def lemmatize_sentence(sentence):\n    # tokenize the sentence and find the POS tag for each token\n    nltk_tagged = nltk.pos_tag(nltk.word_tokenize(sentence))\n    # tuple of (token, wordnet_tag)\n    wordnet_tagged = map(lambda x: (x[0], nltk_tag_to_wordnet_tag(x[1])), nltk_tagged)\n    lemmatized_sentence = []\n    for word, tag in wordnet_tagged:\n        if tag is None:\n            # if there is no available tag, append the token as is\n            lemmatized_sentence.append(word)",
+        "peekOfCode": "def lemmatize_sentence(sentence):\n    # tokenize the sentence and find the POS tag for each token\n    nltk_tagged = nltk.pos_tag(nltk.word_tokenize(sentence))\n    # tuple of (token, wordnet_tag)\n    wordnet_tagged = map(lambda x: (\n        x[0], nltk_tag_to_wordnet_tag(x[1])), nltk_tagged)\n    lemmatized_sentence = []\n    for word, tag in wordnet_tagged:\n        if tag is None:\n            # if there is no available tag, append the token as is",
         "detail": "app",
         "documentation": {}
     },
@@ -828,7 +768,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def hello_world():\n    return \"Hello World!\"\n@app.route(\"/search\")\ndef search():\n    query = request.args.get(\"query\")\n    # word tokenize\n    # filter stopwords\n    keywords = list(get_keywords(query).keys())\n    # lemmatize\n    # synonyms",
+        "peekOfCode": "def hello_world():\n    return \"Hello World!\"\n@app.route(\"/search\")\n@cross_origin()\ndef search():\n    query = request.args.get(\"query\")\n    start = get_time_ms()\n    # word tokenize\n    # filter stopwords\n    # stemming",
         "detail": "app",
         "documentation": {}
     },
@@ -837,7 +777,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def search():\n    query = request.args.get(\"query\")\n    # word tokenize\n    # filter stopwords\n    keywords = list(get_keywords(query).keys())\n    # lemmatize\n    # synonyms\n    # stemming\n    res = Keyword.nodes.filter(keyword__in=keywords)\n    response = {'data': []}",
+        "peekOfCode": "def search():\n    query = request.args.get(\"query\")\n    start = get_time_ms()\n    # word tokenize\n    # filter stopwords\n    # stemming\n    search_keywords = list(get_keywords(query).keys())\n    print(search_keywords)\n    keywords = Keyword.nodes.has(docs=True).filter(keyword__in=search_keywords)\n    response = {}",
         "detail": "app",
         "documentation": {}
     },
@@ -846,7 +786,25 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "app = Flask(__name__)\napp.register_blueprint(crawl_bp)\napp.register_blueprint(stem_bp)\nNEO_URL = \"bolt://{username}:{password}@{uri}\".format(\n    username=os.getenv(\"DB_USERNAME\"),\n    password=os.getenv(\"DB_PASSWORD\"),\n    uri=os.getenv(\"DB_URI\"),\n)\ndb.set_connection(NEO_URL)\nconfig.DATABASE_URL = NEO_URL",
+        "peekOfCode": "app = Flask(__name__)\ncors = CORS(app)\napp.config['CORS_HEADERS'] = 'Content-Type'\napp.register_blueprint(crawl_bp)\napp.register_blueprint(stem_bp)\nNEO_URL = \"bolt://{username}:{password}@{uri}\".format(\n    username=os.getenv(\"DB_USERNAME\"),\n    password=os.getenv(\"DB_PASSWORD\"),\n    uri=os.getenv(\"DB_URI\"),\n)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "cors",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "cors = CORS(app)\napp.config['CORS_HEADERS'] = 'Content-Type'\napp.register_blueprint(crawl_bp)\napp.register_blueprint(stem_bp)\nNEO_URL = \"bolt://{username}:{password}@{uri}\".format(\n    username=os.getenv(\"DB_USERNAME\"),\n    password=os.getenv(\"DB_PASSWORD\"),\n    uri=os.getenv(\"DB_URI\"),\n)\ndb.set_connection(NEO_URL)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['CORS_HEADERS']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['CORS_HEADERS'] = 'Content-Type'\napp.register_blueprint(crawl_bp)\napp.register_blueprint(stem_bp)\nNEO_URL = \"bolt://{username}:{password}@{uri}\".format(\n    username=os.getenv(\"DB_USERNAME\"),\n    password=os.getenv(\"DB_PASSWORD\"),\n    uri=os.getenv(\"DB_URI\"),\n)\ndb.set_connection(NEO_URL)\nconfig.DATABASE_URL = NEO_URL",
         "detail": "app",
         "documentation": {}
     },
@@ -855,7 +813,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "NEO_URL = \"bolt://{username}:{password}@{uri}\".format(\n    username=os.getenv(\"DB_USERNAME\"),\n    password=os.getenv(\"DB_PASSWORD\"),\n    uri=os.getenv(\"DB_URI\"),\n)\ndb.set_connection(NEO_URL)\nconfig.DATABASE_URL = NEO_URL\n# function to convert nltk tag to wordnet tag\ndef nltk_tag_to_wordnet_tag(nltk_tag):\n    if nltk_tag.startswith(\"J\"):",
+        "peekOfCode": "NEO_URL = \"bolt://{username}:{password}@{uri}\".format(\n    username=os.getenv(\"DB_USERNAME\"),\n    password=os.getenv(\"DB_PASSWORD\"),\n    uri=os.getenv(\"DB_URI\"),\n)\ndb.set_connection(NEO_URL)\nconfig.DATABASE_URL = NEO_URL\nlemmatizer = WordNetLemmatizer()\ndef get_time_ms():\n    return int(round(time_.time() * 1000))",
         "detail": "app",
         "documentation": {}
     },
@@ -864,8 +822,71 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "config.DATABASE_URL = NEO_URL\n# function to convert nltk tag to wordnet tag\ndef nltk_tag_to_wordnet_tag(nltk_tag):\n    if nltk_tag.startswith(\"J\"):\n        return wordnet.ADJ\n    elif nltk_tag.startswith(\"V\"):\n        return wordnet.VERB\n    elif nltk_tag.startswith(\"N\"):\n        return wordnet.NOUN\n    elif nltk_tag.startswith(\"R\"):",
+        "peekOfCode": "config.DATABASE_URL = NEO_URL\nlemmatizer = WordNetLemmatizer()\ndef get_time_ms():\n    return int(round(time_.time() * 1000))\n# function to convert nltk tag to wordnet tag\ndef nltk_tag_to_wordnet_tag(nltk_tag):\n    if nltk_tag.startswith(\"J\"):\n        return wordnet.ADJ\n    elif nltk_tag.startswith(\"V\"):\n        return wordnet.VERB",
         "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "lemmatizer",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "lemmatizer = WordNetLemmatizer()\ndef get_time_ms():\n    return int(round(time_.time() * 1000))\n# function to convert nltk tag to wordnet tag\ndef nltk_tag_to_wordnet_tag(nltk_tag):\n    if nltk_tag.startswith(\"J\"):\n        return wordnet.ADJ\n    elif nltk_tag.startswith(\"V\"):\n        return wordnet.VERB\n    elif nltk_tag.startswith(\"N\"):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "sigmoid",
+        "kind": 2,
+        "importPath": "process",
+        "description": "process",
+        "peekOfCode": "def sigmoid(num):\n    return math.exp(num) / (math.exp(num) + 1)\ndef cal_probab(query, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0\n        for word in query:\n            try:\n                ni = doc['freqs'][word]\n                if ni > 0:",
+        "detail": "process",
+        "documentation": {}
+    },
+    {
+        "label": "cal_probab",
+        "kind": 2,
+        "importPath": "process",
+        "description": "process",
+        "peekOfCode": "def cal_probab(query, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0\n        for word in query:\n            try:\n                ni = doc['freqs'][word]\n                if ni > 0:\n                    score += math.log2((N+0.5) / ni)\n            except KeyError:",
+        "detail": "process",
+        "documentation": {}
+    },
+    {
+        "label": "ranking",
+        "kind": 2,
+        "importPath": "process",
+        "description": "process",
+        "peekOfCode": "def ranking(docs):\n    docs = docs.copy()\n    for doc in docs:\n        doc['score'] = sigmoid((doc['scores']['tf_idf'] * 0.5 + doc['scores']['probab'] * 0.25 + doc['scores']['ref'] * 0.25) / 3)\n    return sorted(\n        docs, key=lambda doc: doc[\"score\"], reverse=True)\ndef tf(ni):\n    return 0 if ni <= 0 else 1 + math.log2(ni)\ndef idf(N, n_docs_appear_in):\n    return 0 if n_docs_appear_in <= 0 else math.log2(N / n_docs_appear_in)",
+        "detail": "process",
+        "documentation": {}
+    },
+    {
+        "label": "tf",
+        "kind": 2,
+        "importPath": "process",
+        "description": "process",
+        "peekOfCode": "def tf(ni):\n    return 0 if ni <= 0 else 1 + math.log2(ni)\ndef idf(N, n_docs_appear_in):\n    return 0 if n_docs_appear_in <= 0 else math.log2(N / n_docs_appear_in)\ndef cal_tfidf(search_keywords, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0\n        for search_keyword in search_keywords:\n            if not search_keyword in doc['freqs']:",
+        "detail": "process",
+        "documentation": {}
+    },
+    {
+        "label": "idf",
+        "kind": 2,
+        "importPath": "process",
+        "description": "process",
+        "peekOfCode": "def idf(N, n_docs_appear_in):\n    return 0 if n_docs_appear_in <= 0 else math.log2(N / n_docs_appear_in)\ndef cal_tfidf(search_keywords, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0\n        for search_keyword in search_keywords:\n            if not search_keyword in doc['freqs']:\n                continue\n            score += tf(doc['freqs'][search_keyword]) * idf(N, n_docs_appear_in=sum([1 if search_keyword in doc['freqs'] else 0 for doc in docs]))",
+        "detail": "process",
+        "documentation": {}
+    },
+    {
+        "label": "cal_tfidf",
+        "kind": 2,
+        "importPath": "process",
+        "description": "process",
+        "peekOfCode": "def cal_tfidf(search_keywords, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0\n        for search_keyword in search_keywords:\n            if not search_keyword in doc['freqs']:\n                continue\n            score += tf(doc['freqs'][search_keyword]) * idf(N, n_docs_appear_in=sum([1 if search_keyword in doc['freqs'] else 0 for doc in docs]))\n        doc['scores']['tf_idf'] = sigmoid(score)",
+        "detail": "process",
         "documentation": {}
     },
     {
@@ -884,6 +905,42 @@
         "description": "test",
         "peekOfCode": "doc = extract_ne('European authorities fined Google a record $5.1 billion on Wednesday for abusing its power in the mobile phone market and ordered the company to alter its practices.'\n                 ' Information Retrieval has.')\nprint(doc)",
         "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "calc_score",
+        "kind": 2,
+        "importPath": "tfidf",
+        "description": "tfidf",
+        "peekOfCode": "def calc_score(q, d, all_d):\n    score = 0\n    for t in q:\n        score += tf(t, d) * idf(t, all_d)\n    return score\ndef tf(t, d):\n    return float(d.count(t)) / len(d)\ndef idf(t, all_d):\n    count_in_doc = 0\n    for d in all_d:",
+        "detail": "tfidf",
+        "documentation": {}
+    },
+    {
+        "label": "tf",
+        "kind": 2,
+        "importPath": "tfidf",
+        "description": "tfidf",
+        "peekOfCode": "def tf(t, d):\n    return float(d.count(t)) / len(d)\ndef idf(t, all_d):\n    count_in_doc = 0\n    for d in all_d:\n        if t in d[\"content\"]:\n            count_in_doc += 1\n    return 0 if count_in_doc == 0 else math.log(len(all_d) / float(count_in_doc), 2)\ndef calc_tfidf(query, docs):\n    results = []",
+        "detail": "tfidf",
+        "documentation": {}
+    },
+    {
+        "label": "idf",
+        "kind": 2,
+        "importPath": "tfidf",
+        "description": "tfidf",
+        "peekOfCode": "def idf(t, all_d):\n    count_in_doc = 0\n    for d in all_d:\n        if t in d[\"content\"]:\n            count_in_doc += 1\n    return 0 if count_in_doc == 0 else math.log(len(all_d) / float(count_in_doc), 2)\ndef calc_tfidf(query, docs):\n    results = []\n    for doc in docs: \n        score = calc_score(query, doc[\"content\"], docs)",
+        "detail": "tfidf",
+        "documentation": {}
+    },
+    {
+        "label": "calc_tfidf",
+        "kind": 2,
+        "importPath": "tfidf",
+        "description": "tfidf",
+        "peekOfCode": "def calc_tfidf(query, docs):\n    results = []\n    for doc in docs: \n        score = calc_score(query, doc[\"content\"], docs)\n        if score > 0:\n            results.append({**doc, \"score\": score})\n    for res in results:\n        del res[\"content\"]\n    return results",
+        "detail": "tfidf",
         "documentation": {}
     }
 ]

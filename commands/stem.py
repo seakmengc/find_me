@@ -61,7 +61,6 @@ def get_keywords(text):
         keywords.append(keyword)
 
         # keywords.append(extract_ne(words))
-    print(keywords)
     return Counter(keywords)
 
 

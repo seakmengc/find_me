@@ -27,7 +27,16 @@ def crawl():
             doc.description = html_parser.description
             doc.save()
 
-            Doc.get_or_create(*[{'url': link} for link in html_parser.links])
+            for link in html_parser.links:
+                doc_ref = Doc.nodes.first_or_none(url=link)
+
+                if doc_ref is None:
+                    doc_ref = Doc(url=link).save()
+
+                if not doc_ref.ref_docs.is_connected(doc):
+                    doc_ref.ref_docs.connect(doc)
+
+            # Doc.get_or_create(*[{'url': link} for link in html_parser.links])
 
         doc = Doc.nodes.first_or_none(title__isnull=True)
 
@@ -72,9 +81,10 @@ def get_robot_parser(domain):
 
 def get_urls_from_sitemap(main_sitemap_url):
     urls = []
-    sitemap_xml_urls = xmltodict.parse(requests.get(main_sitemap_url).text)['sitemapindex']['sitemap']
+    sitemap_xml_urls = xmltodict.parse(requests.get(main_sitemap_url).text)[
+        'sitemapindex']['sitemap'][::-1]
     for xml_url in sitemap_xml_urls:
-        raw = xmltodict.parse(requests.get(xml_url['loc']).text)['urlset']['url'][:100]
+        raw = xmltodict.parse(requests.get(xml_url['loc']).text)['urlset']['url']
         urls = urls + raw
         break
 

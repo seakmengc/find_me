@@ -1,7 +1,7 @@
-from flask import Flask, request, jsonify
+from process import ranking, sigmoid, cal_probab, cal_tfidf
+from flask import Flask, request
 from flask_cors import CORS, cross_origin
 import os
-import json
 from neomodel import db
 import time as time_
 
@@ -14,10 +14,10 @@ from nltk.corpus import wordnet
 
 from commands.stem import get_keywords
 from models.keyword import Keyword
-from models.doc import Doc
 from neomodel import Q, config
 
 from tfidf import calc_tfidf
+
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -98,26 +98,43 @@ def search():
     # word tokenize
     # filter stopwords
     # stemming
-    keywords = list(get_keywords(query).keys())
+    search_keywords = list(get_keywords(query).keys())
+    print(search_keywords)
 
-    results = Keyword.nodes.has(docs=True).filter(keyword__in=keywords)
+    keywords = Keyword.nodes.has(docs=True).filter(keyword__in=search_keywords)
 
     response = {}
+    for keyword in list(keywords):
+        for r in list(keyword.docs.all()):
+            if not r.url in response:
+                response[r.url] = {
+                    "url": r.url,
+                    "title": r.title,
+                    "description": r.description,
+                    # "content": (r.title + " " + r.description).lower().split(),
+                    "content": [keyword.keyword],
+                    'freqs': {keyword.keyword: keyword.docs.relationship(r).freq},
+                    'scores': {
+                        'ref': sigmoid(len(r.ref_docs)),
+                    }
+                }
+            else:
+                response[r.url]['content'].append(keyword.keyword)
+                response[r.url]['freqs'][keyword.keyword] = keyword.docs.relationship(r).freq
 
-    for res in list(results):
-        for r in list(res.docs.all()):
-            response[r.url] = {
-                "url": r.url,
-                "title": r.title,
-                "description": r.description,
-                "content": (r.title + " " + r.description).lower().split(),
-            }
 
-    results = calc_tfidf(keywords, list(response.values()))
-    sorted_results = sorted(
-        results, key=lambda res: res["score"], reverse=True)
+    docs = list(response.values())
+
+    cal_probab(search_keywords, docs)
+
+    # calc_tfidf(search_keywords, docs)
+    cal_tfidf(search_keywords, docs)
+
+    sorted_results = ranking(docs)
 
     end = get_time_ms()
+
+    print(start, end)
 
     return {
         "time_to_search_in_milliseconds": str(end - start) + "ms",

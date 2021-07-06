@@ -47,6 +47,10 @@ class _HomeViewState extends State<HomeView> {
   }
 
   _search() async {
+    if (_controller.text.toLowerCase().isEmpty) {
+      return;
+    }
+
     try {
       setState(() {
         _isBusy = true;
@@ -89,6 +93,7 @@ class _HomeViewState extends State<HomeView> {
                 controller: _controller,
                 onChanged: (val) => onSearchChanged(),
                 onSubmitted: (val) => _search(),
+                autofocus: true,
                 decoration: InputDecoration(
                   contentPadding: const EdgeInsets.symmetric(
                     horizontal: 20,
@@ -152,73 +157,158 @@ class _Item extends StatelessWidget {
       : super(key: key);
 
   RegExp get _pattern => RegExp(query.toLowerCase(), caseSensitive: false);
+  List<RegExp> get _patterns => query
+      .toLowerCase()
+      .split(' ')
+      .map((e) => RegExp(e, caseSensitive: false))
+      .toList();
 
-  Widget _textRow(String start, String? end, {bool isLink = false}) {
-    // Iterable matches1 = pattern.allMatches(start);
-    // Iterable matches2 = pattern.allMatches(end ?? '');
-    // print(matches1.length);
-    // print(matches2.length);
+  // Widget _textRow(String start, String? end, {bool isLink = false}) {
+  //   // Iterable matches1 = pattern.allMatches(start);
+  //   // Iterable matches2 = pattern.allMatches(end ?? '');
+  //   // print(matches1.length);
+  //   // print(matches2.length);
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          start,
-          style: TextStyle(
-            decoration: TextDecoration.underline,
-            color: Colors.grey[800],
-            fontWeight: FontWeight.w500,
-          ),
-        ),
-        const SizedBox(height: 5),
-        GestureDetector(
-          onTap: () {
-            if (isLink && end != null) launch(end.toString());
-          },
-          child: ParsedText(
-            text: end ?? '',
-            parse: [
-              MatchText(
-                pattern: _pattern.pattern,
-                style: TextStyle(
-                  fontWeight: FontWeight.w600,
-                  color: Colors.blue,
-                ),
-                onTap: (url) async {},
-              ),
-            ],
-          ),
-          // Text(
-          //   end ?? '',
-          //   style: TextStyle(
-          //     color: isLink ? Colors.blue : null,
-          //   ),
-          // ),
-        ),
-      ],
-    );
-  }
+  //   return Column(
+  //     crossAxisAlignment: CrossAxisAlignment.start,
+  //     children: [
+  //       Text(
+  //         start,
+  //         style: TextStyle(
+  //           decoration: TextDecoration.underline,
+  //           color: Colors.grey[800],
+  //           fontWeight: FontWeight.w500,
+  //         ),
+  //       ),
+  //       const SizedBox(height: 5),
+  //       GestureDetector(
+  //         onTap: () {
+  //           if (isLink && end != null) launch(end.toString());
+  //         },
+  //         child: ParsedText(
+  //           text: end ?? '',
+  //           // parse: [
+  //           //   MatchText(
+  //           //     pattern: _pattern.pattern,
+  //           //     style: TextStyle(
+  //           //       fontWeight: FontWeight.w600,
+  //           //       color: Colors.blue,
+  //           //     ),
+  //           //     onTap: (url) async {},
+  //           //   ),
+  //           // ],
+  //           parse: _patterns.map((RegExp pattern) {
+  //             return MatchText(
+  //               pattern: pattern.pattern,
+  //               style: TextStyle(
+  //                 fontWeight: FontWeight.bold,
+  //                 color: Colors.blue,
+  //               ),
+  //               onTap: (url) async {},
+  //             );
+  //           }).toList(),
+  //         ),
+  //         // Text(
+  //         //   end ?? '',
+  //         //   style: TextStyle(
+  //         //     color: isLink ? Colors.blue : null,
+  //         //   ),
+  //         // ),
+  //       ),
+  //     ],
+  //   );
+  // }
+
+  // // Widget _textRow1(String text, TextStyle style, String? url) {
+  // //   // Iterable matches1 = pattern.allMatches(start);
+  // //   // Iterable matches2 = pattern.allMatches(end ?? '');
+  // //   // print(matches1.length);
+  // //   // print(matches2.length);
+
+  // //   return TextRow(patterns: _patterns);
+  // // }
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: Container(
-        padding: const EdgeInsets.all(15),
-        decoration: BoxDecoration(
-          color: Colors.grey[50],
-          borderRadius: BorderRadius.circular(10),
+    return InkWell(
+      hoverColor: Colors.blueGrey,
+      onHover: (bool boolean) {},
+      child: Card(
+        elevation: 7.0,
+        child: Container(
+          padding: const EdgeInsets.all(15),
+          decoration: BoxDecoration(
+            color: Colors.grey[50],
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: ListTile(
+            trailing: CircleAvatar(
+              backgroundColor: Colors.blue,
+              child: Text(
+                item['score'].toStringAsFixed(2),
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+            ),
+            title: TextRow(
+              patterns: _patterns,
+              text: item['title'],
+              style: TextStyle(
+                fontSize: 24,
+                color: Colors.blue,
+                decoration: TextDecoration.underline,
+              ),
+              url: item['url'],
+            ),
+            subtitle: TextRow(
+              patterns: _patterns,
+              text: item['description'],
+            ),
+          ),
         ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            _textRow('Title', item['title']),
-            const SizedBox(height: 10),
-            _textRow('Description', item['description']),
-            const SizedBox(height: 10),
-            _textRow('Score', item['score'].toString()),
-            const SizedBox(height: 10),
-            _textRow('Url', item['url'], isLink: true),
-          ],
+      ),
+    );
+  }
+}
+
+class TextRow extends StatelessWidget {
+  final String text;
+  final TextStyle? style;
+  final String? url;
+
+  const TextRow({
+    required List<RegExp> patterns,
+    required this.text,
+    this.style,
+    this.url,
+  }) : _patterns = patterns;
+
+  final List<RegExp> _patterns;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8.0),
+      child: InkWell(
+        onTap: url == null
+            ? null
+            : () {
+                launch(url!);
+              },
+        child: ParsedText(
+          text: text,
+          style: style,
+          parse: _patterns.map((RegExp pattern) {
+            return MatchText(
+              pattern: pattern.pattern,
+              style: TextStyle(
+                fontWeight: FontWeight.w900,
+                // color: Colors.blue,
+              ),
+              onTap: (url) async {},
+            );
+          }).toList(),
         ),
       ),
     );

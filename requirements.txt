@@ -6,3 +6,4 @@ neomodel~=4.0.3
 Flask~=2.0.1
 requests~=2.25.1
 xmltodict~=0.12.0
+flask-cors
