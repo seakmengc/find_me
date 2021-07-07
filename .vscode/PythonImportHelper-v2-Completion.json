@@ -516,7 +516,7 @@
         "kind": 2,
         "importPath": "commands.crawl",
         "description": "commands.crawl",
-        "peekOfCode": "def crawl():\n    add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    doc = Doc.nodes.first_or_none(title__isnull=True)\n    while doc:\n        html_parser = parse_html(doc)\n        if html_parser:\n            # Done: save data to Url model\n            doc.title = html_parser.title\n            doc.description = html_parser.description",
+        "peekOfCode": "def crawl():\n    # add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    doc = Doc.nodes.first_or_none(title__isnull=True)\n    while doc:\n        html_parser = parse_html(doc)\n        if html_parser:\n            # Done: save data to Url model\n            doc.title = html_parser.title\n            doc.description = html_parser.description",
         "detail": "commands.crawl",
         "documentation": {}
     },
@@ -534,7 +534,7 @@
         "kind": 2,
         "importPath": "commands.crawl",
         "description": "commands.crawl",
-        "peekOfCode": "def add_urls_by_sitemap():\n    domains = ['https://stackoverflow.com']\n    for domain in domains:\n        print('Crawling sitemap of ' + domain)\n        rp = get_robot_parser(domain)\n        print('Done parsing robots.txt of ' + domain)\n        raw_urls = get_urls_from_sitemap(rp.site_maps()[0])\n        queue_urls = [{'url': url['loc']} for url in raw_urls]\n        print(*queue_urls)\n        Doc.get_or_create(*queue_urls)",
+        "peekOfCode": "def add_urls_by_sitemap():\n    domains = ['https://stackoverflow.com']\n    for domain in domains:\n        print('Crawling sitemap of ' + domain)\n        rp = get_robot_parser(domain)\n        print('Done parsing robots.txt of ' + domain)\n        if rp.site_maps() is None:\n            continue\n        raw_urls = get_urls_from_sitemap(rp.site_maps()[0])\n        queue_urls = [{'url': url['loc']} for url in raw_urls]",
         "detail": "commands.crawl",
         "documentation": {}
     },
@@ -543,7 +543,7 @@
         "kind": 2,
         "importPath": "commands.crawl",
         "description": "commands.crawl",
-        "peekOfCode": "def get_robot_parser(domain):\n    rp = robotparser.RobotFileParser()\n    rp.set_url(domain + \"/robots.txt\")\n    rp.read()\n    return rp\ndef get_urls_from_sitemap(main_sitemap_url):\n    urls = []\n    sitemap_xml_urls = xmltodict.parse(requests.get(main_sitemap_url).text)[\n        'sitemapindex']['sitemap'][::-1]\n    for xml_url in sitemap_xml_urls:",
+        "peekOfCode": "def get_robot_parser(domain):\n    rp = robotparser.RobotFileParser()\n    rp.set_url(domain + \"/robots.txt\")\n    rp.read()\n    return rp\ndef get_urls_from_sitemap(main_sitemap_url):\n    urls = []\n    sitemap_xml_urls = xmltodict.parse(requests.get(main_sitemap_url).text)[\n        'sitemapindex']['sitemap']\n    for xml_url in sitemap_xml_urls:",
         "detail": "commands.crawl",
         "documentation": {}
     },
@@ -552,7 +552,7 @@
         "kind": 2,
         "importPath": "commands.crawl",
         "description": "commands.crawl",
-        "peekOfCode": "def get_urls_from_sitemap(main_sitemap_url):\n    urls = []\n    sitemap_xml_urls = xmltodict.parse(requests.get(main_sitemap_url).text)[\n        'sitemapindex']['sitemap'][::-1]\n    for xml_url in sitemap_xml_urls:\n        raw = xmltodict.parse(requests.get(xml_url['loc']).text)['urlset']['url']\n        urls = urls + raw\n        break\n    return urls",
+        "peekOfCode": "def get_urls_from_sitemap(main_sitemap_url):\n    urls = []\n    sitemap_xml_urls = xmltodict.parse(requests.get(main_sitemap_url).text)[\n        'sitemapindex']['sitemap']\n    for xml_url in sitemap_xml_urls:\n        raw = xmltodict.parse(requests.get(xml_url['loc']).text)[\n            'urlset']['url']\n        print(raw)\n        exit()\n        urls = urls + (raw if isinstance(raw, list) else [raw])",
         "detail": "commands.crawl",
         "documentation": {}
     },
@@ -561,7 +561,7 @@
         "kind": 5,
         "importPath": "commands.crawl",
         "description": "commands.crawl",
-        "peekOfCode": "bp = Blueprint('crawler', __name__, cli_group='crawler')\n@bp.cli.command('crawl')\ndef crawl():\n    add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    doc = Doc.nodes.first_or_none(title__isnull=True)\n    while doc:\n        html_parser = parse_html(doc)\n        if html_parser:\n            # Done: save data to Url model",
+        "peekOfCode": "bp = Blueprint('crawler', __name__, cli_group='crawler')\n@bp.cli.command('crawl')\ndef crawl():\n    # add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    doc = Doc.nodes.first_or_none(title__isnull=True)\n    while doc:\n        html_parser = parse_html(doc)\n        if html_parser:\n            # Done: save data to Url model",
         "detail": "commands.crawl",
         "documentation": {}
     },

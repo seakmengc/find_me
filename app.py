@@ -112,16 +112,15 @@ def search():
                     "title": r.title,
                     "description": r.description,
                     # "content": (r.title + " " + r.description).lower().split(),
-                    "content": [keyword.keyword],
                     'freqs': {keyword.keyword: keyword.docs.relationship(r).freq},
                     'scores': {
                         'ref': sigmoid(len(r.ref_docs)),
                     }
                 }
             else:
-                response[r.url]['content'].append(keyword.keyword)
-                response[r.url]['freqs'][keyword.keyword] = keyword.docs.relationship(r).freq
-
+                # response[r.url]['content'].append(keyword.keyword)
+                response[r.url]['freqs'][keyword.keyword] = keyword.docs.relationship(
+                    r).freq
 
     docs = list(response.values())
 
@@ -133,8 +132,6 @@ def search():
     sorted_results = ranking(docs)
 
     end = get_time_ms()
-
-    print(start, end)
 
     return {
         "time_to_search_in_milliseconds": str(end - start) + "ms",

@@ -14,7 +14,7 @@ bp = Blueprint('crawler', __name__, cli_group='crawler')
 
 @bp.cli.command('crawl')
 def crawl():
-    add_urls_by_sitemap()
+    # add_urls_by_sitemap()
 
     # Start scraping and exploring more urls
     doc = Doc.nodes.first_or_none(title__isnull=True)
@@ -31,12 +31,13 @@ def crawl():
                 doc_ref = Doc.nodes.first_or_none(url=link)
 
                 if doc_ref is None:
+                    continue
                     doc_ref = Doc(url=link).save()
 
-                if not doc_ref.ref_docs.is_connected(doc):
+                if doc_ref.id != doc.id and not doc_ref.ref_docs.is_connected(doc):
                     doc_ref.ref_docs.connect(doc)
 
-            # Doc.get_or_create(*[{'url': link} for link in html_parser.links])
+            Doc.get_or_create(*[{'url': link} for link in html_parser.links])
 
         doc = Doc.nodes.first_or_none(title__isnull=True)
 
@@ -65,9 +66,12 @@ def add_urls_by_sitemap():
         rp = get_robot_parser(domain)
         print('Done parsing robots.txt of ' + domain)
 
+        if rp.site_maps() is None:
+            continue
+
         raw_urls = get_urls_from_sitemap(rp.site_maps()[0])
         queue_urls = [{'url': url['loc']} for url in raw_urls]
-        print(*queue_urls)
+        # print(*queue_urls)
         Doc.get_or_create(*queue_urls)
 
 
@@ -82,10 +86,13 @@ def get_robot_parser(domain):
 def get_urls_from_sitemap(main_sitemap_url):
     urls = []
     sitemap_xml_urls = xmltodict.parse(requests.get(main_sitemap_url).text)[
-        'sitemapindex']['sitemap'][::-1]
+        'sitemapindex']['sitemap']
+
     for xml_url in sitemap_xml_urls:
-        raw = xmltodict.parse(requests.get(xml_url['loc']).text)['urlset']['url']
-        urls = urls + raw
-        break
+        raw = xmltodict.parse(requests.get(xml_url['loc']).text)[
+            'urlset']['url']
+        print(raw)
+        exit()
+        urls = urls + (raw if isinstance(raw, list) else [raw])
 
     return urls
