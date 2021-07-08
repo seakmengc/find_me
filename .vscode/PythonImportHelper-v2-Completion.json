@@ -858,7 +858,7 @@
         "kind": 2,
         "importPath": "process",
         "description": "process",
-        "peekOfCode": "def ranking(docs):\n    docs = docs.copy()\n    for doc in docs:\n        doc['score'] = sigmoid((doc['scores']['tf_idf'] * 0.5 + doc['scores']['probab'] * 0.25 + doc['scores']['ref'] * 0.25) / 3)\n    return sorted(\n        docs, key=lambda doc: doc[\"score\"], reverse=True)\ndef tf(ni):\n    return 0 if ni <= 0 else 1 + math.log2(ni)\ndef idf(N, n_docs_appear_in):\n    return 0 if n_docs_appear_in <= 0 else math.log2(N / n_docs_appear_in)",
+        "peekOfCode": "def ranking(docs):\n    docs = docs.copy()\n    for doc in docs:\n        doc['score'] = doc['scores']['tf_idf'] * 0.5 + \\\n            doc['scores']['probab'] * 0.25 + doc['scores']['ref'] * 0.25\n    return sorted(\n        docs, key=lambda doc: doc[\"score\"], reverse=True)\ndef tf(ni):\n    return 0 if ni <= 0 else 1 + math.log2(ni)\ndef idf(N, n_docs_appear_in):",
         "detail": "process",
         "documentation": {}
     },
@@ -876,7 +876,7 @@
         "kind": 2,
         "importPath": "process",
         "description": "process",
-        "peekOfCode": "def idf(N, n_docs_appear_in):\n    return 0 if n_docs_appear_in <= 0 else math.log2(N / n_docs_appear_in)\ndef cal_tfidf(search_keywords, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0\n        for search_keyword in search_keywords:\n            if not search_keyword in doc['freqs']:\n                continue\n            score += tf(doc['freqs'][search_keyword]) * idf(N, n_docs_appear_in=sum([1 if search_keyword in doc['freqs'] else 0 for doc in docs]))",
+        "peekOfCode": "def idf(N, n_docs_appear_in):\n    return 0 if n_docs_appear_in <= 0 else math.log2(N / n_docs_appear_in)\ndef cal_tfidf(search_keywords, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0\n        for search_keyword in search_keywords:\n            if not search_keyword in doc['freqs']:\n                continue\n            score += tf(doc['freqs'][search_keyword]) * idf(N, n_docs_appear_in=sum(",
         "detail": "process",
         "documentation": {}
     },
@@ -885,7 +885,7 @@
         "kind": 2,
         "importPath": "process",
         "description": "process",
-        "peekOfCode": "def cal_tfidf(search_keywords, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0\n        for search_keyword in search_keywords:\n            if not search_keyword in doc['freqs']:\n                continue\n            score += tf(doc['freqs'][search_keyword]) * idf(N, n_docs_appear_in=sum([1 if search_keyword in doc['freqs'] else 0 for doc in docs]))\n        doc['scores']['tf_idf'] = sigmoid(score)",
+        "peekOfCode": "def cal_tfidf(search_keywords, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0\n        for search_keyword in search_keywords:\n            if not search_keyword in doc['freqs']:\n                continue\n            score += tf(doc['freqs'][search_keyword]) * idf(N, n_docs_appear_in=sum(\n                [1 if search_keyword in doc['freqs'] else 0 for doc in docs]))\n        doc['scores']['tf_idf'] = sigmoid(score)",
         "detail": "process",
         "documentation": {}
     },
