@@ -1,15 +1,16 @@
-from neomodel import StringProperty, StructuredNode, BooleanProperty,RelationshipTo, StructuredRel
+from neomodel import StringProperty, StructuredNode, BooleanProperty, RelationshipTo, StructuredRel
 from neomodel.properties import IntegerProperty
 
 
 class RefRelationship(StructuredRel):
     pass
 
+
 class Doc(StructuredNode):
     url = StringProperty(required=True, unique_index=True)
     title = StringProperty()
     description = StringProperty()
-    # ref = IntegerProperty(default=0)
+    ref = IntegerProperty(default=0)
     stemmed = BooleanProperty(default=False)
 
     ref_docs = RelationshipTo('Doc', 'REF', model=RefRelationship)

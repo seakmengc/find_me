@@ -40,10 +40,10 @@ class _HomeViewState extends State<HomeView> {
   Map _queryResults = {};
 
   onSearchChanged() {
-    if (_debounce?.isActive ?? false) _debounce?.cancel();
-    _debounce = Timer(const Duration(milliseconds: 250), () {
-      _search();
-    });
+    // if (_debounce?.isActive ?? false) _debounce?.cancel();
+    // _debounce = Timer(const Duration(milliseconds: 250), () {
+    //   _search();
+    // });
   }
 
   _search() async {
@@ -156,77 +156,11 @@ class _Item extends StatelessWidget {
   const _Item({Key? key, required this.item, required this.query})
       : super(key: key);
 
-  RegExp get _pattern => RegExp(query.toLowerCase(), caseSensitive: false);
   List<RegExp> get _patterns => query
       .toLowerCase()
       .split(' ')
-      .map((e) => RegExp(e, caseSensitive: false))
+      .map((e) => RegExp("\\b($e)\\b", caseSensitive: false))
       .toList();
-
-  // Widget _textRow(String start, String? end, {bool isLink = false}) {
-  //   // Iterable matches1 = pattern.allMatches(start);
-  //   // Iterable matches2 = pattern.allMatches(end ?? '');
-  //   // print(matches1.length);
-  //   // print(matches2.length);
-
-  //   return Column(
-  //     crossAxisAlignment: CrossAxisAlignment.start,
-  //     children: [
-  //       Text(
-  //         start,
-  //         style: TextStyle(
-  //           decoration: TextDecoration.underline,
-  //           color: Colors.grey[800],
-  //           fontWeight: FontWeight.w500,
-  //         ),
-  //       ),
-  //       const SizedBox(height: 5),
-  //       GestureDetector(
-  //         onTap: () {
-  //           if (isLink && end != null) launch(end.toString());
-  //         },
-  //         child: ParsedText(
-  //           text: end ?? '',
-  //           // parse: [
-  //           //   MatchText(
-  //           //     pattern: _pattern.pattern,
-  //           //     style: TextStyle(
-  //           //       fontWeight: FontWeight.w600,
-  //           //       color: Colors.blue,
-  //           //     ),
-  //           //     onTap: (url) async {},
-  //           //   ),
-  //           // ],
-  //           parse: _patterns.map((RegExp pattern) {
-  //             return MatchText(
-  //               pattern: pattern.pattern,
-  //               style: TextStyle(
-  //                 fontWeight: FontWeight.bold,
-  //                 color: Colors.blue,
-  //               ),
-  //               onTap: (url) async {},
-  //             );
-  //           }).toList(),
-  //         ),
-  //         // Text(
-  //         //   end ?? '',
-  //         //   style: TextStyle(
-  //         //     color: isLink ? Colors.blue : null,
-  //         //   ),
-  //         // ),
-  //       ),
-  //     ],
-  //   );
-  // }
-
-  // // Widget _textRow1(String text, TextStyle style, String? url) {
-  // //   // Iterable matches1 = pattern.allMatches(start);
-  // //   // Iterable matches2 = pattern.allMatches(end ?? '');
-  // //   // print(matches1.length);
-  // //   // print(matches2.length);
-
-  // //   return TextRow(patterns: _patterns);
-  // // }
 
   @override
   Widget build(BuildContext context) {
@@ -261,9 +195,28 @@ class _Item extends StatelessWidget {
               ),
               url: item['url'],
             ),
-            subtitle: TextRow(
-              patterns: _patterns,
-              text: item['description'],
+            subtitle: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                InkWell(
+                  onHover: (bool boolean) {},
+                  onTap: () {
+                    launch(item['url']);
+                  },
+                  child: Text(
+                    item['url'],
+                    style: TextStyle(
+                      decoration: TextDecoration.underline,
+                      color: Colors.green,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 7),
+                TextRow(
+                  patterns: _patterns,
+                  text: item['description'],
+                )
+              ],
             ),
           ),
         ),

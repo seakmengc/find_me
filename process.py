@@ -2,6 +2,8 @@ import math
 
 
 def sigmoid(num):
+    num = 100 if num > 100 else num
+
     return math.exp(num) / (math.exp(num) + 1)
 
 

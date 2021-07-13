@@ -1,8 +1,8 @@
+from models.doc import Doc
 from process import ranking, sigmoid, cal_probab, cal_tfidf
 from flask import Flask, request
 from flask_cors import CORS, cross_origin
 import os
-from neomodel import db
 import time as time_
 
 from commands.crawl import bp as crawl_bp
@@ -14,9 +14,7 @@ from nltk.corpus import wordnet
 
 from commands.stem import get_keywords
 from models.keyword import Keyword
-from neomodel import Q, config
-
-from tfidf import calc_tfidf
+from neomodel import Q, config, db
 
 
 app = Flask(__name__)
@@ -33,6 +31,7 @@ NEO_URL = "bolt://{username}:{password}@{uri}".format(
 )
 
 db.set_connection(NEO_URL)
+config.AUTO_INSTALL_LABELS = True
 
 config.DATABASE_URL = NEO_URL
 
@@ -57,23 +56,6 @@ def nltk_tag_to_wordnet_tag(nltk_tag):
         return None
 
 
-def lemmatize_sentence(sentence):
-    # tokenize the sentence and find the POS tag for each token
-    nltk_tagged = nltk.pos_tag(nltk.word_tokenize(sentence))
-    # tuple of (token, wordnet_tag)
-    wordnet_tagged = map(lambda x: (
-        x[0], nltk_tag_to_wordnet_tag(x[1])), nltk_tagged)
-    lemmatized_sentence = []
-    for word, tag in wordnet_tagged:
-        if tag is None:
-            # if there is no available tag, append the token as is
-            lemmatized_sentence.append(word)
-        else:
-            # else use the tag to lemmatize the token
-            lemmatized_sentence.append(lemmatizer.lemmatize(word, tag))
-    return " ".join(lemmatized_sentence)
-
-
 def find_synonyms(keyword):
     synonyms = []
     for synset in wordnet.synsets(keyword):
@@ -92,7 +74,6 @@ def hello_world():
 @cross_origin()
 def search():
     query = request.args.get("query")
-
     start = get_time_ms()
 
     # word tokenize
@@ -101,26 +82,55 @@ def search():
     search_keywords = list(get_keywords(query).keys())
     print(search_keywords)
 
-    keywords = Keyword.nodes.has(docs=True).filter(keyword__in=search_keywords)
+    # keywords = Keyword.nodes.has(docs=True).filter(
+    #     keyword__in=search_keywords)
+    # # end = get_time_ms()
 
-    response = {}
-    for keyword in list(keywords):
-        for r in list(keyword.docs.all()):
-            if not r.url in response:
-                response[r.url] = {
-                    "url": r.url,
-                    "title": r.title,
-                    "description": r.description,
-                    # "content": (r.title + " " + r.description).lower().split(),
-                    'freqs': {keyword.keyword: keyword.docs.relationship(r).freq},
-                    'scores': {
-                        'ref': sigmoid(len(r.ref_docs)),
-                    }
+    response = dict()
+    query = ""
+    for keyword in search_keywords:
+        query += "MATCH (d: Doc) < -[ in :IN]-(k: Keyword {keyword: '" + keyword + \
+            "'}) RETURN {d: properties(d), freq: COALESCE(in.freq, 0)} UNION ALL "
+
+    rtn = db.cypher_query(query.rstrip(" UNION ALL "))[0]
+    print(query)
+    for [each] in rtn:
+        if not each['d']['url'] in response:
+            response[each['d']['url']] = {
+                "url": each['d']['url'],
+                "title": each['d']['title'],
+                "description": each['d']['description'],
+                'freqs': {keyword: each['freq']},
+                'scores': {
+                    'ref': each['d']['ref'],
                 }
-            else:
-                # response[r.url]['content'].append(keyword.keyword)
-                response[r.url]['freqs'][keyword.keyword] = keyword.docs.relationship(
-                    r).freq
+            }
+        else:
+            response[each['d']['url']]['freqs'][keyword] = each['freq']
+            response[each['d']['url']
+                     ]['scores']['ref'] += each['d']['ref']
+
+    # retrieve by each
+    # pluck url and retrieve doc
+
+    # response = {}
+    # for keyword in list(keywords):
+    #     for r in list(keyword.docs.all()):
+    #         if not r.url in response:
+    #             response[r.url] = {
+    #                 "url": r.url,
+    #                 "title": r.title,
+    #                 "description": r.description,
+    #                 # "content": (r.title + " " + r.description).lower().split(),
+    #                 'freqs': {keyword.keyword: keyword.docs.relationship(r).freq},
+    #                 'scores': {
+    #                     'ref': sigmoid(len(r.ref_docs)),
+    #                 }
+    #             }
+    #         else:
+    #             # response[r.url]['content'].append(keyword.keyword)
+    #             response[r.url]['freqs'][keyword.keyword] = keyword.docs.relationship(
+    #                 r).freq
 
     docs = list(response.values())
 
@@ -133,8 +143,9 @@ def search():
 
     end = get_time_ms()
 
+    print(start, end, str(end-start))
     return {
-        "time_to_search_in_milliseconds": str(end - start) + "ms",
+        "time_to_search_in_milliseconds": str(end - start),
         "results": sorted_results,
     }
 

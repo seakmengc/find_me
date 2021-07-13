@@ -32,7 +32,8 @@ def stem():
 
         with db.transaction:
             # print(*[{'keyword': keyword} for keyword in keys])
-            keywords = Keyword.get_or_create(*[{'keyword': keyword} for keyword in keys])
+            keywords = Keyword.get_or_create(
+                *[{'keyword': keyword} for keyword in keys])
             for keyword in keywords:
                 if not keyword.docs.is_connected(doc):
                     keyword.docs.connect(doc, {'freq': keys[keyword.keyword]})
@@ -62,27 +63,6 @@ def get_keywords(text):
 
         # keywords.append(extract_ne(words))
     return Counter(keywords)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # Experiment

@@ -19,6 +19,12 @@ def crawl():
     # Start scraping and exploring more urls
     doc = Doc.nodes.first_or_none(title__isnull=True)
     while doc:
+        if doc.url.startswith('https://stackoverflow.com/users'):
+            print("deleted ", doc.url)
+            doc.delete()
+            doc = Doc.nodes.first_or_none(title__isnull=True)
+            continue
+
         html_parser = parse_html(doc)
 
         if html_parser:
@@ -32,7 +38,7 @@ def crawl():
 
                 if doc_ref is None:
                     continue
-                    doc_ref = Doc(url=link).save()
+                    # doc_ref = Doc(url=link).save()
 
                 if doc_ref.id != doc.id and not doc_ref.ref_docs.is_connected(doc):
                     doc_ref.ref_docs.connect(doc)

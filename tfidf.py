@@ -1,5 +1,6 @@
 import math
 
+
 def calc_score(q, d, all_d):
     score = 0
     for t in q:
@@ -14,7 +15,7 @@ def tf(t, d):
 
 def idf(t, all_d):
     count_in_doc = 0
-    
+
     for d in all_d:
         if t in d["content"]:
             count_in_doc += 1
@@ -25,7 +26,7 @@ def idf(t, all_d):
 def calc_tfidf(query, docs):
     results = []
 
-    for doc in docs: 
+    for doc in docs:
         score = calc_score(query, doc["content"], docs)
 
         if score > 0:
@@ -33,5 +34,5 @@ def calc_tfidf(query, docs):
 
     for res in results:
         del res["content"]
-        
+
     return results

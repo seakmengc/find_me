@@ -130,6 +130,14 @@
         "documentation": {}
     },
     {
+        "label": "Doc",
+        "importPath": "models.doc",
+        "description": "models.doc",
+        "isExtraImport": true,
+        "detail": "models.doc",
+        "documentation": {}
+    },
+    {
         "label": "re",
         "kind": 6,
         "isExtraImport": true,
@@ -300,14 +308,6 @@
         "documentation": {}
     },
     {
-        "label": "db",
-        "importPath": "neomodel",
-        "description": "neomodel",
-        "isExtraImport": true,
-        "detail": "neomodel",
-        "documentation": {}
-    },
-    {
         "label": "Q",
         "importPath": "neomodel",
         "description": "neomodel",
@@ -317,6 +317,14 @@
     },
     {
         "label": "config",
+        "importPath": "neomodel",
+        "description": "neomodel",
+        "isExtraImport": true,
+        "detail": "neomodel",
+        "documentation": {}
+    },
+    {
+        "label": "db",
         "importPath": "neomodel",
         "description": "neomodel",
         "isExtraImport": true,
@@ -495,14 +503,6 @@
         "documentation": {}
     },
     {
-        "label": "calc_tfidf",
-        "importPath": "tfidf",
-        "description": "tfidf",
-        "isExtraImport": true,
-        "detail": "tfidf",
-        "documentation": {}
-    },
-    {
         "label": "math",
         "kind": 6,
         "isExtraImport": true,
@@ -516,7 +516,7 @@
         "kind": 2,
         "importPath": "commands.crawl",
         "description": "commands.crawl",
-        "peekOfCode": "def crawl():\n    # add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    doc = Doc.nodes.first_or_none(title__isnull=True)\n    while doc:\n        html_parser = parse_html(doc)\n        if html_parser:\n            # Done: save data to Url model\n            doc.title = html_parser.title\n            doc.description = html_parser.description",
+        "peekOfCode": "def crawl():\n    # add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    doc = Doc.nodes.first_or_none(title__isnull=True)\n    while doc:\n        if doc.url.startswith('https://stackoverflow.com/users'):\n            print(\"deleted \", doc.url)\n            doc.delete()\n            doc = Doc.nodes.first_or_none(title__isnull=True)\n            continue",
         "detail": "commands.crawl",
         "documentation": {}
     },
@@ -561,7 +561,7 @@
         "kind": 5,
         "importPath": "commands.crawl",
         "description": "commands.crawl",
-        "peekOfCode": "bp = Blueprint('crawler', __name__, cli_group='crawler')\n@bp.cli.command('crawl')\ndef crawl():\n    # add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    doc = Doc.nodes.first_or_none(title__isnull=True)\n    while doc:\n        html_parser = parse_html(doc)\n        if html_parser:\n            # Done: save data to Url model",
+        "peekOfCode": "bp = Blueprint('crawler', __name__, cli_group='crawler')\n@bp.cli.command('crawl')\ndef crawl():\n    # add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    doc = Doc.nodes.first_or_none(title__isnull=True)\n    while doc:\n        if doc.url.startswith('https://stackoverflow.com/users'):\n            print(\"deleted \", doc.url)\n            doc.delete()",
         "detail": "commands.crawl",
         "documentation": {}
     },
@@ -696,7 +696,7 @@
         "kind": 6,
         "importPath": "models.doc",
         "description": "models.doc",
-        "peekOfCode": "class RefRelationship(StructuredRel):\n    pass\nclass Doc(StructuredNode):\n    url = StringProperty(required=True, unique_index=True)\n    title = StringProperty()\n    description = StringProperty()\n    # ref = IntegerProperty(default=0)\n    stemmed = BooleanProperty(default=False)\n    ref_docs = RelationshipTo('Doc', 'REF', model=RefRelationship)\n    @staticmethod",
+        "peekOfCode": "class RefRelationship(StructuredRel):\n    pass\nclass Doc(StructuredNode):\n    url = StringProperty(required=True, unique_index=True)\n    title = StringProperty()\n    description = StringProperty()\n    ref = IntegerProperty(default=0)\n    stemmed = BooleanProperty(default=False)\n    ref_docs = RelationshipTo('Doc', 'REF', model=RefRelationship)\n    @staticmethod",
         "detail": "models.doc",
         "documentation": {}
     },
@@ -705,7 +705,7 @@
         "kind": 6,
         "importPath": "models.doc",
         "description": "models.doc",
-        "peekOfCode": "class Doc(StructuredNode):\n    url = StringProperty(required=True, unique_index=True)\n    title = StringProperty()\n    description = StringProperty()\n    # ref = IntegerProperty(default=0)\n    stemmed = BooleanProperty(default=False)\n    ref_docs = RelationshipTo('Doc', 'REF', model=RefRelationship)\n    @staticmethod\n    def get_havent_stemmed():\n        return Doc.nodes.first_or_none(stemmed__exact=False, title__isnull=False, description__isnull=False)",
+        "peekOfCode": "class Doc(StructuredNode):\n    url = StringProperty(required=True, unique_index=True)\n    title = StringProperty()\n    description = StringProperty()\n    ref = IntegerProperty(default=0)\n    stemmed = BooleanProperty(default=False)\n    ref_docs = RelationshipTo('Doc', 'REF', model=RefRelationship)\n    @staticmethod\n    def get_havent_stemmed():\n        return Doc.nodes.first_or_none(stemmed__exact=False, title__isnull=False, description__isnull=False)",
         "detail": "models.doc",
         "documentation": {}
     },
@@ -714,7 +714,7 @@
         "kind": 6,
         "importPath": "models.keyword",
         "description": "models.keyword",
-        "peekOfCode": "class KeywordRelationship(StructuredRel):\n    freq = IntegerProperty(required=True)\nclass Keyword(StructuredNode):\n    keyword = StringProperty(unique_index=True)\n    docs = RelationshipTo('Doc', 'IN', model=KeywordRelationship)",
+        "peekOfCode": "class KeywordRelationship(StructuredRel):\n    freq = IntegerProperty(required=True)\n# INDEX\n# CREATE CONSTRAINT ON (k:Keyword) ASSERT k.keyword IS UNIQUE\n#\nclass Keyword(StructuredNode):\n    keyword = StringProperty(unique_index=True)\n    docs = RelationshipTo('Doc', 'IN', model=KeywordRelationship)",
         "detail": "models.keyword",
         "documentation": {}
     },
@@ -746,15 +746,6 @@
         "documentation": {}
     },
     {
-        "label": "lemmatize_sentence",
-        "kind": 2,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "def lemmatize_sentence(sentence):\n    # tokenize the sentence and find the POS tag for each token\n    nltk_tagged = nltk.pos_tag(nltk.word_tokenize(sentence))\n    # tuple of (token, wordnet_tag)\n    wordnet_tagged = map(lambda x: (\n        x[0], nltk_tag_to_wordnet_tag(x[1])), nltk_tagged)\n    lemmatized_sentence = []\n    for word, tag in wordnet_tagged:\n        if tag is None:\n            # if there is no available tag, append the token as is",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
         "label": "find_synonyms",
         "kind": 2,
         "importPath": "app",
@@ -777,7 +768,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def search():\n    query = request.args.get(\"query\")\n    start = get_time_ms()\n    # word tokenize\n    # filter stopwords\n    # stemming\n    search_keywords = list(get_keywords(query).keys())\n    print(search_keywords)\n    keywords = Keyword.nodes.has(docs=True).filter(keyword__in=search_keywords)\n    response = {}",
+        "peekOfCode": "def search():\n    query = request.args.get(\"query\")\n    start = get_time_ms()\n    # word tokenize\n    # filter stopwords\n    # stemming\n    search_keywords = list(get_keywords(query).keys())\n    print(search_keywords)\n    # keywords = Keyword.nodes.has(docs=True).filter(\n    #     keyword__in=search_keywords)",
         "detail": "app",
         "documentation": {}
     },
@@ -804,7 +795,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "app.config['CORS_HEADERS'] = 'Content-Type'\napp.register_blueprint(crawl_bp)\napp.register_blueprint(stem_bp)\nNEO_URL = \"bolt://{username}:{password}@{uri}\".format(\n    username=os.getenv(\"DB_USERNAME\"),\n    password=os.getenv(\"DB_PASSWORD\"),\n    uri=os.getenv(\"DB_URI\"),\n)\ndb.set_connection(NEO_URL)\nconfig.DATABASE_URL = NEO_URL",
+        "peekOfCode": "app.config['CORS_HEADERS'] = 'Content-Type'\napp.register_blueprint(crawl_bp)\napp.register_blueprint(stem_bp)\nNEO_URL = \"bolt://{username}:{password}@{uri}\".format(\n    username=os.getenv(\"DB_USERNAME\"),\n    password=os.getenv(\"DB_PASSWORD\"),\n    uri=os.getenv(\"DB_URI\"),\n)\ndb.set_connection(NEO_URL)\nconfig.AUTO_INSTALL_LABELS = True",
         "detail": "app",
         "documentation": {}
     },
@@ -813,7 +804,16 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "NEO_URL = \"bolt://{username}:{password}@{uri}\".format(\n    username=os.getenv(\"DB_USERNAME\"),\n    password=os.getenv(\"DB_PASSWORD\"),\n    uri=os.getenv(\"DB_URI\"),\n)\ndb.set_connection(NEO_URL)\nconfig.DATABASE_URL = NEO_URL\nlemmatizer = WordNetLemmatizer()\ndef get_time_ms():\n    return int(round(time_.time() * 1000))",
+        "peekOfCode": "NEO_URL = \"bolt://{username}:{password}@{uri}\".format(\n    username=os.getenv(\"DB_USERNAME\"),\n    password=os.getenv(\"DB_PASSWORD\"),\n    uri=os.getenv(\"DB_URI\"),\n)\ndb.set_connection(NEO_URL)\nconfig.AUTO_INSTALL_LABELS = True\nconfig.DATABASE_URL = NEO_URL\nlemmatizer = WordNetLemmatizer()\ndef get_time_ms():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "config.AUTO_INSTALL_LABELS",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "config.AUTO_INSTALL_LABELS = True\nconfig.DATABASE_URL = NEO_URL\nlemmatizer = WordNetLemmatizer()\ndef get_time_ms():\n    return int(round(time_.time() * 1000))\n# function to convert nltk tag to wordnet tag\ndef nltk_tag_to_wordnet_tag(nltk_tag):\n    if nltk_tag.startswith(\"J\"):\n        return wordnet.ADJ\n    elif nltk_tag.startswith(\"V\"):",
         "detail": "app",
         "documentation": {}
     },
@@ -840,7 +840,7 @@
         "kind": 2,
         "importPath": "process",
         "description": "process",
-        "peekOfCode": "def sigmoid(num):\n    return math.exp(num) / (math.exp(num) + 1)\ndef cal_probab(query, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0\n        for word in query:\n            try:\n                ni = doc['freqs'][word]\n                if ni > 0:",
+        "peekOfCode": "def sigmoid(num):\n    num = 100 if num > 100 else num\n    return math.exp(num) / (math.exp(num) + 1)\ndef cal_probab(query, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0\n        for word in query:\n            try:\n                ni = doc['freqs'][word]",
         "detail": "process",
         "documentation": {}
     },
@@ -930,7 +930,7 @@
         "kind": 2,
         "importPath": "tfidf",
         "description": "tfidf",
-        "peekOfCode": "def idf(t, all_d):\n    count_in_doc = 0\n    for d in all_d:\n        if t in d[\"content\"]:\n            count_in_doc += 1\n    return 0 if count_in_doc == 0 else math.log(len(all_d) / float(count_in_doc), 2)\ndef calc_tfidf(query, docs):\n    results = []\n    for doc in docs: \n        score = calc_score(query, doc[\"content\"], docs)",
+        "peekOfCode": "def idf(t, all_d):\n    count_in_doc = 0\n    for d in all_d:\n        if t in d[\"content\"]:\n            count_in_doc += 1\n    return 0 if count_in_doc == 0 else math.log(len(all_d) / float(count_in_doc), 2)\ndef calc_tfidf(query, docs):\n    results = []\n    for doc in docs:\n        score = calc_score(query, doc[\"content\"], docs)",
         "detail": "tfidf",
         "documentation": {}
     },
@@ -939,7 +939,7 @@
         "kind": 2,
         "importPath": "tfidf",
         "description": "tfidf",
-        "peekOfCode": "def calc_tfidf(query, docs):\n    results = []\n    for doc in docs: \n        score = calc_score(query, doc[\"content\"], docs)\n        if score > 0:\n            results.append({**doc, \"score\": score})\n    for res in results:\n        del res[\"content\"]\n    return results",
+        "peekOfCode": "def calc_tfidf(query, docs):\n    results = []\n    for doc in docs:\n        score = calc_score(query, doc[\"content\"], docs)\n        if score > 0:\n            results.append({**doc, \"score\": score})\n    for res in results:\n        del res[\"content\"]\n    return results",
         "detail": "tfidf",
         "documentation": {}
     }
