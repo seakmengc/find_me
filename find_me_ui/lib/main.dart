@@ -215,7 +215,9 @@ class _Item extends StatelessWidget {
                 TextRow(
                   patterns: _patterns,
                   text: item['description'],
-                )
+                ),
+                const SizedBox(height: 7),
+                Text(item['scores'].toString()),
               ],
             ),
           ),

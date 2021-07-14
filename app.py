@@ -1,3 +1,4 @@
+import json
 from models.doc import Doc
 from process import ranking, sigmoid, cal_probab, cal_tfidf
 from flask import Flask, request
@@ -15,7 +16,7 @@ from nltk.corpus import wordnet
 from commands.stem import get_keywords
 from models.keyword import Keyword
 from neomodel import Q, config, db
-
+from neo4j import GraphDatabase
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -34,6 +35,9 @@ db.set_connection(NEO_URL)
 config.AUTO_INSTALL_LABELS = True
 
 config.DATABASE_URL = NEO_URL
+
+db = GraphDatabase.driver(os.getenv("URI"), auth=(
+    os.getenv("DB_USERNAME"), os.getenv("DB_PASSWORD")))
 
 lemmatizer = WordNetLemmatizer()
 
@@ -90,47 +94,34 @@ def search():
     query = ""
     for keyword in search_keywords:
         query += "MATCH (d: Doc) < -[ in :IN]-(k: Keyword {keyword: '" + keyword + \
-            "'}) RETURN {d: properties(d), freq: COALESCE(in.freq, 0)} UNION ALL "
+            "'}) RETURN {d: properties(d), freq: COALESCE(in.freq, 0), keyword: k.keyword} as result UNION ALL "
 
-    rtn = db.cypher_query(query.rstrip(" UNION ALL "))[0]
+    # graph_response = db.cypher_query(query.rstrip(" UNION ALL "))[0]
+
+    query = query.rstrip(" UNION ALL ")
+    with db.session() as session:
+        # graph_response = session.read_transaction(lambda tx: tx.run(query))
+        graph_response = session.run(query).data()
+        # print([record.data() for record in graph_response])
+    # print(graph_response)
     print(query)
-    for [each] in rtn:
+
+    for record in graph_response:
+        each = record['result']
         if not each['d']['url'] in response:
             response[each['d']['url']] = {
                 "url": each['d']['url'],
                 "title": each['d']['title'],
                 "description": each['d']['description'],
-                'freqs': {keyword: each['freq']},
+                'freqs': {each['keyword']: each['freq']},
                 'scores': {
                     'ref': each['d']['ref'],
                 }
             }
         else:
-            response[each['d']['url']]['freqs'][keyword] = each['freq']
+            response[each['d']['url']]['freqs'][each['keyword']] = each['freq']
             response[each['d']['url']
                      ]['scores']['ref'] += each['d']['ref']
-
-    # retrieve by each
-    # pluck url and retrieve doc
-
-    # response = {}
-    # for keyword in list(keywords):
-    #     for r in list(keyword.docs.all()):
-    #         if not r.url in response:
-    #             response[r.url] = {
-    #                 "url": r.url,
-    #                 "title": r.title,
-    #                 "description": r.description,
-    #                 # "content": (r.title + " " + r.description).lower().split(),
-    #                 'freqs': {keyword.keyword: keyword.docs.relationship(r).freq},
-    #                 'scores': {
-    #                     'ref': sigmoid(len(r.ref_docs)),
-    #                 }
-    #             }
-    #         else:
-    #             # response[r.url]['content'].append(keyword.keyword)
-    #             response[r.url]['freqs'][keyword.keyword] = keyword.docs.relationship(
-    #                 r).freq
 
     docs = list(response.values())
 
@@ -145,7 +136,7 @@ def search():
 
     print(start, end, str(end-start))
     return {
-        "time_to_search_in_milliseconds": str(end - start),
+        "time_to_search_in_milliseconds": str(end - start) + " ms",
         "results": sorted_results,
     }
 

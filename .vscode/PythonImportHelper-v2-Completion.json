@@ -1,5 +1,32 @@
 [
     {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "signal",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "signal",
+        "description": "signal",
+        "detail": "signal",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
         "label": "OrderedDict",
         "importPath": "collections",
         "description": "collections",
@@ -13,6 +40,23 @@
         "description": "collections",
         "isExtraImport": true,
         "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
         "documentation": {}
     },
     {
@@ -138,85 +182,11 @@
         "documentation": {}
     },
     {
-        "label": "re",
-        "kind": 6,
+        "label": "db",
+        "importPath": "neomodel",
+        "description": "neomodel",
         "isExtraImport": true,
-        "importPath": "re",
-        "description": "re",
-        "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "punctuation",
-        "importPath": "string",
-        "description": "string",
-        "isExtraImport": true,
-        "detail": "string",
-        "documentation": {}
-    },
-    {
-        "label": "nltk",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "nltk",
-        "description": "nltk",
-        "detail": "nltk",
-        "documentation": {}
-    },
-    {
-        "label": "word_tokenize",
-        "importPath": "nltk",
-        "description": "nltk",
-        "isExtraImport": true,
-        "detail": "nltk",
-        "documentation": {}
-    },
-    {
-        "label": "SnowballStemmer",
-        "importPath": "nltk",
-        "description": "nltk",
-        "isExtraImport": true,
-        "detail": "nltk",
-        "documentation": {}
-    },
-    {
-        "label": "word_tokenize",
-        "importPath": "nltk",
-        "description": "nltk",
-        "isExtraImport": true,
-        "detail": "nltk",
-        "documentation": {}
-    },
-    {
-        "label": "stopwords",
-        "importPath": "nltk.corpus",
-        "description": "nltk.corpus",
-        "isExtraImport": true,
-        "detail": "nltk.corpus",
-        "documentation": {}
-    },
-    {
-        "label": "wordnet",
-        "importPath": "nltk.corpus",
-        "description": "nltk.corpus",
-        "isExtraImport": true,
-        "detail": "nltk.corpus",
-        "documentation": {}
-    },
-    {
-        "label": "Keyword",
-        "importPath": "models.keyword",
-        "description": "models.keyword",
-        "isExtraImport": true,
-        "detail": "models.keyword",
-        "documentation": {}
-    },
-    {
-        "label": "Keyword",
-        "importPath": "models.keyword",
-        "description": "models.keyword",
-        "isExtraImport": true,
-        "detail": "models.keyword",
+        "detail": "neomodel",
         "documentation": {}
     },
     {
@@ -332,6 +302,88 @@
         "documentation": {}
     },
     {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "punctuation",
+        "importPath": "string",
+        "description": "string",
+        "isExtraImport": true,
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "nltk",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "nltk",
+        "description": "nltk",
+        "detail": "nltk",
+        "documentation": {}
+    },
+    {
+        "label": "word_tokenize",
+        "importPath": "nltk",
+        "description": "nltk",
+        "isExtraImport": true,
+        "detail": "nltk",
+        "documentation": {}
+    },
+    {
+        "label": "SnowballStemmer",
+        "importPath": "nltk",
+        "description": "nltk",
+        "isExtraImport": true,
+        "detail": "nltk",
+        "documentation": {}
+    },
+    {
+        "label": "word_tokenize",
+        "importPath": "nltk",
+        "description": "nltk",
+        "isExtraImport": true,
+        "detail": "nltk",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "Keyword",
+        "importPath": "models.keyword",
+        "description": "models.keyword",
+        "isExtraImport": true,
+        "detail": "models.keyword",
+        "documentation": {}
+    },
+    {
+        "label": "Keyword",
+        "importPath": "models.keyword",
+        "description": "models.keyword",
+        "isExtraImport": true,
+        "detail": "models.keyword",
+        "documentation": {}
+    },
+    {
         "label": "LinkFinder",
         "importPath": "link_finder",
         "description": "link_finder",
@@ -405,6 +457,15 @@
         "documentation": {}
     },
     {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
         "label": "ranking",
         "importPath": "process",
         "description": "process",
@@ -462,15 +523,6 @@
         "documentation": {}
     },
     {
-        "label": "time",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "time",
-        "description": "time",
-        "detail": "time",
-        "documentation": {}
-    },
-    {
         "label": "bp",
         "importPath": "commands.crawl",
         "description": "commands.crawl",
@@ -503,6 +555,14 @@
         "documentation": {}
     },
     {
+        "label": "GraphDatabase",
+        "importPath": "neo4j",
+        "description": "neo4j",
+        "isExtraImport": true,
+        "detail": "neo4j",
+        "documentation": {}
+    },
+    {
         "label": "math",
         "kind": 6,
         "isExtraImport": true,
@@ -516,7 +576,25 @@
         "kind": 2,
         "importPath": "commands.crawl",
         "description": "commands.crawl",
-        "peekOfCode": "def crawl():\n    # add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    doc = Doc.nodes.first_or_none(title__isnull=True)\n    while doc:\n        if doc.url.startswith('https://stackoverflow.com/users'):\n            print(\"deleted \", doc.url)\n            doc.delete()\n            doc = Doc.nodes.first_or_none(title__isnull=True)\n            continue",
+        "peekOfCode": "def crawl():\n    # add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    create_threads(thread_function=crawl_webpages, n=8)\n    while True:\n        sleep(1)\ndef create_threads(thread_function, n):\n    threads = list()\n    for index in range(n):\n        print(\"Main    : create and start thread %d.\", index)",
+        "detail": "commands.crawl",
+        "documentation": {}
+    },
+    {
+        "label": "create_threads",
+        "kind": 2,
+        "importPath": "commands.crawl",
+        "description": "commands.crawl",
+        "peekOfCode": "def create_threads(thread_function, n):\n    threads = list()\n    for index in range(n):\n        print(\"Main    : create and start thread %d.\", index)\n        x = threading.Thread(target=thread_function, daemon=True)\n        threads.append(x)\n        x.start()\n        sleep(1)\n    return threads\ndef crawl_webpages():",
+        "detail": "commands.crawl",
+        "documentation": {}
+    },
+    {
+        "label": "crawl_webpages",
+        "kind": 2,
+        "importPath": "commands.crawl",
+        "description": "commands.crawl",
+        "peekOfCode": "def crawl_webpages():\n    doc = Doc.nodes.order_by('?').first_or_none(title__isnull=True)\n    while doc:\n        if doc.url.startswith('https://stackoverflow.com/users/') or doc.url.startswith('https://stackoverflow.com/a/') or doc.url.startswith('https://stackoverflow.com/q/') or doc.url.startswith('https://stackoverflow.com/questions/tagged/'):\n            print(\"deleted \", doc.url)\n            doc.delete()\n            doc = Doc.nodes.order_by('?').first_or_none(title__isnull=True)\n            continue\n        html_parser = parse_html(doc)\n        if html_parser:",
         "detail": "commands.crawl",
         "documentation": {}
     },
@@ -525,7 +603,7 @@
         "kind": 2,
         "importPath": "commands.crawl",
         "description": "commands.crawl",
-        "peekOfCode": "def parse_html(doc):\n    if doc.title:\n        return\n    print('Crawling: ' + doc.url)\n    try:\n        response = requests.get(doc.url)\n        links = LinkFinder(doc.url)\n        links.feed(response.text)\n    except:\n        return",
+        "peekOfCode": "def parse_html(doc):\n    if doc.title:\n        return None\n    print('Crawling: ' + doc.url)\n    try:\n        response = requests.get(doc.url)\n        links = LinkFinder(doc.url)\n        links.feed(response.text)\n    except:\n        return None",
         "detail": "commands.crawl",
         "documentation": {}
     },
@@ -561,7 +639,7 @@
         "kind": 5,
         "importPath": "commands.crawl",
         "description": "commands.crawl",
-        "peekOfCode": "bp = Blueprint('crawler', __name__, cli_group='crawler')\n@bp.cli.command('crawl')\ndef crawl():\n    # add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    doc = Doc.nodes.first_or_none(title__isnull=True)\n    while doc:\n        if doc.url.startswith('https://stackoverflow.com/users'):\n            print(\"deleted \", doc.url)\n            doc.delete()",
+        "peekOfCode": "bp = Blueprint('crawler', __name__, cli_group='crawler')\n@bp.cli.command('crawl')\ndef crawl():\n    # add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    create_threads(thread_function=crawl_webpages, n=8)\n    while True:\n        sleep(1)\ndef create_threads(thread_function, n):\n    threads = list()",
         "detail": "commands.crawl",
         "documentation": {}
     },
@@ -804,7 +882,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "NEO_URL = \"bolt://{username}:{password}@{uri}\".format(\n    username=os.getenv(\"DB_USERNAME\"),\n    password=os.getenv(\"DB_PASSWORD\"),\n    uri=os.getenv(\"DB_URI\"),\n)\ndb.set_connection(NEO_URL)\nconfig.AUTO_INSTALL_LABELS = True\nconfig.DATABASE_URL = NEO_URL\nlemmatizer = WordNetLemmatizer()\ndef get_time_ms():",
+        "peekOfCode": "NEO_URL = \"bolt://{username}:{password}@{uri}\".format(\n    username=os.getenv(\"DB_USERNAME\"),\n    password=os.getenv(\"DB_PASSWORD\"),\n    uri=os.getenv(\"DB_URI\"),\n)\ndb.set_connection(NEO_URL)\nconfig.AUTO_INSTALL_LABELS = True\nconfig.DATABASE_URL = NEO_URL\ndb = GraphDatabase.driver(os.getenv(\"URI\"), auth=(\n    os.getenv(\"DB_USERNAME\"), os.getenv(\"DB_PASSWORD\")))",
         "detail": "app",
         "documentation": {}
     },
@@ -813,7 +891,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "config.AUTO_INSTALL_LABELS = True\nconfig.DATABASE_URL = NEO_URL\nlemmatizer = WordNetLemmatizer()\ndef get_time_ms():\n    return int(round(time_.time() * 1000))\n# function to convert nltk tag to wordnet tag\ndef nltk_tag_to_wordnet_tag(nltk_tag):\n    if nltk_tag.startswith(\"J\"):\n        return wordnet.ADJ\n    elif nltk_tag.startswith(\"V\"):",
+        "peekOfCode": "config.AUTO_INSTALL_LABELS = True\nconfig.DATABASE_URL = NEO_URL\ndb = GraphDatabase.driver(os.getenv(\"URI\"), auth=(\n    os.getenv(\"DB_USERNAME\"), os.getenv(\"DB_PASSWORD\")))\nlemmatizer = WordNetLemmatizer()\ndef get_time_ms():\n    return int(round(time_.time() * 1000))\n# function to convert nltk tag to wordnet tag\ndef nltk_tag_to_wordnet_tag(nltk_tag):\n    if nltk_tag.startswith(\"J\"):",
         "detail": "app",
         "documentation": {}
     },
@@ -822,7 +900,16 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "config.DATABASE_URL = NEO_URL\nlemmatizer = WordNetLemmatizer()\ndef get_time_ms():\n    return int(round(time_.time() * 1000))\n# function to convert nltk tag to wordnet tag\ndef nltk_tag_to_wordnet_tag(nltk_tag):\n    if nltk_tag.startswith(\"J\"):\n        return wordnet.ADJ\n    elif nltk_tag.startswith(\"V\"):\n        return wordnet.VERB",
+        "peekOfCode": "config.DATABASE_URL = NEO_URL\ndb = GraphDatabase.driver(os.getenv(\"URI\"), auth=(\n    os.getenv(\"DB_USERNAME\"), os.getenv(\"DB_PASSWORD\")))\nlemmatizer = WordNetLemmatizer()\ndef get_time_ms():\n    return int(round(time_.time() * 1000))\n# function to convert nltk tag to wordnet tag\ndef nltk_tag_to_wordnet_tag(nltk_tag):\n    if nltk_tag.startswith(\"J\"):\n        return wordnet.ADJ",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "db = GraphDatabase.driver(os.getenv(\"URI\"), auth=(\n    os.getenv(\"DB_USERNAME\"), os.getenv(\"DB_PASSWORD\")))\nlemmatizer = WordNetLemmatizer()\ndef get_time_ms():\n    return int(round(time_.time() * 1000))\n# function to convert nltk tag to wordnet tag\ndef nltk_tag_to_wordnet_tag(nltk_tag):\n    if nltk_tag.startswith(\"J\"):\n        return wordnet.ADJ\n    elif nltk_tag.startswith(\"V\"):",
         "detail": "app",
         "documentation": {}
     },
@@ -840,7 +927,25 @@
         "kind": 2,
         "importPath": "process",
         "description": "process",
-        "peekOfCode": "def sigmoid(num):\n    num = 100 if num > 100 else num\n    return math.exp(num) / (math.exp(num) + 1)\ndef cal_probab(query, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0\n        for word in query:\n            try:\n                ni = doc['freqs'][word]",
+        "peekOfCode": "def sigmoid(num):\n    return math.exp(num) / (math.exp(num) + 1)\ndef minmax_norm(num, min, max):\n    return (num - min) / (max - min)\ndef find_minmax(dict, key):\n    return [min(dict, key=lambda doc: doc['scores'][key])['scores'][key], max(dict, key=lambda doc: doc['scores'][key])['scores'][key]]\ndef cal_probab(query, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0",
+        "detail": "process",
+        "documentation": {}
+    },
+    {
+        "label": "minmax_norm",
+        "kind": 2,
+        "importPath": "process",
+        "description": "process",
+        "peekOfCode": "def minmax_norm(num, min, max):\n    return (num - min) / (max - min)\ndef find_minmax(dict, key):\n    return [min(dict, key=lambda doc: doc['scores'][key])['scores'][key], max(dict, key=lambda doc: doc['scores'][key])['scores'][key]]\ndef cal_probab(query, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0\n        for word in query:\n            if not word in doc['freqs']:",
+        "detail": "process",
+        "documentation": {}
+    },
+    {
+        "label": "find_minmax",
+        "kind": 2,
+        "importPath": "process",
+        "description": "process",
+        "peekOfCode": "def find_minmax(dict, key):\n    return [min(dict, key=lambda doc: doc['scores'][key])['scores'][key], max(dict, key=lambda doc: doc['scores'][key])['scores'][key]]\ndef cal_probab(query, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0\n        for word in query:\n            if not word in doc['freqs']:\n                continue\n            ni = doc['freqs'][word]",
         "detail": "process",
         "documentation": {}
     },
@@ -849,7 +954,7 @@
         "kind": 2,
         "importPath": "process",
         "description": "process",
-        "peekOfCode": "def cal_probab(query, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0\n        for word in query:\n            try:\n                ni = doc['freqs'][word]\n                if ni > 0:\n                    score += math.log2((N+0.5) / ni)\n            except KeyError:",
+        "peekOfCode": "def cal_probab(query, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0\n        for word in query:\n            if not word in doc['freqs']:\n                continue\n            ni = doc['freqs'][word]\n            if ni <= 0:\n                continue",
         "detail": "process",
         "documentation": {}
     },
@@ -858,7 +963,7 @@
         "kind": 2,
         "importPath": "process",
         "description": "process",
-        "peekOfCode": "def ranking(docs):\n    docs = docs.copy()\n    for doc in docs:\n        doc['score'] = doc['scores']['tf_idf'] * 0.5 + \\\n            doc['scores']['probab'] * 0.25 + doc['scores']['ref'] * 0.25\n    return sorted(\n        docs, key=lambda doc: doc[\"score\"], reverse=True)\ndef tf(ni):\n    return 0 if ni <= 0 else 1 + math.log2(ni)\ndef idf(N, n_docs_appear_in):",
+        "peekOfCode": "def ranking(docs):\n    docs = docs.copy()\n    [min_ref, max_ref] = find_minmax(docs, 'ref')\n    # print(find_minmax(docs, 'tf_idf'))\n    # print(find_minmax(docs, 'probab'))\n    for doc in docs:\n        doc['scores']['ref'] = minmax_norm(\n            doc['scores']['ref'], min=min_ref, max=max_ref)\n        doc['score'] = doc['scores']['tf_idf'] * 0.6 + \\\n            doc['scores']['ref'] * 0.25 + \\",
         "detail": "process",
         "documentation": {}
     },
@@ -885,7 +990,7 @@
         "kind": 2,
         "importPath": "process",
         "description": "process",
-        "peekOfCode": "def cal_tfidf(search_keywords, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0\n        for search_keyword in search_keywords:\n            if not search_keyword in doc['freqs']:\n                continue\n            score += tf(doc['freqs'][search_keyword]) * idf(N, n_docs_appear_in=sum(\n                [1 if search_keyword in doc['freqs'] else 0 for doc in docs]))\n        doc['scores']['tf_idf'] = sigmoid(score)",
+        "peekOfCode": "def cal_tfidf(search_keywords, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0\n        for search_keyword in search_keywords:\n            if not search_keyword in doc['freqs']:\n                continue\n            score += tf(doc['freqs'][search_keyword]) * idf(N, n_docs_appear_in=sum(\n                [1 if search_keyword in doc['freqs'] and doc['freqs'][search_keyword] > 0 else 0 for doc in docs]))\n        doc['scores']['tf_idf'] = sigmoid(score)",
         "detail": "process",
         "documentation": {}
     },
