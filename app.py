@@ -92,22 +92,30 @@ def search():
 
     response = dict()
     query = ""
+    cnt_query = ""
     for keyword in search_keywords:
         query += "MATCH (d: Doc) < -[ in :IN]-(k: Keyword {keyword: '" + keyword + \
-            "'}) RETURN {d: properties(d), freq: COALESCE(in.freq, 0), keyword: k.keyword} as result UNION ALL "
+            "'}) RETURN {d: properties(d), freq: COALESCE(in.freq, 0), keyword: k.keyword} as result LIMIT 50 UNION ALL "
+        cnt_query += "MATCH (d: Doc) < -[ in :IN]-(k: Keyword {keyword: '" + keyword + \
+            "'}) RETURN count(d) as cnt UNION ALL "
 
     # graph_response = db.cypher_query(query.rstrip(" UNION ALL "))[0]
 
     query = query.rstrip(" UNION ALL ")
+    cnt_query = cnt_query.rstrip(" UNION ALL ")
     with db.session() as session:
         # graph_response = session.read_transaction(lambda tx: tx.run(query))
         graph_response = session.run(query).data()
         # print([record.data() for record in graph_response])
+
+        total_docs = sum(record['cnt']
+                         for record in session.run(cnt_query).data())
     # print(graph_response)
     print(query)
 
     for record in graph_response:
         each = record['result']
+
         if not each['d']['url'] in response:
             response[each['d']['url']] = {
                 "url": each['d']['url'],
@@ -137,7 +145,8 @@ def search():
     print(start, end, str(end-start))
     return {
         "time_to_search_in_milliseconds": str(end - start) + " ms",
-        "results": sorted_results,
+        "results": sorted_results[:20],
+        "total": total_docs,
     }
 
     # lemmatize

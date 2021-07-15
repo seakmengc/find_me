@@ -27,7 +27,7 @@ def stem():
     while doc:
         text = doc.title + ' ' + doc.description
         keys = get_keywords(text=text)
-        # print(keywords.items())
+        print("Stemmed:", doc.url)
         # return
 
         with db.transaction:

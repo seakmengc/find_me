@@ -119,7 +119,7 @@ class _HomeViewState extends State<HomeView> {
             if (!_isBusy) ...[
               if (results.isNotEmpty) ...[
                 Text(
-                  'Found ${results.length} result${results.length > 1 ? 's' : ''} ($time)',
+                  'Found ${_queryResults['total']} result${results.length > 1 ? 's' : ''} ($time)',
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w500,
@@ -157,13 +157,13 @@ class _Item extends StatelessWidget {
       : super(key: key);
 
   List<RegExp> get _patterns => query
-      .toLowerCase()
       .split(' ')
       .map((e) => RegExp("\\b($e)\\b", caseSensitive: false))
       .toList();
 
   @override
   Widget build(BuildContext context) {
+    print(_patterns);
     return InkWell(
       hoverColor: Colors.blueGrey,
       onHover: (bool boolean) {},
@@ -203,21 +203,23 @@ class _Item extends StatelessWidget {
                   onTap: () {
                     launch(item['url']);
                   },
-                  child: Text(
-                    item['url'],
+                  child: TextRow(
+                    patterns: _patterns,
+                    text: item['url'],
                     style: TextStyle(
                       decoration: TextDecoration.underline,
                       color: Colors.green,
                     ),
+                    url: item['url'],
                   ),
                 ),
                 const SizedBox(height: 7),
                 TextRow(
                   patterns: _patterns,
-                  text: item['description'],
+                  text: item['description'].toString().replaceAll("\n", " "),
                 ),
-                const SizedBox(height: 7),
-                Text(item['scores'].toString()),
+                // const SizedBox(height: 7),
+                // Text(item['scores'].toString()),
               ],
             ),
           ),
@@ -253,6 +255,7 @@ class TextRow extends StatelessWidget {
               },
         child: ParsedText(
           text: text,
+          regexOptions: RegexOptions(caseSensitive: false),
           style: style,
           parse: _patterns.map((RegExp pattern) {
             return MatchText(

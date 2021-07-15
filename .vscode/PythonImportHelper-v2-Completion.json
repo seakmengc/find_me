@@ -576,7 +576,7 @@
         "kind": 2,
         "importPath": "commands.crawl",
         "description": "commands.crawl",
-        "peekOfCode": "def crawl():\n    # add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    create_threads(thread_function=crawl_webpages, n=8)\n    while True:\n        sleep(1)\ndef create_threads(thread_function, n):\n    threads = list()\n    for index in range(n):\n        print(\"Main    : create and start thread %d.\", index)",
+        "peekOfCode": "def crawl():\n    # add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    create_threads(thread_function=crawl_webpages, n=5)\n    while True:\n        print(\"Thread active:\", threading.active_count())\n        sleep(3)\ndef create_threads(thread_function, n):\n    threads = list()\n    for index in range(n):",
         "detail": "commands.crawl",
         "documentation": {}
     },
@@ -585,7 +585,7 @@
         "kind": 2,
         "importPath": "commands.crawl",
         "description": "commands.crawl",
-        "peekOfCode": "def create_threads(thread_function, n):\n    threads = list()\n    for index in range(n):\n        print(\"Main    : create and start thread %d.\", index)\n        x = threading.Thread(target=thread_function, daemon=True)\n        threads.append(x)\n        x.start()\n        sleep(1)\n    return threads\ndef crawl_webpages():",
+        "peekOfCode": "def create_threads(thread_function, n):\n    threads = list()\n    for index in range(n):\n        print(\"Main    : create and start thread\", index)\n        x = threading.Thread(target=thread_function,\n                             args=(index,), daemon=True)\n        threads.append(x)\n        x.start()\n        sleep(1)\n    return threads",
         "detail": "commands.crawl",
         "documentation": {}
     },
@@ -594,7 +594,7 @@
         "kind": 2,
         "importPath": "commands.crawl",
         "description": "commands.crawl",
-        "peekOfCode": "def crawl_webpages():\n    doc = Doc.nodes.order_by('?').first_or_none(title__isnull=True)\n    while doc:\n        if doc.url.startswith('https://stackoverflow.com/users/') or doc.url.startswith('https://stackoverflow.com/a/') or doc.url.startswith('https://stackoverflow.com/q/') or doc.url.startswith('https://stackoverflow.com/questions/tagged/'):\n            print(\"deleted \", doc.url)\n            doc.delete()\n            doc = Doc.nodes.order_by('?').first_or_none(title__isnull=True)\n            continue\n        html_parser = parse_html(doc)\n        if html_parser:",
+        "peekOfCode": "def crawl_webpages(index=0):\n    doc = Doc.nodes.order_by('?').first_or_none(title__isnull=True)\n    while doc:\n        if doc.url.startswith('https://stackoverflow.com/users/') or doc.url.startswith('https://stackoverflow.com/a/') or doc.url.startswith('https://stackoverflow.com/q/') or doc.url.startswith('https://stackoverflow.com/questions/tagged/'):\n            print(\"deleted \", doc.url)\n            doc.delete()\n            doc = Doc.nodes.order_by('?').first_or_none(title__isnull=True)\n            continue\n        html_parser = parse_html(doc)\n        print('Crawled: ' + doc.url, ' Thread', index)",
         "detail": "commands.crawl",
         "documentation": {}
     },
@@ -603,7 +603,7 @@
         "kind": 2,
         "importPath": "commands.crawl",
         "description": "commands.crawl",
-        "peekOfCode": "def parse_html(doc):\n    if doc.title:\n        return None\n    print('Crawling: ' + doc.url)\n    try:\n        response = requests.get(doc.url)\n        links = LinkFinder(doc.url)\n        links.feed(response.text)\n    except:\n        return None",
+        "peekOfCode": "def parse_html(doc):\n    if doc.title:\n        return None\n    try:\n        response = requests.get(doc.url)\n        links = LinkFinder(doc.url)\n        links.feed(response.text)\n    except:\n        return None\n    return HtmlTagParser(doc.url, response.text, links.page_links())",
         "detail": "commands.crawl",
         "documentation": {}
     },
@@ -639,7 +639,7 @@
         "kind": 5,
         "importPath": "commands.crawl",
         "description": "commands.crawl",
-        "peekOfCode": "bp = Blueprint('crawler', __name__, cli_group='crawler')\n@bp.cli.command('crawl')\ndef crawl():\n    # add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    create_threads(thread_function=crawl_webpages, n=8)\n    while True:\n        sleep(1)\ndef create_threads(thread_function, n):\n    threads = list()",
+        "peekOfCode": "bp = Blueprint('crawler', __name__, cli_group='crawler')\n@bp.cli.command('crawl')\ndef crawl():\n    # add_urls_by_sitemap()\n    # Start scraping and exploring more urls\n    create_threads(thread_function=crawl_webpages, n=5)\n    while True:\n        print(\"Thread active:\", threading.active_count())\n        sleep(3)\ndef create_threads(thread_function, n):",
         "detail": "commands.crawl",
         "documentation": {}
     },
@@ -648,7 +648,7 @@
         "kind": 2,
         "importPath": "commands.stem",
         "description": "commands.stem",
-        "peekOfCode": "def stem():\n    nltk.download(\"stopwords\")\n    nltk.download(\"averaged_perceptron_tagger\")\n    # Start stemming\n    doc = Doc.get_havent_stemmed()\n    while doc:\n        text = doc.title + ' ' + doc.description\n        keys = get_keywords(text=text)\n        # print(keywords.items())\n        # return",
+        "peekOfCode": "def stem():\n    nltk.download(\"stopwords\")\n    nltk.download(\"averaged_perceptron_tagger\")\n    # Start stemming\n    doc = Doc.get_havent_stemmed()\n    while doc:\n        text = doc.title + ' ' + doc.description\n        keys = get_keywords(text=text)\n        print(\"Stemmed:\", doc.url)\n        # return",
         "detail": "commands.stem",
         "documentation": {}
     },
@@ -927,7 +927,7 @@
         "kind": 2,
         "importPath": "process",
         "description": "process",
-        "peekOfCode": "def sigmoid(num):\n    return math.exp(num) / (math.exp(num) + 1)\ndef minmax_norm(num, min, max):\n    return (num - min) / (max - min)\ndef find_minmax(dict, key):\n    return [min(dict, key=lambda doc: doc['scores'][key])['scores'][key], max(dict, key=lambda doc: doc['scores'][key])['scores'][key]]\ndef cal_probab(query, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0",
+        "peekOfCode": "def sigmoid(num):\n    return math.exp(num) / (math.exp(num) + 1)\ndef minmax_norm(num, min, max):\n    div = (max - min)\n    return 0 if div == 0 else (num - min) / div\ndef find_minmax(dict, key):\n    return [min(dict, key=lambda doc: doc['scores'][key])['scores'][key], max(dict, key=lambda doc: doc['scores'][key])['scores'][key]]\ndef cal_probab(query, docs):\n    N = len(docs)\n    for doc in docs:",
         "detail": "process",
         "documentation": {}
     },
@@ -936,7 +936,7 @@
         "kind": 2,
         "importPath": "process",
         "description": "process",
-        "peekOfCode": "def minmax_norm(num, min, max):\n    return (num - min) / (max - min)\ndef find_minmax(dict, key):\n    return [min(dict, key=lambda doc: doc['scores'][key])['scores'][key], max(dict, key=lambda doc: doc['scores'][key])['scores'][key]]\ndef cal_probab(query, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0\n        for word in query:\n            if not word in doc['freqs']:",
+        "peekOfCode": "def minmax_norm(num, min, max):\n    div = (max - min)\n    return 0 if div == 0 else (num - min) / div\ndef find_minmax(dict, key):\n    return [min(dict, key=lambda doc: doc['scores'][key])['scores'][key], max(dict, key=lambda doc: doc['scores'][key])['scores'][key]]\ndef cal_probab(query, docs):\n    N = len(docs)\n    for doc in docs:\n        score = 0\n        for word in query:",
         "detail": "process",
         "documentation": {}
     },

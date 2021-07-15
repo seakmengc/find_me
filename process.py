@@ -6,7 +6,8 @@ def sigmoid(num):
 
 
 def minmax_norm(num, min, max):
-    return (num - min) / (max - min)
+    div = (max - min)
+    return 0 if div == 0 else (num - min) / div
 
 
 def find_minmax(dict, key):
