@@ -24,17 +24,19 @@ def crawl():
     # add_urls_by_sitemap()
 
     # Start scraping and exploring more urls
-    create_threads(thread_function=crawl_webpages, n=8)
+    create_threads(thread_function=crawl_webpages, n=5)
 
     while True:
-        sleep(1)
+        print("Thread active:", threading.active_count())
+        sleep(3)
 
 
 def create_threads(thread_function, n):
     threads = list()
     for index in range(n):
-        print("Main    : create and start thread %d.", index)
-        x = threading.Thread(target=thread_function, daemon=True)
+        print("Main    : create and start thread", index)
+        x = threading.Thread(target=thread_function,
+                             args=(index,), daemon=True)
         threads.append(x)
         x.start()
         sleep(1)
@@ -42,7 +44,7 @@ def create_threads(thread_function, n):
     return threads
 
 
-def crawl_webpages():
+def crawl_webpages(index=0):
     doc = Doc.nodes.order_by('?').first_or_none(title__isnull=True)
 
     while doc:
@@ -53,6 +55,8 @@ def crawl_webpages():
             continue
 
         html_parser = parse_html(doc)
+
+        print('Crawled: ' + doc.url, ' Thread', index)
 
         if html_parser:
             with db.write_transaction:
@@ -84,8 +88,6 @@ def crawl_webpages():
 def parse_html(doc):
     if doc.title:
         return None
-
-    print('Crawling: ' + doc.url)
 
     try:
         response = requests.get(doc.url)
